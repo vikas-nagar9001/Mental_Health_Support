@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e5eeff","inverse-primary":"#bec6e0","tertiary-container":"#001d31","on-tertiary-fixed-variant":"#004b73","secondary-fixed":"#89f5e7","on-primary":"#ffffff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","surface-container-high":"#dce9ff","primary-fixed-dim":"#bec6e0","secondary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","primary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-error":"#ffffff","error-container":"#ffdad6","tertiary":"#000000","tertiary-fixed":"#cce5ff","on-surface":"#0b1c30","primary":"#000000","inverse-on-surface":"#eaf1ff","secondary-container":"#86f2e4","on-secondary-container":"#006f66","surface-tint":"#565e74","error":"#ba1a1a","surface-variant":"#d3e4fe","primary-container":"#131b2e","on-secondary":"#ffffff","inverse-surface":"#213145","surface-container-lowest":"#ffffff","on-tertiary-container":"#188ace","on-surface-variant":"#45464d","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","on-primary-container":"#7c839b","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#3f465c","secondary":"#006a61","outline":"#76777d","on-background":"#0b1c30","on-tertiary-fixed":"#001d31","background":"#f8f9ff","outline-variant":"#c6c6cd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"display":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="min-h-20 py-3 px-4 flex items-center gap-3"><img alt="MindCare Logo" class="h-14 w-auto object-contain" src="../../assets/images/logo.png"/></div><div class="px-4 py-2"><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-label-lg font-semibold"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="wellness-check" href="#"><span class="material-symbols-outlined text-xl">spa</span><span>Wellness Check</span></a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-all bg-surface-container-high text-on-surface font-label-lg font-semibold" data-path="ai-support" href="#"><span class="material-symbols-outlined text-xl">smart_toy</span><span>AI Support</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="mood-tracker" href="#"><span class="material-symbols-outlined text-xl">mood</span><span>Mood Tracker</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="resources" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Resources</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="counseling" href="#"><span class="material-symbols-outlined text-xl">volunteer_activism</span><span>Counseling</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span>Appointments</span></a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2</span></a><div class="pt-3 pb-1"><div class="h-px bg-surface-container-high mx-2 my-1"></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-xl">person</span><span>Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-xl">help</span><span>Help</span></a></nav></div></div><div class="p-4 mb-3"><div class="rounded-2xl p-4 bg-error-container text-on-error-container flex flex-col gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-xl text-error">emergency</span><span class="font-label-lg text-label-lg font-semibold text-on-error-container">Crisis Helpline</span></div><p class="font-body-sm text-body-sm leading-snug">Confidential 24/7 care whenever you feel overwhelmed.</p><a class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm" data-path="emergency-helpline" href="#"><span>Reach SOS Support</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-8 flex items-center justify-between gap-6"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap"><span class="material-symbols-outlined text-base text-secondary">school</span><span>Delhi Technological University • Academic Year 2024-25</span></div><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md truncate"><span class="material-symbols-outlined text-base text-secondary">psychology_alt</span><span class="truncate">“One day at a time, Ananya”</span></div></div><div class="flex items-center gap-3 shrink-0"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-error-container font-label-sm text-label-sm text-on-error-container font-medium hover:bg-error hover:text-on-error transition-colors" data-path="emergency-helpline" href="#"><span class="material-symbols-outlined text-base">call</span><span>Crisis Hotline</span></a><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="h-6 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMR9rJ2AxPqsMhNBaqkNb3avAQHrPABpyznEHzJXMa3FUXf0cT6zO8c0WoXzseYGkY7hCiPi9fFbmwrtK-NXNsdssW9NzUpeOFU073pF-glZrFyDmKhUkJAY5cPcgjiNo3Z2A7Jcmpdw6MrQYShKd5Andiu9LD3cp9a7PdipH8JaAUd930fGKTJpG2wkRWd8jd57lMDwpMzDtCLvUL7hbR5_rRKFLPTYtUQyJIypC3gibSuQovSyyJ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-medium">Ananya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Online • Sem 6 CS</span></div></div></div></header><main class="flex-1 pt-20 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto pb-6">
+<!-- Top Context & Emergency Disclaimer Banner -->
+<div class="flex flex-wrap items-center justify-between gap-4 p-4 mb-6 rounded-2xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-2xl">lock</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h1 class="font-headline-sm text-headline-sm text-on-surface">AI Care Companion</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Safe Space active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Confidential supportive dialogue. Zero academic or disciplinary records.</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<!-- Dual State Toggle Switcher for Testing / Demonstration -->
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-highest text-on-surface hover:bg-surface-container-high transition-all shadow-sm font-label-md text-label-md" id="crisis-toggle-btn" onclick="toggleCrisisState()">
+<span class="material-symbols-outlined text-lg text-error" id="toggle-icon">shield_with_heart</span>
+<span id="toggle-label">Simulate Crisis Safe State</span>
+</button>
+<a class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-lowest text-secondary font-label-md text-label-md hover:bg-surface-container transition-all shadow-sm" href="#quick-grounding">
+<span class="material-symbols-outlined text-lg">air</span>
+<span>Box Breathing</span>
+</a>
+</div>
+</div>
+<!-- Main Workspace Layout: 3 Columns (Nav/History - Chat Canvas - Crisis/Safety Companion) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- 1. LEFT PANEL: Conversation History & Context (3 Cols) -->
+<section class="lg:col-span-3 flex flex-col gap-4">
+<!-- New Session Action -->
+<button class="w-full flex items-center justify-center gap-2.5 px-4 py-3 rounded-2xl bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container hover:text-on-surface transition-all">
+<span class="material-symbols-outlined text-xl">add_circle</span>
+<span>Start New Dialogue</span>
+</button>
+<!-- Search Bar -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-lg">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary shadow-sm" placeholder="Search past conversations..." type="text"/>
+</div>
+<!-- Chat History List -->
+<div class="flex flex-col gap-2 bg-surface-container-lowest p-3 rounded-2xl shadow-sm">
+<div class="flex items-center justify-between px-2 pt-1 pb-2">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">Recent Check-ins</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">3 archived</span>
+</div>
+<!-- Active Thread -->
+<div class="flex flex-col gap-1 p-3 rounded-xl bg-surface-container-high text-on-surface cursor-pointer shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold truncate">Exam Stress &amp; Brain Fog</span>
+<span class="font-label-sm text-label-sm text-secondary">Today</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">3 back-to-back project submissions and a viva tomorrow...</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Academic Stress</span>
+</div>
+</div>
+<!-- Past Thread 1 -->
+<div class="flex flex-col gap-1 p-3 rounded-xl hover:bg-surface-container-low text-on-surface cursor-pointer transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md truncate">Trouble Sleeping Before Viva</span>
+<span class="font-label-sm text-label-sm text-outline">3d ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Mind won't shut off, racing thoughts at 3:30 AM.</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Rest &amp; Sleep</span>
+</div>
+</div>
+<!-- Past Thread 2 -->
+<div class="flex flex-col gap-1 p-3 rounded-xl hover:bg-surface-container-low text-on-surface cursor-pointer transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md truncate">Grounding Exercises for Anxiety</span>
+<span class="font-label-sm text-label-sm text-outline">1w ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">The 5-4-3-2-1 sensory drill helped me during lab presentations.</p>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Anxiety Drill</span>
+</div>
+</div>
+</div>
+<!-- Privacy & Ethics Seal -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-lg">verified_user</span>
+<span class="font-label-md text-label-md font-semibold">DTU Student Privacy Shield</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            All chats are end-to-end encrypted &amp; completely decoupled from campus faculty. AI is an emotional first-aid companion, not a substitute for clinical diagnostics.
+          </p>
+<div class="flex items-center gap-3 pt-1">
+<span class="font-label-sm text-label-sm text-secondary underline cursor-pointer">Security Protocol</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-outline cursor-pointer">Clear History</span>
+</div>
+</div>
+<!-- Supportive Micro Card with Rich Visual -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<img class="w-16 h-16 rounded-xl object-cover" data-alt="Quiet university library study corner with warm sunlight filtering through leaves, soft aesthetic, gentle pastel mint tones, modern clean composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0uou8Jqr4PmoLThi9MwDadIkRe9ghbkUN6NcugTxsxI4TEUiefg8slpchll-K0AlJ0OvjOBOVWpAk65xvr7KidWkcwH0aiP9jv9VO3atmlrv4_YfxaNBjgT0AEuE6ArG44IlAawO86WtKVvxIEFlPrV0Gtncr9dewpBqRc5XUR-3uJ3G-3_n50gSRb_hZg4lb0KLeLSYG0p1AWWgdgGkDc5f3T18P55vEpgZGDitIjTm2F0D-WmpG"/>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Quiet Corner</span>
+<span class="font-label-md text-label-md font-medium text-on-surface">Campus Wellness Hub</span>
+<span class="font-body-sm text-body-sm text-secondary">Open till 10:00 PM • Library L3</span>
+</div>
+</div>
+</section>
+<!-- 2. MAIN CONVERSATIONAL CANVAS (6 Cols) -->
+<section class="lg:col-span-6 flex flex-col h-[780px] bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden relative">
+<!-- Chat Canvas Header -->
+<div class="px-6 py-4 bg-surface-container-lowest flex items-center justify-between shadow-sm z-10">
+<div class="flex items-center gap-3">
+<div class="relative">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-2xl">smart_toy</span>
+</div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">MindCare AI</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm">Active &amp; Attentive</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Empathetic cognitive reframing • 24/7 Support</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="Summarize conversation">
+<span class="material-symbols-outlined text-xl">auto_stories</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="Clear session">
+<span class="material-symbols-outlined text-xl">refresh</span>
+</button>
+</div>
+</div>
+<!-- Suggestion Prompt Pills Bar -->
+<div class="px-6 py-3 bg-surface-container-low flex items-center gap-2 overflow-x-auto no-scrollbar">
+<span class="font-label-sm text-label-sm text-outline whitespace-nowrap">Suggested:</span>
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-sm text-label-sm whitespace-nowrap shadow-sm" onclick="insertPrompt('I\'m stressed about exams and submissions')">
+            I'm stressed about exams
+          </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-sm text-label-sm whitespace-nowrap shadow-sm" onclick="insertPrompt('I can\'t focus on studying right now')">
+            I can't focus on studying
+          </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-sm text-label-sm whitespace-nowrap shadow-sm" onclick="insertPrompt('I feel completely isolated and lonely today')">
+            I feel lonely today
+          </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-sm text-label-sm whitespace-nowrap shadow-sm" onclick="insertPrompt('Guide me through a calming exercise right now')">
+            Help me relax right now
+          </button>
+</div>
+<!-- Chat Stream Area -->
+<div class="flex-1 overflow-y-auto p-6 space-y-6" id="chat-stream">
+<!-- System Context Timestamp -->
+<div class="flex items-center justify-center my-2">
+<span class="px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-outline">Today, 2:45 PM • Session initiated</span>
+</div>
+<!-- Student Message -->
+<div class="flex items-start justify-end gap-3">
+<div class="flex flex-col items-end max-w-[80%]">
+<div class="p-4 rounded-2xl rounded-tr-sm bg-primary text-on-primary shadow-sm">
+<p class="font-body-md text-body-md leading-relaxed">
+                  I have 3 back-to-back project submissions and a viva tomorrow. My heart is racing and I feel like I'm going to fail everything.
+                </p>
+</div>
+<span class="mt-1 font-label-sm text-label-sm text-outline">Sent • 2:46 PM</span>
+</div>
+<img class="w-8 h-8 rounded-full object-cover shrink-0" data-alt="Portrait of an Indian female university student looking thoughtful and focused, soft ambient natural lighting, muted calming colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9_XtzgFxtr8svPgyWpJ99AGHJR56dss6JnnJyiem3yGOqhvgEU1QWhqkZVoMMcS5BS27yekfhhzIMM9PT22IA-Q_hAnFVm3DEYy9UnSNcQUlESAPYg8Z7wZxL0wp7S63NcDcRRX2NGToqC4smL9ouvXY3V9EKiM_hzyuW3CYudKTt8spUwDrHHy_TJsjFSufUEolrV4FgUsQryVhsf24jW01c4Xh8D7YiV_STAYzG_tBEXst5b9CG"/>
+</div>
+<!-- MindCare AI Response with Empathetic Formatting -->
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-lg">smart_toy</span>
+</div>
+<div class="flex flex-col max-w-[85%]">
+<div class="p-5 rounded-2xl rounded-tl-sm bg-surface-container-low text-on-surface shadow-sm space-y-3">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-semibold text-secondary uppercase tracking-wider">Compassionate Reframing</span>
+</div>
+<p class="font-body-md text-body-md leading-relaxed text-on-surface">
+                  I hear how heavy this feels right now, Ananya. It’s completely understandable that your nervous system is on high alert with three major deadlines at once.
+                </p>
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm space-y-2">
+<p class="font-label-md text-label-md font-semibold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">self_improvement</span>
+                    Let's pause for just 60 seconds before tackling the list:
+                  </p>
+<ol class="list-decimal list-inside space-y-1.5 font-body-sm text-body-sm text-on-surface-variant pl-1">
+<li><strong class="text-on-surface">Plant both feet</strong> firmly on the ground right where you're seated.</li>
+<li><strong class="text-on-surface">Take a slow breath</strong> in through your nose for 4 seconds... and let it out gently.</li>
+</ol>
+</div>
+<p class="font-body-md text-body-md leading-relaxed text-on-surface">
+                  Would you like to try a quick <strong>2-minute focus grounding exercise</strong>, or should we break down your submission tasks into bite-sized <strong>20-minute chunks</strong>?
+                </p>
+<!-- Interactive Action Responses Inside Chat -->
+<div class="flex flex-wrap gap-2 pt-2">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md shadow-sm hover:opacity-90 transition-opacity" onclick="triggerQuickAction('Start 2-min Grounding Drill')">
+<span class="material-symbols-outlined text-base">air</span>
+<span>2-Min Grounding Drill</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="triggerQuickAction('Break Down My Viva Tasks')">
+<span class="material-symbols-outlined text-base">checklist</span>
+<span>Break into 20-min Chunks</span>
+</button>
+</div>
+</div>
+<div class="flex items-center gap-3 mt-1.5 px-1">
+<span class="font-label-sm text-label-sm text-outline">AI Companion • 2:47 PM</span>
+<span class="text-outline-variant">•</span>
+<button class="text-outline hover:text-secondary flex items-center gap-0.5 font-label-sm text-label-sm" title="Helpful"><span class="material-symbols-outlined text-sm">thumb_up</span> Helpful</button>
+<button class="text-outline hover:text-error flex items-center gap-0.5 font-label-sm text-label-sm" title="Provide Feedback"><span class="material-symbols-outlined text-sm">flag</span> Report</button>
+</div>
+</div>
+</div>
+<!-- Dynamic Chat Message Append Container -->
+<div class="space-y-6" id="dynamic-messages"></div>
+<!-- Typing Indicator (Hidden by default) -->
+<div class="hidden items-center gap-3" id="typing-indicator">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-lg">smart_toy</span>
+</div>
+<div class="px-4 py-3 rounded-2xl rounded-tl-sm bg-surface-container-low text-on-surface-variant flex items-center gap-1.5 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse" style="animation-delay: 200ms;"></span>
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse" style="animation-delay: 400ms;"></span>
+<span class="font-label-sm text-label-sm ml-2 text-outline">Reframing thoughts...</span>
+</div>
+</div>
+</div>
+<!-- Input Bar Section -->
+<div class="p-4 bg-surface-container-lowest shadow-sm z-10">
+<form class="flex flex-col gap-2 bg-surface-container-low rounded-2xl p-2.5 shadow-inner" id="chat-form" onsubmit="handleChatSubmit(event)">
+<div class="flex items-center gap-2">
+<textarea class="flex-1 bg-transparent px-3 py-1.5 font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none resize-none max-h-24" id="chat-input" placeholder="Share what's on your mind... (Press Enter to send)" rows="1"></textarea>
+<div class="flex items-center gap-1 shrink-0">
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" title="Audio note input" type="button">
+<span class="material-symbols-outlined text-xl">mic</span>
+</button>
+<button class="p-2 rounded-xl text-on-surface-variant hover:bg-surface-container transition-colors" onclick="toggleGroundingModal()" title="Grounding Exercise selector" type="button">
+<span class="material-symbols-outlined text-xl">self_improvement</span>
+</button>
+<button class="p-2.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-colors shadow-sm flex items-center justify-center" type="submit">
+<span class="material-symbols-outlined text-xl">send</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between px-3 pt-1 text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-outline">Press Shift + Enter for new line</span>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Safe Mode &amp; Sentiment Guard ON</span>
+</div>
+</div>
+</form>
+</div>
+</section>
+<!-- 3. RIGHT INTERACTIVE SIDEBAR: Dual State (Normal Rail vs. High-Risk Crisis Safe State) (3 Cols) -->
+<section class="lg:col-span-3 flex flex-col gap-4">
+<!-- DUAL STATE CONTAINER: Switches based on crisis simulation or sentiment triggers -->
+<div class="flex flex-col gap-4 transition-all" id="companion-sidebar">
+<!-- STATE A: Normal Wellness Companion (Default) -->
+<div class="flex flex-col gap-4" id="state-normal">
+<!-- Quick Grounding Visual Breathing Widget -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4" id="quick-grounding">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">spa</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Box Breathing</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container">1 min cycle</span>
+</div>
+<!-- Animated Breathing Circle -->
+<div class="flex flex-col items-center justify-center py-4 relative">
+<div class="w-32 h-32 rounded-full bg-gradient-to-tr from-secondary-container via-surface-variant to-secondary-container flex items-center justify-center animate-pulse shadow-inner relative overflow-hidden">
+<div class="w-24 h-24 rounded-full bg-surface-container-lowest flex flex-col items-center justify-center shadow-md">
+<span class="font-label-md text-label-md font-semibold text-secondary uppercase tracking-widest" id="breath-text">Inhale</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold" id="breath-count">4s</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center mt-3">Follow the rhythm to reduce sympathetic heart spike</p>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-3 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm hover:opacity-95" onclick="startBreathGuide()">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+<span>Begin Cycle</span>
+</button>
+<button class="py-2 px-3 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container">
+<span class="material-symbols-outlined text-base">headphones</span>
+<span>Audio chime</span>
+</button>
+</div>
+</div>
+<!-- Somatic Check-in & Real-time Distress Level -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Somatic Distress Meter</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Moderate (6/10)</span>
+</div>
+<!-- Subtle Progress Track -->
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full" style="width: 60%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Grounded</span>
+<span>Elevated (Exam)</span>
+<span>Overwhelmed</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1 leading-snug">
+                Based on your pacing, we detected physiological strain. Would you like a 30-second temple massage break?
+              </p>
+</div>
+<!-- Campus Support Direct Link -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-2xl">support_agent</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-semibold text-on-surface">Talk with Human Counselor</h4>
+<span class="font-label-sm text-label-sm text-secondary">Free for DTU Students</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prefer speaking with a certified psychologist? Book an on-campus slot or tele-consultation.</p>
+<button class="w-full py-2.5 px-3 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors text-center font-medium">
+                Book Counselor (Dr. Aarti Saxena)
+              </button>
+</div>
+</div>
+<!-- STATE B: High-Risk Crisis Safe State Panel (Activated via toggle or high-risk inputs) -->
+<div class="hidden flex-col gap-4" id="state-crisis">
+<!-- High-Risk Alert Card -->
+<div class="p-5 rounded-2xl bg-error-container text-on-error-container shadow-md flex flex-col gap-3 animate-fade-in">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-surface-container-lowest flex items-center justify-center text-error shadow-sm">
+<span class="material-symbols-outlined text-2xl font-bold">crisis_alert</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-error-container">Immediate Safe Harbor</h3>
+<span class="font-label-sm text-label-sm text-error font-semibold">Priority Student Response Active</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm leading-relaxed text-on-error-container">
+                If you or a friend are feeling unsafe, experiencing thoughts of self-harm, or in acute distress, <strong>you do not have to carry this alone.</strong> Trained professionals are ready to listen right now.
+              </p>
+</div>
+<!-- Priority Direct Action Contacts -->
+<div class="flex flex-col gap-2.5 bg-surface-container-lowest p-4 rounded-2xl shadow-sm">
+<span class="font-label-sm text-label-sm font-semibold uppercase text-outline tracking-wider px-1">Instant Direct Lines</span>
+<!-- 24/7 Campus Emergency -->
+<a class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between transition-colors shadow-sm group" href="tel:18005550199">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">emergency</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Campus 24/7 Emergency Line</span>
+<span class="font-label-sm text-label-sm text-error font-medium">1800-555-0199 • Instant Connect</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-error group-hover:translate-x-1 transition-transform">call</span>
+</a>
+<!-- Tele-MANAS Govt of India -->
+<a class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between transition-colors shadow-sm group" href="tel:14416">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">local_hospital</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Tele-MANAS Student Crisis</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Dial 14416 (Toll-Free, Govt. of India)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary group-hover:translate-x-1 transition-transform">call</span>
+</a>
+<!-- Campus Resident Warden / Proctor -->
+<a class="p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container flex items-center justify-between transition-colors shadow-sm group" href="tel:9876543210">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">shield_person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Hostel Resident Warden</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Prof. Raman • Block B Duty</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">call</span>
+</a>
+<!-- Trusted Buddy Card -->
+<div class="p-3.5 rounded-xl bg-secondary-container/30 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Notify Nominated Buddy</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container font-medium">Kavya (Hostel Room 304)</span>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-semibold hover:bg-secondary hover:text-on-secondary transition-colors" onclick="alert('Notification sent discreetly to Kavya: Ananya has requested a quick presence check.')">
+                  Alert Buddy
+                </button>
+</div>
+</div>
+<!-- Ground Yourself Audio Relief -->
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Immediate Sensory Grounding</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Step away from your screen. Listen to gentle binaural rain while help connects.</p>
+<button class="w-full py-2.5 px-3 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-medium flex items-center justify-center gap-2 hover:opacity-95" onclick="playCalmingAudio()">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+<span id="audio-play-label">Play Calming Audio (Rain &amp; Ocean)</span>
+</button>
+</div>
+<!-- Reassurance Assurance -->
+<div class="p-3 rounded-xl bg-surface-container-low text-center">
+<span class="font-label-sm text-label-sm text-outline leading-tight block">
+                Confidential • Zero disciplinary impact • Immediate human care
+              </span>
+</div>
+</div>
+</div>
+<!-- Academic Reassurance Micro Note -->
+<div class="p-4 rounded-2xl bg-surface-container-low shadow-sm flex items-center gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container-lowest flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">fact_check</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Medical Leave / Deferral</span>
+<span class="font-body-sm text-body-sm text-outline">Dean's mental health extenuating policy applies to vivas.</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Interactive Guided Exercise Modal (Hidden by default) -->
+<div class="hidden fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm items-center justify-center p-4" id="exercise-modal">
+<div class="bg-surface-container-lowest rounded-2xl max-w-md w-full p-6 shadow-2xl flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Choose Guided Drill</h3>
+<button class="p-1.5 rounded-lg text-outline hover:bg-surface-container" onclick="toggleGroundingModal()">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select an immediate 2-minute psychological tool to stabilize your thoughts:</p>
+<div class="space-y-2">
+<button class="w-full p-3 rounded-xl bg-surface-container-low hover:bg-secondary-container hover:text-on-secondary-container text-left transition-colors flex items-center gap-3" onclick="selectExercise('5-4-3-2-1 Sensory Grounding')">
+<span class="material-symbols-outlined text-secondary">visibility</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">5-4-3-2-1 Sensory Grounding</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Anchor yourself into the room by engaging all 5 senses.</div>
+</div>
+</button>
+<button class="w-full p-3 rounded-xl bg-surface-container-low hover:bg-secondary-container hover:text-on-secondary-container text-left transition-colors flex items-center gap-3" onclick="selectExercise('4-7-8 Deep Sleep &amp; Calm Breath')">
+<span class="material-symbols-outlined text-secondary">bedtime</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">4-7-8 Parasympathetic Reset</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Slow your heart rate and release physical chest tightness.</div>
+</div>
+</button>
+<button class="w-full p-3 rounded-xl bg-surface-container-low hover:bg-secondary-container hover:text-on-secondary-container text-left transition-colors flex items-center gap-3" onclick="selectExercise('Thought Defusion &amp; Chunking')">
+<span class="material-symbols-outlined text-secondary">alt_route</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Cognitive De-catastrophizing</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Separate actual facts from worst-case exam assumptions.</div>
+</div>
+</button>
+</div>
+<div class="flex justify-end pt-2">
+<button class="px-4 py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md" onclick="toggleGroundingModal()">Close</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Vanilla JS for Micro-Interactions, Dual-State Toggle, and Simulated Safe-State Triggering -->
+<script>
+  let isCrisisActive = false;
+  let breathInterval = null;
+  let audioPlaying = false;
+
+  function toggleCrisisState() {
+    isCrisisActive = !isCrisisActive;
+    updateStateUI();
+  }
+
+  function updateStateUI() {
+    const normalState = document.getElementById('state-normal');
+    const crisisState = document.getElementById('state-crisis');
+    const toggleBtn = document.getElementById('crisis-toggle-btn');
+    const toggleLabel = document.getElementById('toggle-label');
+    const toggleIcon = document.getElementById('toggle-icon');
+
+    if (isCrisisActive) {
+      normalState.classList.add('hidden');
+      crisisState.classList.remove('hidden');
+      toggleBtn.classList.remove('bg-surface-container-highest', 'text-on-surface');
+      toggleBtn.classList.add('bg-error-container', 'text-on-error-container');
+      toggleLabel.innerText = "Revert to Normal Mode";
+      toggleIcon.innerText = "check_circle";
+
+      // Append emergency disclaimer to dialogue
+      appendAiMessage("I sense you are experiencing acute distress right now. Please know you matter and help is readily available. I have activated our immediate campus and national hotline links on your right sidebar. You are not alone.");
+    } else {
+      crisisState.classList.add('hidden');
+      normalState.classList.remove('hidden');
+      toggleBtn.classList.remove('bg-error-container', 'text-on-error-container');
+      toggleBtn.classList.add('bg-surface-container-highest', 'text-on-surface');
+      toggleLabel.innerText = "Simulate Crisis Safe State";
+      toggleIcon.innerText = "shield_with_heart";
+    }
+  }
+
+  function insertPrompt(text) {
+    const input = document.getElementById('chat-input');
+    input.value = text;
+    input.focus();
+  }
+
+  function handleChatSubmit(event) {
+    event.preventDefault();
+    const input = document.getElementById('chat-input');
+    const message = input.value.trim();
+    if (!message) return;
+
+    // Append User Message
+    appendUserMessage(message);
+    input.value = "";
+
+    // Check for high-risk keywords triggering Safe State automatically
+    const crisisKeywords = ['hurt myself', 'suicide', 'die', 'end it', 'hopeless', 'self harm', 'can\'t go on', 'kill myself'];
+    const matchedKeyword = crisisKeywords.some(kw => message.toLowerCase().includes(kw));
+
+    showTypingIndicator();
+
+    setTimeout(() => {
+      hideTypingIndicator();
+      if (matchedKeyword) {
+        if (!isCrisisActive) {
+          isCrisisActive = true;
+          updateStateUI();
+        } else {
+          appendAiMessage("Ananya, your life is deeply valuable. Immediate human support is standing by at 1800-555-0199 or 14416. Please tap any of the direct dial buttons on the right.");
+        }
+      } else {
+        generateEmpatheticResponse(message);
+      }
+    }, 900);
+  }
+
+  function appendUserMessage(text) {
+    const container = document.getElementById('dynamic-messages');
+    const msgDiv = document.createElement('div');
+    msgDiv.className = "flex items-start justify-end gap-3";
+    msgDiv.innerHTML = `
+      <div class="flex flex-col items-end max-w-[80%]">
+        <div class="p-4 rounded-2xl rounded-tr-sm bg-primary text-on-primary shadow-sm">
+          <p class="font-body-md text-body-md leading-relaxed">${escapeHtml(text)}</p>
+        </div>
+        <span class="mt-1 font-label-sm text-label-sm text-outline">Sent • Just now</span>
+      </div>
+      <div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface shrink-0 font-label-sm text-label-sm font-semibold">AS</div>
+    `;
+    container.appendChild(msgDiv);
+    scrollChatBottom();
+  }
+
+  function appendAiMessage(text) {
+    const container = document.getElementById('dynamic-messages');
+    const msgDiv = document.createElement('div');
+    msgDiv.className = "flex items-start gap-3";
+    msgDiv.innerHTML = `
+      <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0 shadow-sm">
+        <span class="material-symbols-outlined text-lg">smart_toy</span>
+      </div>
+      <div class="flex flex-col max-w-[85%]">
+        <div class="p-5 rounded-2xl rounded-tl-sm bg-surface-container-low text-on-surface shadow-sm space-y-2">
+          <span class="font-label-sm text-label-sm font-semibold text-secondary uppercase tracking-wider block">MindCare AI Guidance</span>
+          <p class="font-body-md text-body-md leading-relaxed text-on-surface">${escapeHtml(text)}</p>
+        </div>
+        <span class="mt-1 font-label-sm text-label-sm text-outline px-1">MindCare AI • Just now</span>
+      </div>
+    `;
+    container.appendChild(msgDiv);
+    scrollChatBottom();
+  }
+
+  function generateEmpatheticResponse(userText) {
+    let reply = "Thank you for sharing that with me. It takes real courage to acknowledge when things pile up. Let's take things one step at a time: what is the single smallest action we could complete in the next 15 minutes to take pressure off your shoulders?";
+    
+    if (userText.toLowerCase().includes('lonely') || userText.toLowerCase().includes('isolated')) {
+      reply = "Feeling disconnected during intense college semesters happens to so many students, even in crowded dorms. Remember that this feeling is a temporary cloud, not your identity. Would you like to reach out to our campus peer listener circle or do a 5-minute self-compassion exercise?";
+    } else if (userText.toLowerCase().includes('focus') || userText.toLowerCase().includes('study')) {
+      reply = "Brain fog often occurs when cognitive overwhelm triggers fight-or-flight. Let's implement the Pomodoro method: 20 minutes of soft, low-pressure reading followed by 5 minutes of stretching. Let's pick one single paragraph right now.";
+    }
+    appendAiMessage(reply);
+  }
+
+  function triggerQuickAction(actionName) {
+    appendUserMessage("Let's do: " + actionName);
+    showTypingIndicator();
+    setTimeout(() => {
+      hideTypingIndicator();
+      if (actionName.includes('Grounding')) {
+        appendAiMessage("Starting the 2-minute Grounding Drill. Look around your study room right now. Notice 3 physical objects that are green or blue. Feel the temperature of the surface under your palms. Take a gentle 4-second breath in...");
+      } else {
+        appendAiMessage("Great choice. Let's divide your viva preparation into 3 distinct 20-minute chunks. Chunk 1: Review slide definitions. Chunk 2: Quick formula brush-up. Chunk 3: 5-minute mock Q&A aloud. Which one shall we begin with?");
+      }
+    }, 700);
+  }
+
+  function showTypingIndicator() {
+    const indicator = document.getElementById('typing-indicator');
+    indicator.classList.remove('hidden');
+    indicator.classList.add('flex');
+    scrollChatBottom();
+  }
+
+  function hideTypingIndicator() {
+    const indicator = document.getElementById('typing-indicator');
+    indicator.classList.add('hidden');
+    indicator.classList.remove('flex');
+  }
+
+  function scrollChatBottom() {
+    const chatStream = document.getElementById('chat-stream');
+    chatStream.scrollTop = chatStream.scrollHeight;
+  }
+
+  function toggleGroundingModal() {
+    const modal = document.getElementById('exercise-modal');
+    modal.classList.toggle('hidden');
+    modal.classList.toggle('flex');
+  }
+
+  function selectExercise(name) {
+    toggleGroundingModal();
+    appendUserMessage("Can you guide me through " + name + "?");
+    showTypingIndicator();
+    setTimeout(() => {
+      hideTypingIndicator();
+      appendAiMessage("Beginning " + name + ". Settle into your chair, let your shoulders drop away from your ears, and follow my prompts as we do this step by step.");
+    }, 600);
+  }
+
+  function startBreathGuide() {
+    const breathText = document.getElementById('breath-text');
+    const breathCount = document.getElementById('breath-count');
+    let state = 'Inhale';
+    let counter = 4;
+    
+    if (breathInterval) clearInterval(breathInterval);
+    
+    breathText.innerText = "Inhale";
+    breathCount.innerText = "4s";
+    
+    breathInterval = setInterval(() => {
+      counter--;
+      if (counter < 1) {
+        if (state === 'Inhale') {
+          state = 'Hold';
+          counter = 4;
+        } else if (state === 'Hold') {
+          state = 'Exhale';
+          counter = 4;
+        } else if (state === 'Exhale') {
+          state = 'Rest';
+          counter = 4;
+        } else {
+          state = 'Inhale';
+          counter = 4;
+        }
+      }
+      breathText.innerText = state;
+      breathCount.innerText = counter + "s";
+    }, 1000);
+  }
+
+  function playCalmingAudio() {
+    const label = document.getElementById('audio-play-label');
+    audioPlaying = !audioPlaying;
+    if (audioPlaying) {
+      label.innerText = "Audio Playing: Rain Sounds (Mute)";
+    } else {
+      label.innerText = "Play Calming Audio (Rain & Ocean)";
+    }
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+  }
+</script></main></div><script src="../../assets/js/nav.js"></script></body></html>

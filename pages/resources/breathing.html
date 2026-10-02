@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e5eeff","inverse-primary":"#bec6e0","tertiary-container":"#001d31","on-tertiary-fixed-variant":"#004b73","secondary-fixed":"#89f5e7","on-primary":"#ffffff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","surface-container-high":"#dce9ff","primary-fixed-dim":"#bec6e0","secondary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","primary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-error":"#ffffff","error-container":"#ffdad6","tertiary":"#000000","tertiary-fixed":"#cce5ff","on-surface":"#0b1c30","primary":"#000000","inverse-on-surface":"#eaf1ff","secondary-container":"#86f2e4","on-secondary-container":"#006f66","surface-tint":"#565e74","error":"#ba1a1a","surface-variant":"#d3e4fe","primary-container":"#131b2e","on-secondary":"#ffffff","inverse-surface":"#213145","surface-container-lowest":"#ffffff","on-tertiary-container":"#188ace","on-surface-variant":"#45464d","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","on-primary-container":"#7c839b","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#3f465c","secondary":"#006a61","outline":"#76777d","on-background":"#0b1c30","on-tertiary-fixed":"#001d31","background":"#f8f9ff","outline-variant":"#c6c6cd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"display":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="min-h-20 py-3 px-4 flex items-center gap-3"><img alt="MindCare Logo" class="h-14 w-auto object-contain" src="../../assets/images/logo.png"/></div><div class="px-4 py-2"><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-label-lg font-semibold"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="wellness-check" href="#"><span class="material-symbols-outlined text-xl">spa</span><span>Wellness Check</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-support" href="#"><span class="material-symbols-outlined text-xl">smart_toy</span><span>AI Support</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="mood-tracker" href="#"><span class="material-symbols-outlined text-xl">mood</span><span>Mood Tracker</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="resources" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Resources</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="counseling" href="#"><span class="material-symbols-outlined text-xl">volunteer_activism</span><span>Counseling</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span>Appointments</span></a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2</span></a><div class="pt-3 pb-1"><div class="h-px bg-surface-container-high mx-2 my-1"></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-xl">person</span><span>Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-xl">help</span><span>Help</span></a></nav></div></div><div class="p-4 mb-3"><div class="rounded-2xl p-4 bg-error-container text-on-error-container flex flex-col gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-xl text-error">emergency</span><span class="font-label-lg text-label-lg font-semibold text-on-error-container">Crisis Helpline</span></div><p class="font-body-sm text-body-sm leading-snug">Confidential 24/7 care whenever you feel overwhelmed.</p><a class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm" data-path="emergency-helpline" href="#"><span>Reach SOS Support</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-8 flex items-center justify-between gap-6"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap"><span class="material-symbols-outlined text-base text-secondary">school</span><span>Delhi Technological University • Academic Year 2024-25</span></div><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md truncate"><span class="material-symbols-outlined text-base text-secondary">psychology_alt</span><span class="truncate">“One day at a time, Ananya”</span></div></div><div class="flex items-center gap-3 shrink-0"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-error-container font-label-sm text-label-sm text-on-error-container font-medium hover:bg-error hover:text-on-error transition-colors" data-path="emergency-helpline" href="#"><span class="material-symbols-outlined text-base">call</span><span>Crisis Hotline</span></a><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="h-6 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMR9rJ2AxPqsMhNBaqkNb3avAQHrPABpyznEHzJXMa3FUXf0cT6zO8c0WoXzseYGkY7hCiPi9fFbmwrtK-NXNsdssW9NzUpeOFU073pF-glZrFyDmKhUkJAY5cPcgjiNo3Z2A7Jcmpdw6MrQYShKd5Andiu9LD3cp9a7PdipH8JaAUd930fGKTJpG2wkRWd8jd57lMDwpMzDtCLvUL7hbR5_rRKFLPTYtUQyJIypC3gibSuQovSyyJ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-medium">Ananya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Online • Sem 6 CS</span></div></div></div></header><main class="flex-1 pt-20 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-8 max-w-[1400px] mx-auto w-full">
+<!-- Top Section: Header & Discovery Filters -->
+<div class="flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary mb-2">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span>Clinically Approved Student Tools</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Campus Wellness Resources &amp; Micro-Tools</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-1">
+            Evidence-based guides, guided audio sessions, and interactive regulation exercises tailored for university students.
+          </p>
+</div>
+<!-- Quick Access Meta Stats -->
+<div class="flex items-center gap-3 shrink-0">
+<div class="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-xl">self_improvement</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Session</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">12m Completed</span>
+</div>
+</div>
+<div class="flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-secondary text-xl">bookmark</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Saved Guides</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">3 Articles</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Search Bar and Category Chips -->
+<div class="flex flex-col gap-3.5">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-xl">search</span>
+<input class="w-full pl-12 pr-4 py-3.5 rounded-2xl bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant/70 font-body-md text-body-md shadow-sm outline-none transition-all focus:bg-surface-container-lowest focus:shadow-md" placeholder="Search articles, breathing drills, sleep guides, exam stress routines..." type="text"/>
+<div class="absolute right-3.5 top-1/2 -translate-y-1/2 flex items-center gap-1.5 px-2 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span>⌘</span><span>K</span>
+</div>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md whitespace-nowrap shadow-sm hover:opacity-95 transition-all">
+            All (42)
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all shadow-sm">
+            Exam Anxiety
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all shadow-sm">
+            Sleep &amp; Rest
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all shadow-sm">
+            Mindfulness
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all shadow-sm">
+            Academic Burnout
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all shadow-sm">
+            Relationships
+          </button>
+<button class="px-4 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-all shadow-sm">
+            Focus &amp; Deep Work
+          </button>
+</div>
+</div>
+</div>
+<!-- Featured Micro-Tool: Circular Box Breathing Hero Card -->
+<div class="relative overflow-hidden rounded-3xl bg-surface-container-lowest shadow-md p-6 lg:p-8">
+<div class="absolute -right-24 -bottom-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -top-20 w-80 h-80 rounded-full bg-surface-container-high/40 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+<!-- Interactive Circle / Breath Visualizer -->
+<div class="flex flex-col items-center justify-center shrink-0 w-full sm:w-auto">
+<div class="relative w-64 h-64 sm:w-72 sm:h-72 flex items-center justify-center">
+<!-- Concentric Background Ripple Rings -->
+<div class="absolute inset-0 rounded-full bg-surface-container transition-all duration-1000 opacity-60 scale-95" id="ring-outer"></div>
+<div class="absolute inset-4 rounded-full bg-surface-container-high/60 transition-all duration-1000 opacity-50 scale-95" id="ring-mid"></div>
+<!-- Dynamic Breathing Orb -->
+<div class="relative z-10 w-44 h-44 rounded-full bg-gradient-to-tr from-secondary to-secondary-container flex flex-col items-center justify-center text-on-secondary shadow-lg transition-transform duration-1000 ease-in-out" id="breathing-orb">
+<span class="font-headline-sm text-headline-sm font-semibold tracking-tight text-center px-4 leading-tight" id="breathing-phase">Ready</span>
+<span class="font-label-sm text-label-sm text-on-secondary/80 mt-1 uppercase tracking-wider font-semibold" id="breathing-timer">Press Start</span>
+</div>
+<!-- Orbit Dot for visual guide -->
+<div class="absolute inset-2 rounded-full border-2 border-dashed border-secondary/20 pointer-events-none" id="orbit-track"></div>
+</div>
+<!-- Progress Micro-bar -->
+<div class="w-64 mt-4 flex items-center justify-between gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span>Cycle <strong class="text-on-surface font-semibold" id="cycle-count">0</strong>/4</span>
+<div class="flex-1 mx-2 h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-0 transition-all duration-500" id="cycle-progress-bar"></div>
+</div>
+<span class="text-secondary font-medium">Box 4-4-4-4</span>
+</div>
+</div>
+<!-- Content & Micro-drill Controls -->
+<div class="flex flex-col flex-1 gap-5 w-full">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                Somatic Reset Micro-Tool
+              </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">schedule</span> 4 Minutes
+              </span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">Circular Box Breathing &amp; Nervous System Reset</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+              Designed to deliberately stimulate the vagus nerve and downregulate sympathetic arousal before heavy exam sessions, presentations, or late-night anxiety surges.
+            </p>
+</div>
+<!-- Step Indicators -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+<div class="p-3 rounded-2xl bg-surface-container-low transition-all" id="phase-card-0">
+<div class="font-label-sm text-label-sm text-secondary font-semibold uppercase">Phase 1</div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Inhale</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">4 Seconds</div>
+</div>
+<div class="p-3 rounded-2xl bg-surface-container-low transition-all" id="phase-card-1">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase">Phase 2</div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Hold</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">4 Seconds</div>
+</div>
+<div class="p-3 rounded-2xl bg-surface-container-low transition-all" id="phase-card-2">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase">Phase 3</div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Exhale</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">4 Seconds</div>
+</div>
+<div class="p-3 rounded-2xl bg-surface-container-low transition-all" id="phase-card-3">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase">Phase 4</div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold">Hold</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">4 Seconds</div>
+</div>
+</div>
+<!-- Ambient Sound Chooser -->
+<div class="flex flex-wrap items-center gap-3 pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Background Soundscape:</span>
+<div class="flex items-center gap-1.5 p-1 rounded-xl bg-surface-container-low">
+<button class="sound-tab px-3 py-1 rounded-lg text-on-surface bg-surface-container-lowest shadow-sm font-label-sm text-label-sm font-medium transition-all" data-sound="rain">
+                Dorm Rain
+              </button>
+<button class="sound-tab px-3 py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium transition-all" data-sound="ocean">
+                Ocean Waves
+              </button>
+<button class="sound-tab px-3 py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium transition-all" data-sound="bowl">
+                Singing Bowl
+              </button>
+<button class="sound-tab px-2.5 py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-all" title="Mute Ambient Sound">
+<span class="material-symbols-outlined text-sm align-middle">volume_up</span>
+</button>
+</div>
+</div>
+<!-- Action Controls -->
+<div class="flex items-center gap-3 pt-2">
+<button class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:bg-on-surface transition-all shadow-sm" id="btn-toggle-breath">
+<span class="material-symbols-outlined text-lg" id="breath-icon">play_arrow</span>
+<span id="breath-btn-text">Begin Regulation</span>
+</button>
+<button class="p-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface transition-all" id="btn-reset-breath" title="Reset Session">
+<span class="material-symbols-outlined text-lg">restart_alt</span>
+</button>
+<span class="text-on-surface-variant font-label-sm text-label-sm pl-2">
+              Tip: Keep shoulders dropped and jaw relaxed.
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Workspace (2/3 Grid + 1/3 Quick Shelf Rail) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Primary Stream: Resource Cards Grid (8 cols) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Handpicked for Finals Preparation</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Curated</span>
+</div>
+<button class="text-secondary font-label-sm text-label-sm font-semibold hover:underline flex items-center gap-1">
+<span>View All Guides</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<!-- Card 1: Article - Grounding Techniques -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-3.5">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Calm university student at a clean wooden study desk near a sunlit window with a warm ceramic tea mug, focused and relaxed, soft morning illumination, realistic modern photography style in calming teal and navy accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT-5eHc0nUB1LxaY2DimhVL9grEPLR8mouci4h7gJ8Dv4_RPu9E37LkJJzyx2i-hlqdLyr7m_PjubtJXZ6Ms0c2Plfu4KbbS2itY9W4luqKdOyNuW9HBW2-dNHHAiFj5LPopw6ckIx-nTF26CqSQmkHMOoGkhO2I2h_WyJq9GoYSM6g-tSKnWxXbvbjMBD-XRwT3Um6L2lBx_PBgLAll39f58GG5U83zsVKoylBu5XfhcFlfs2O2fQ"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm font-semibold text-secondary">
+                  Exam Anxiety
+                </div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="Bookmark article">
+<span class="material-symbols-outlined text-base">bookmark_border</span>
+</button>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">article</span>
+<span>Article</span>
+<span>•</span>
+<span>6 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-secondary transition-colors line-clamp-2">
+                De-escalating Academic Overwhelm: 5 Grounding Techniques for Exam Season
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Practical sensory anchoring methods (5-4-3-2-1 reset, bilateral tapping) tailored to prevent mental blackout during timed exams.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t-0 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Portrait photo of Dr. Radhika Sharma, clinical psychologist, friendly and approachable expression with warm natural lighting, professional university healthcare setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_i-w2oSIJPOPF1ouYuxsla26Cnv9AfcPksVscrQ4BMkPKzkPzDbXrUI07oXDrxt_srtienJaGuhjOez_dTGY0Ak4-jXvkrnygoPKcoiRacs22Dpk275cL2Ans1APr5yaglCrcaZy3_-721zQqS_BVztoyjla2C9Pv1BhRosKqbFVjY93omigHWSNCeLVZw6-bfQb3NjauaUhXmsbtREkXFRkmgcqp3Bw54M06NcptR3JM2IGMOsGl"/>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Dr. Radhika Sharma</span>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface font-semibold hover:bg-secondary hover:text-on-secondary transition-colors">
+<span>Read</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Sleep Hygiene Guide & Audio -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-3.5">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dim cozy student dorm room at nighttime, glowing ambient lamp, tidy bed with comfortable linen, peaceful quiet atmosphere, soft navy blue and warm amber tones, serene photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi5SnDKNQh8Vb0Gt5nnMvg1_Lj4ghNQ9glM4jXhHzWPmwFlvwSS11Jy3coG6Z4qSwv3AkDWvI3zMLlNxDKklPe0hezOkZxM-q4GiNk4AAcyhwBCrIxrUPvvqfNryZA1l_c2b7Uss9zcKwfqs3KfY7vywzf3S_AUx44H3PtSt1Ye708JRjSiHYqbvdiw5KVFq4KFrz0ERDESRBlX677OmQsxp7Wvo4AUQWA__biP2kIAlF1aLxX-z6z"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm font-semibold text-secondary">
+                  Sleep &amp; Rest
+                </div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="Bookmark article">
+<span class="material-symbols-outlined text-base">bookmark_border</span>
+</button>
+<!-- Audio Floating Player badge -->
+<div class="absolute bottom-3 left-3 right-3 px-3 py-1.5 rounded-xl bg-primary-container/85 backdrop-blur-md text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-base">graphic_eq</span>
+<span class="font-label-sm text-label-sm truncate">Delta Wave Ambient Sleep Induction</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed shrink-0">12:00</span>
+</div>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">headphones</span>
+<span>Guide &amp; Audio Track</span>
+<span>•</span>
+<span>12 min listen</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-secondary transition-colors line-clamp-2">
+                Restorative Sleep Hygiene for College Night Owls
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                How to recalibrate circadian rhythms after marathon study nights without relying on excess caffeine or sleeping pills.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t-0 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-label-sm font-bold">
+                  MC
+                </div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">MindCare Clinic</span>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm">play_arrow</span>
+<span>Listen Now</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Imposter Syndrome in Engineering -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-3.5">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Engineering laboratory with an engaged university student writing computational logic on glass dry-erase board, soft daylight and quiet modern university interior, candid editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXJKIr7e9aB2UFNsITG6IZXusvqny3HUIb52XA9P-RgsCbfGy0i5J4BK-TIEM6HNfHHtlwLPR7TwYNc5eAynH_UrhK1tFjzBO-vQD-P6Htp6GsF38eJ10wpz6xQltp9oBMA5MakkIs2B1RnF-yJrj5O330_H2P8A_lTxlnuAiSz4LqtHcqanSy_e1Yp7qZN9ubUkuA7Gd_EmoH-17Mzo5JQmIxkwymk7Vu_Rl0xgUqLhGTb3VG95Pf"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm font-semibold text-secondary">
+                  Academic Burnout
+                </div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-secondary flex items-center justify-center transition-colors" title="Saved">
+<span class="material-symbols-outlined text-base" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">psychology</span>
+<span>Deep Dive Article</span>
+<span>•</span>
+<span>8 min read</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-secondary transition-colors line-clamp-2">
+                Overcoming Imposter Syndrome in Competitive Engineering Programs
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Unpacking social comparison traps, grading curve despair, and building internal metrics of technical competence.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t-0 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover" data-alt="Faculty headshot of Professor Amitav Sen, mentor and student psychology advisor, smiling reassuringly, academic campus library background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT_xHVTtrqxe6g6j_l7Dp_q-T7Vj_rlARY42cMb8ud1D3rFHst8vgkgTVnc1tl0q4HoKN7VFKG54zH6C61wI7Yjp0asfBlirCeXPaO5aqGgzzkpfIfDjThjt-jtKYI_ZVu9CzqY6ZzZYYt8r5XEzIBZEY_z85ADwv9-QWngwYkq_sRrYysHfXamd_G_z2rTcC_Zk1GeSTo1VCybO1pN9utXoklcvrdH4y5g1Sh18gMu4DVgV4sm5M_"/>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Prof. Amitav Sen</span>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface font-semibold hover:bg-secondary hover:text-on-secondary transition-colors">
+<span>Read</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 4: Somatic Calming Audio Meditation -->
+<div class="flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-5 shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-3.5">
+<div class="relative w-full h-44 rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tranquil campus green quad with lush trees, autumn leaves on the ground, morning mist, solitary student taking a mindful walk, soft cinematic natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSS7I_xCoWHw28p4dlette8LVWkXIpqLHSZVMs7r4QoVjn_d7p1iVcQ5u6MpBz2bjfPJZjZOCKfmbOnPprHKvViEyWguge-oORjwNNV4bkz4K6fuWgTmXEK9eO9-8fkiw6JQI8_AoXZeE6Y6PmPMNeHn0O4MQUM5RACUS_q6eeUh8jl_QWv64xDboqplLdkSnmo9k2MhFwpYnBIbQf6H1N9azJoyu1bZ4YjqGvkryfPVP00-j7JdN7"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md font-label-sm text-label-sm font-semibold text-secondary">
+                  Mindfulness
+                </div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="Bookmark article">
+<span class="material-symbols-outlined text-base">bookmark_border</span>
+</button>
+<div class="absolute bottom-3 left-3 px-3 py-1 rounded-xl bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-secondary text-sm">mic</span>
+<span>Voice Guided • 10m</span>
+</div>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">headphones</span>
+<span>Audio Drill</span>
+<span>•</span>
+<span>10 min exercise</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold group-hover:text-secondary transition-colors line-clamp-2">
+                10-Minute Pre-Presentation Somatic Calming Meditation
+              </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Release throat tightness, quicken grounding awareness, and harness nervous flutter into clear, steady vocal delivery.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t-0 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-sm text-label-sm font-semibold">
+                  SL
+                </div>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">SomaLab DTU</span>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm">play_arrow</span>
+<span>Practice</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Companion Rail (4 cols) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Shelf: Saved by You -->
+<div class="flex flex-col gap-4 p-5 rounded-2xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">bookmarks</span>
+<h3 class="font-label-lg text-label-lg font-semibold text-on-surface">Saved by You</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 Items</span>
+</div>
+<div class="flex flex-col gap-3">
+<a class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-3 group" href="#">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest shrink-0 flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-lg">spa</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate group-hover:text-secondary transition-colors">Micro-Breaks for 6-Hour Coding Sprints</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guide • 4 min read</span>
+</div>
+</a>
+<a class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-3 group" href="#">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest shrink-0 flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-lg">bedtime</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate group-hover:text-secondary transition-colors">Restorative Sleep Hygiene for College Night Owls</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Audio Track • 12 min listen</span>
+</div>
+</a>
+<a class="p-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-start gap-3 group" href="#">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest shrink-0 flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-lg">psychology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate group-hover:text-secondary transition-colors">Overcoming Imposter Syndrome in Engineering</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Article • 8 min read</span>
+</div>
+</a>
+</div>
+</div>
+<!-- Dock: Quick Relaxation Audio Player -->
+<div class="flex flex-col gap-4 p-5 rounded-2xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">music_note</span>
+<h3 class="font-label-lg text-label-lg font-semibold text-on-surface">Ambient Focus Stream</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Live Loop</span>
+</div>
+<!-- Sound Selector Tabs -->
+<div class="grid grid-cols-3 gap-1.5 p-1 rounded-xl bg-surface-container-low text-center">
+<button class="py-1.5 px-2 rounded-lg bg-surface-container-lowest shadow-sm font-label-sm text-label-sm text-on-surface font-medium">
+              Campus Rain
+            </button>
+<button class="py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors font-medium">
+              White Noise
+            </button>
+<button class="py-1.5 px-2 rounded-lg font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors font-medium">
+              Forest Breeze
+            </button>
+</div>
+<!-- Player Controls & Waveform Mini Vis -->
+<div class="flex flex-col gap-3 pt-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-medium text-on-surface">North Campus Library Monsoon</span>
+<span>24:18 left</span>
+</div>
+<!-- Custom Mini Equalizer Bars (Inline SVG) -->
+<div class="w-full h-8 flex items-center justify-between gap-1 px-1">
+<div class="w-1 bg-secondary rounded-full h-3 animate-pulse"></div>
+<div class="w-1 bg-secondary rounded-full h-6 animate-pulse" style="animation-delay: 0.1s"></div>
+<div class="w-1 bg-secondary rounded-full h-4 animate-pulse" style="animation-delay: 0.25s"></div>
+<div class="w-1 bg-secondary rounded-full h-7 animate-pulse" style="animation-delay: 0.15s"></div>
+<div class="w-1 bg-secondary rounded-full h-5 animate-pulse" style="animation-delay: 0.3s"></div>
+<div class="w-1 bg-secondary rounded-full h-3 animate-pulse" style="animation-delay: 0.05s"></div>
+<div class="w-1 bg-secondary rounded-full h-6 animate-pulse" style="animation-delay: 0.2s"></div>
+<div class="w-1 bg-secondary rounded-full h-8 animate-pulse" style="animation-delay: 0.35s"></div>
+<div class="w-1 bg-secondary rounded-full h-4 animate-pulse" style="animation-delay: 0.1s"></div>
+<div class="w-1 bg-secondary rounded-full h-6 animate-pulse" style="animation-delay: 0.4s"></div>
+<div class="w-1 bg-secondary rounded-full h-3 animate-pulse" style="animation-delay: 0.15s"></div>
+<div class="w-1 bg-secondary rounded-full h-5 animate-pulse" style="animation-delay: 0.25s"></div>
+<div class="w-1 bg-secondary rounded-full h-7 animate-pulse" style="animation-delay: 0.05s"></div>
+<div class="w-1 bg-secondary rounded-full h-4 animate-pulse" style="animation-delay: 0.3s"></div>
+<div class="w-1 bg-secondary rounded-full h-6 animate-pulse" style="animation-delay: 0.2s"></div>
+</div>
+<!-- Track Progress Slider -->
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary w-2/5 rounded-full"></div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<button class="text-on-surface-variant hover:text-on-surface transition-colors p-1" title="Shuffle Soundscapes">
+<span class="material-symbols-outlined text-lg">shuffle</span>
+</button>
+<div class="flex items-center gap-3">
+<button class="text-on-surface-variant hover:text-on-surface transition-colors p-1" title="Rewind 15s">
+<span class="material-symbols-outlined text-xl">replay_10</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center hover:opacity-90 shadow-sm transition-all" title="Play / Pause">
+<span class="material-symbols-outlined text-xl">pause</span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors p-1" title="Forward 15s">
+<span class="material-symbols-outlined text-xl">forward_10</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-base">volume_down</span>
+<div class="w-14 h-1 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-on-surface-variant w-3/4"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Counselor Connection Nudge Card -->
+<div class="p-5 rounded-2xl bg-gradient-to-br from-surface-container-high/60 via-surface-container-lowest to-surface-container-low shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-xl">support_agent</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Campus Care Network</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-snug">
+            Need more personalized support?
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            All enrolled DTU students have 4 free 1-on-1 confidential counseling sessions per semester. In-person at Admin Block B or encrypted tele-health.
+          </p>
+<a class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:opacity-95 shadow-sm transition-all mt-1" href="#">
+<span>Book Free Student Session</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Box Breathing Interactive State Machine
+  (function initBreathingTool() {
+    var isRunning = false;
+    var timerInterval = null;
+    var currentPhase = 0; // 0: Inhale, 1: Hold 1, 2: Exhale, 3: Hold 2
+    var secondsLeft = 4;
+    var totalCycles = 0;
+
+    var phases = [
+      { name: "Inhale", desc: "Breathe in deeply through nose", scale: "scale-125", bgOuter: "scale-110 opacity-80" },
+      { name: "Hold", desc: "Keep chest buoyant & still", scale: "scale-125", bgOuter: "scale-105 opacity-60" },
+      { name: "Exhale", desc: "Slow release through lips", scale: "scale-90", bgOuter: "scale-90 opacity-30" },
+      { name: "Hold Empty", desc: "Relax diaphragm completely", scale: "scale-90", bgOuter: "scale-95 opacity-40" }
+    ];
+
+    var orb = document.getElementById("breathing-orb");
+    var ringOuter = document.getElementById("ring-outer");
+    var phaseTitle = document.getElementById("breathing-phase");
+    var timerText = document.getElementById("breathing-timer");
+    var toggleBtn = document.getElementById("btn-toggle-breath");
+    var toggleIcon = document.getElementById("breath-icon");
+    var toggleBtnText = document.getElementById("breath-btn-text");
+    var resetBtn = document.getElementById("btn-reset-breath");
+    var cycleCounter = document.getElementById("cycle-count");
+    var cycleProgressBar = document.getElementById("cycle-progress-bar");
+
+    function updatePhaseDisplay() {
+      var cur = phases[currentPhase];
+      phaseTitle.textContent = cur.name;
+      timerText.textContent = secondsLeft + "s";
+
+      // Scale breathing orb
+      orb.className = "relative z-10 w-44 h-44 rounded-full bg-gradient-to-tr from-secondary to-secondary-container flex flex-col items-center justify-center text-on-secondary shadow-lg transition-transform duration-1000 ease-in-out " + cur.scale;
+      ringOuter.className = "absolute inset-0 rounded-full bg-surface-container transition-all duration-1000 " + cur.bgOuter;
+
+      // Highlight active step indicator
+      for (var i = 0; i < 4; i++) {
+        var card = document.getElementById("phase-card-" + i);
+        if (card) {
+          if (i === currentPhase && isRunning) {
+            card.classList.remove("bg-surface-container-low");
+            card.classList.add("bg-secondary-container", "text-on-secondary-container");
+          } else {
+            card.classList.remove("bg-secondary-container", "text-on-secondary-container");
+            card.classList.add("bg-surface-container-low");
+          }
+        }
+      }
+    }
+
+    function tick() {
+      secondsLeft--;
+      if (secondsLeft <= 0) {
+        currentPhase = (currentPhase + 1) % 4;
+        secondsLeft = 4;
+        if (currentPhase === 0) {
+          totalCycles++;
+          cycleCounter.textContent = totalCycles;
+          var pct = Math.min((totalCycles / 4) * 100, 100);
+          cycleProgressBar.style.width = pct + "%";
+        }
+      }
+      updatePhaseDisplay();
+    }
+
+    function startBreathing() {
+      isRunning = true;
+      toggleIcon.textContent = "pause";
+      toggleBtnText.textContent = "Pause Session";
+      toggleBtn.classList.remove("bg-primary");
+      toggleBtn.classList.add("bg-surface-container-highest", "text-on-surface");
+      updatePhaseDisplay();
+      timerInterval = setInterval(tick, 1000);
+    }
+
+    function pauseBreathing() {
+      isRunning = false;
+      clearInterval(timerInterval);
+      toggleIcon.textContent = "play_arrow";
+      toggleBtnText.textContent = "Resume Regulation";
+      toggleBtn.classList.remove("bg-surface-container-highest", "text-on-surface");
+      toggleBtn.classList.add("bg-primary", "text-on-primary");
+      phaseTitle.textContent = "Paused";
+    }
+
+    function resetBreathing() {
+      isRunning = false;
+      clearInterval(timerInterval);
+      currentPhase = 0;
+      secondsLeft = 4;
+      totalCycles = 0;
+      cycleCounter.textContent = "0";
+      cycleProgressBar.style.width = "0%";
+      toggleIcon.textContent = "play_arrow";
+      toggleBtnText.textContent = "Begin Regulation";
+      toggleBtn.classList.remove("bg-surface-container-highest", "text-on-surface");
+      toggleBtn.classList.add("bg-primary", "text-on-primary");
+      phaseTitle.textContent = "Ready";
+      timerText.textContent = "Press Start";
+      orb.className = "relative z-10 w-44 h-44 rounded-full bg-gradient-to-tr from-secondary to-secondary-container flex flex-col items-center justify-center text-on-secondary shadow-lg transition-transform duration-1000 ease-in-out scale-100";
+      ringOuter.className = "absolute inset-0 rounded-full bg-surface-container transition-all duration-1000 opacity-60 scale-95";
+
+      for (var i = 0; i < 4; i++) {
+        var card = document.getElementById("phase-card-" + i);
+        if (card) {
+          card.classList.remove("bg-secondary-container", "text-on-secondary-container");
+          card.classList.add("bg-surface-container-low");
+        }
+      }
+    }
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener("click", function () {
+        if (!isRunning) {
+          startBreathing();
+        } else {
+          pauseBreathing();
+        }
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener("click", resetBreathing);
+    }
+
+    // Soundscape Tab Switchers Micro-Interaction
+    var soundTabs = document.querySelectorAll(".sound-tab");
+    soundTabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        soundTabs.forEach(function (t) {
+          t.classList.remove("bg-surface-container-lowest", "shadow-sm", "text-on-surface");
+          t.classList.add("text-on-surface-variant");
+        });
+        tab.classList.add("bg-surface-container-lowest", "shadow-sm", "text-on-surface");
+        tab.classList.remove("text-on-surface-variant");
+      });
+    });
+  })();
+</script></main></div><script src="../../assets/js/nav.js"></script></body></html>

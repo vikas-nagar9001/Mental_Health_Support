@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e5eeff","inverse-primary":"#bec6e0","tertiary-container":"#001d31","on-tertiary-fixed-variant":"#004b73","secondary-fixed":"#89f5e7","on-primary":"#ffffff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","surface-container-high":"#dce9ff","primary-fixed-dim":"#bec6e0","secondary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","primary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-error":"#ffffff","error-container":"#ffdad6","tertiary":"#000000","tertiary-fixed":"#cce5ff","on-surface":"#0b1c30","primary":"#000000","inverse-on-surface":"#eaf1ff","secondary-container":"#86f2e4","on-secondary-container":"#006f66","surface-tint":"#565e74","error":"#ba1a1a","surface-variant":"#d3e4fe","primary-container":"#131b2e","on-secondary":"#ffffff","inverse-surface":"#213145","surface-container-lowest":"#ffffff","on-tertiary-container":"#188ace","on-surface-variant":"#45464d","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","on-primary-container":"#7c839b","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#3f465c","secondary":"#006a61","outline":"#76777d","on-background":"#0b1c30","on-tertiary-fixed":"#001d31","background":"#f8f9ff","outline-variant":"#c6c6cd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"display":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="min-h-20 py-3 px-4 flex items-center gap-3"><img alt="MindCare Logo" class="h-14 w-auto object-contain" src="../../assets/images/logo.png"/></div><div class="px-4 py-2"><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-label-lg font-semibold"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="wellness-check" href="#"><span class="material-symbols-outlined text-xl">spa</span><span>Wellness Check</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-support" href="#"><span class="material-symbols-outlined text-xl">smart_toy</span><span>AI Support</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="mood-tracker" href="#"><span class="material-symbols-outlined text-xl">mood</span><span>Mood Tracker</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="resources" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Resources</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="counseling" href="#"><span class="material-symbols-outlined text-xl">volunteer_activism</span><span>Counseling</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span>Appointments</span></a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2</span></a><div class="pt-3 pb-1"><div class="h-px bg-surface-container-high mx-2 my-1"></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-xl">person</span><span>Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-xl">help</span><span>Help</span></a></nav></div></div><div class="p-4 mb-3"><div class="rounded-2xl p-4 bg-error-container text-on-error-container flex flex-col gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-xl text-error">emergency</span><span class="font-label-lg text-label-lg font-semibold text-on-error-container">Crisis Helpline</span></div><p class="font-body-sm text-body-sm leading-snug">Confidential 24/7 care whenever you feel overwhelmed.</p><a class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm" data-path="emergency-helpline" href="#"><span>Reach SOS Support</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-8 flex items-center justify-between gap-6"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap"><span class="material-symbols-outlined text-base text-secondary">school</span><span>Delhi Technological University • Academic Year 2024-25</span></div><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md truncate"><span class="material-symbols-outlined text-base text-secondary">psychology_alt</span><span class="truncate">“One day at a time, Ananya”</span></div></div><div class="flex items-center gap-3 shrink-0"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-error-container font-label-sm text-label-sm text-on-error-container font-medium hover:bg-error hover:text-on-error transition-colors" data-path="emergency-helpline" href="#"><span class="material-symbols-outlined text-base">call</span><span>Crisis Hotline</span></a><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="h-6 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMR9rJ2AxPqsMhNBaqkNb3avAQHrPABpyznEHzJXMa3FUXf0cT6zO8c0WoXzseYGkY7hCiPi9fFbmwrtK-NXNsdssW9NzUpeOFU073pF-glZrFyDmKhUkJAY5cPcgjiNo3Z2A7Jcmpdw6MrQYShKd5Andiu9LD3cp9a7PdipH8JaAUd930fGKTJpG2wkRWd8jd57lMDwpMzDtCLvUL7hbR5_rRKFLPTYtUQyJIypC3gibSuQovSyyJ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-medium">Ananya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Online • Sem 6 CS</span></div></div></div></header><main class="flex-1 pt-20 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<!-- Privacy Guarantee Pill & Reassurance Header -->
+<div class="flex items-center justify-between pb-6 flex-wrap gap-4">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-error animate-ping"></div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold tracking-wide uppercase">Emergency &amp; Crisis Response System</span>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Protocol active: 24/7 Priority Route</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">lock</span>
+<span>100% Anonymous • Non-punitive &amp; Academically Protected</span>
+</div>
+</div>
+<!-- Warm Reassurance Hero Alert Card (No double H1, no borders) -->
+<section class="rounded-3xl p-8 mb-8 bg-error-container text-on-error-container shadow-md relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-on-error-container/5 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+<div class="flex items-start gap-5 max-w-3xl">
+<div class="p-4 rounded-2xl bg-surface-container-lowest text-error shadow-sm shrink-0">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+</div>
+<div>
+<div class="inline-flex items-center gap-2 font-label-sm text-label-sm uppercase tracking-widest text-error font-semibold mb-1">
+<span>DTU Campus Triage Available Instantly</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-semibold tracking-tight text-on-error-container mb-2">
+            You Are Not Alone. Immediate Support Is Available Right Now.
+          </h2>
+<p class="font-body-lg text-body-lg text-on-error-container/90 leading-relaxed">
+            Free, completely confidential, and 24/7 care. Connecting to emergency mental health counselors has zero impact on your academic standing, grades, or university records.
+          </p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row md:flex-col gap-3 shrink-0 w-full md:w-auto">
+<a class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-error text-on-error font-label-lg text-label-lg font-semibold shadow-md hover:opacity-95 transition-all" href="tel:18005990019">
+<span class="material-symbols-outlined text-xl">call</span>
+<span>One-Tap Direct SOS</span>
+</a>
+<button class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-low transition-colors shadow-sm" onclick="document.getElementById('grounding-drawer').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-lg text-secondary">self_improvement</span>
+<span>Breathe First (Grounding)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Rapid 1-Tap SOS Contact Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
+<!-- Card 1: University Immediate Emergency (5 Cols) -->
+<div class="lg:col-span-4 rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-4">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Campus First Responder</span>
+<span class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            &lt; 30s Wait
+          </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Campus Crisis Line</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-5">
+          DTU Health &amp; Student Wellness Center. Dedicated psychiatric specialists, rapid transit, and hostel emergency dispatch.
+        </p>
+<div class="p-3.5 rounded-xl bg-surface-container-low mb-6">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Campus Priority Hotline</div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">1800-599-0019</div>
+<div class="font-body-sm text-body-sm text-secondary mt-0.5">Toll-free from any intercom or mobile</div>
+</div>
+</div>
+<div class="flex flex-col gap-2.5">
+<a class="w-full inline-flex items-center justify-center gap-2.5 py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold hover:bg-on-surface transition-all shadow-sm" href="tel:18005990019">
+<span class="material-symbols-outlined text-lg">call</span>
+<span>Call Campus Helpline Now</span>
+</a>
+<button class="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-high transition-colors" onclick="alert('Opening confidential campus text dispatcher... Anonymous session initiated.')">
+<span class="material-symbols-outlined text-base">forum</span>
+<span>Live Confidential Web Chat</span>
+</button>
+</div>
+</div>
+<!-- Card 2: National Mental Health Helpline (4 Cols) -->
+<div class="lg:col-span-4 rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-4">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">National Support</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Multilingual 24/7</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Tele-MANAS &amp; Kiran</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-5">
+          Government of India certified tele-mental health programme. Free, discrete psychological counseling available in 14 languages.
+        </p>
+<div class="p-3.5 rounded-xl bg-surface-container-low mb-6">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Shortcode &amp; Toll-Free</div>
+<div class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">14416 / 1800-891-4416</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">English, Hindi, Punjabi, Bengali &amp; more</div>
+</div>
+</div>
+<div class="flex flex-col gap-2.5">
+<a class="w-full inline-flex items-center justify-center gap-2.5 py-3 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-semibold hover:opacity-95 transition-all shadow-sm" href="tel:14416">
+<span class="material-symbols-outlined text-lg">ring_volume</span>
+<span>Dial Tele-MANAS (14416)</span>
+</a>
+<a class="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-high transition-colors" href="tel:18005990019">
+<span class="material-symbols-outlined text-base">support_agent</span>
+<span>Call Kiran Line (MoSJE)</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Nominated Safety Circle & Hostel Emergency (4 Cols) -->
+<div class="lg:col-span-4 rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-4">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">Ananya’s Circle</span>
+<span class="material-symbols-outlined text-secondary text-base">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-2">Personal Safety Circle</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+          Direct dials to your designated safe hostel staff, assigned university counselor, and pre-selected buddy.
+        </p>
+<div class="space-y-2.5 mb-5">
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="min-w-0 pr-2">
+<div class="font-label-md text-label-md font-medium text-on-surface truncate">Dr. K. Mehta (Hostel Warden)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Girls Hostel 3 • Direct Extension</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-lowest text-secondary hover:bg-secondary-container transition-colors shadow-sm shrink-0" href="tel:+919876543210">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="min-w-0 pr-2">
+<div class="font-label-md text-label-md font-medium text-on-surface truncate">Ms. R. Sengupta (Counselor)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Assigned Academic Therapist</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-lowest text-secondary hover:bg-secondary-container transition-colors shadow-sm shrink-0" href="tel:+919876543211">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="min-w-0 pr-2">
+<div class="font-label-md text-label-md font-medium text-on-surface truncate">Riya (Peer Buddy)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Room 412 • Primary contact</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-lowest text-secondary hover:bg-secondary-container transition-colors shadow-sm shrink-0" href="tel:+919876543212">
+<span class="material-symbols-outlined text-lg">call</span>
+</a>
+</div>
+</div>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-2 py-2.5 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container transition-colors" onclick="alert('Notification sent to Personal Safety Circle. They will be alerted gently.')">
+<span class="material-symbols-outlined text-base">emergency_share</span>
+<span>Ping My Circle For Support</span>
+</button>
+</div>
+</div>
+<!-- Lower Section Split: Grounding Protocol & Campus Safe Zones -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" id="grounding-drawer">
+<!-- Grounding Protocol Section (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="rounded-3xl bg-surface-container-lowest p-7 shadow-sm">
+<div class="flex items-center justify-between flex-wrap gap-4 pb-4">
+<div class="flex items-center gap-3">
+<div class="p-2.5 rounded-xl bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-2xl">spa</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Immediate De-escalation: 5-4-3-2-1 Sensory Grounding</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Reconnect with your physical surroundings to calm the nervous system.</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container-low font-label-sm text-label-sm text-on-surface-variant">Interactive Exercise</span>
+</div>
+<!-- 5-4-3-2-1 Steps -->
+<div class="space-y-3.5 my-5">
+<div class="flex items-start gap-4 p-3.5 rounded-xl bg-surface-container-low/70">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg font-bold shrink-0">5</span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-2">
+<span>See</span>
+<span class="material-symbols-outlined text-base text-secondary">visibility</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Acknowledge 5 things you can see around you right now (a book, a shadow, a plant, a pen, light from a window).</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-3.5 rounded-xl bg-surface-container-low/70">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg font-bold shrink-0">4</span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-2">
+<span>Touch</span>
+<span class="material-symbols-outlined text-base text-secondary">back_hand</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Notice 4 physical textures (your phone case, the fabric of your sleeve, cold desk surface, your feet on the floor).</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-3.5 rounded-xl bg-surface-container-low/70">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg font-bold shrink-0">3</span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-2">
+<span>Hear</span>
+<span class="material-symbols-outlined text-base text-secondary">hearing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Listen for 3 distinct ambient sounds (a distant fan hum, someone walking, passing traffic outside).</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-3.5 rounded-xl bg-surface-container-low/70">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg font-bold shrink-0">2</span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-2">
+<span>Smell</span>
+<span class="material-symbols-outlined text-base text-secondary">air</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Identify 2 subtle scents (fresh air, laundry detergent, coffee, wood).</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-3.5 rounded-xl bg-surface-container-low/70">
+<span class="flex items-center justify-center w-7 h-7 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg font-bold shrink-0">1</span>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface font-semibold flex items-center gap-2">
+<span>Taste</span>
+<span class="material-symbols-outlined text-base text-secondary">restaurant</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Note 1 taste in your mouth, or take a slow sip of cold water.</p>
+</div>
+</div>
+</div>
+<!-- Somatic Sigh Interactive Widget -->
+<div class="p-5 rounded-2xl bg-surface-container flex flex-col md:flex-row items-center justify-between gap-5 mt-6">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container transition-all duration-1000" id="breath-orb">
+<span class="material-symbols-outlined text-2xl">air</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-semibold text-on-surface">Physiological Sigh (Double Inhale, Long Exhale)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant" id="breath-text">Resets autonomic breathing rate in 30 seconds.</div>
+</div>
+</div>
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold hover:bg-on-surface transition-all shrink-0" id="start-breath-btn" onclick="startBreathingRoutine()">
+            Start 30s Exercise
+          </button>
+</div>
+</div>
+<!-- Empathetic Student Note with Image -->
+<div class="rounded-3xl bg-surface-container-lowest p-6 shadow-sm flex flex-col sm:flex-row items-center gap-6">
+<img class="w-28 h-28 rounded-2xl object-cover shrink-0" data-alt="Warm and calm sunlight streaming through a campus library courtyard with university students resting peacefully in safe garden seating in soft natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCs1Uso5WsNFhLkqvSonBMDx4kTy8UQInij6wLglNgTpvq7znvfPhPN3pNy78vQu_SKydiQ2tUQwlYOy-vyMfg8Oq0QnQJk9aKP6YlPCVDyIoRwcDS-N3aobz-JoGyRv-gK5pijXyltng6Zl_ROADc4ScdZg48nyViy4DgUlb7Svcf4k8myvEYDZ48sQy2J_2SR19-8dKFPjElWMtk9yDUvA9S4ME7mW39WYBWR6OtPBw8fkdr_Imi3"/>
+<div>
+<div class="inline-flex items-center gap-2 font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mb-1">
+<span>Student Peer Note</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug">
+            “No test, deadline, or academic hurdle is worth your well-being. If you are having thoughts of self-harm or despair, please speak with an on-duty clinician right now. People who care are waiting.”
+          </p>
+</div>
+</div>
+</div>
+<!-- Campus Safe Zones & Physical Dispensary Map (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="rounded-3xl bg-surface-container-lowest p-7 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="p-2.5 rounded-xl bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-2xl">pin_drop</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Campus Safe Zones</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Physical walking distance safe refuges at DTU.</p>
+</div>
+</div>
+</div>
+<!-- Campus Map static view using standard pipeline -->
+<div class="w-full h-48 bg-cover bg-center rounded-2xl mb-5 shadow-inner" data-location="Delhi Technological University Health Centre, Main Campus, Delhi" style=""></div>
+<!-- Safe Zone Cards -->
+<div class="space-y-3.5">
+<!-- Zone 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xl text-secondary mt-0.5">night_shelter</span>
+<div>
+<div class="font-label-lg text-label-lg font-semibold text-on-surface">Center for Student Well-Being</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Block B, Ground Floor • Dedicated Soundproof Rooms</div>
+<div class="flex items-center gap-2 mt-1.5">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Open 24 Hours</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 min walk from Quad</span>
+</div>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-sm shrink-0" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined text-lg">directions</span>
+</a>
+</div>
+<!-- Zone 2 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xl text-secondary mt-0.5">quiet_time</span>
+<div>
+<div class="font-label-lg text-label-lg font-semibold text-on-surface">Quiet Sensory &amp; Decompression Room</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Central Library, 3rd Floor East Wing</div>
+<div class="flex items-center gap-2 mt-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">8:00 AM – 11:00 PM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Low Lighting • White Noise</span>
+</div>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-sm shrink-0" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined text-lg">directions</span>
+</a>
+</div>
+<!-- Zone 3 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start justify-between gap-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-xl text-error mt-0.5">local_hospital</span>
+<div>
+<div class="font-label-lg text-label-lg font-semibold text-on-surface">Resident Doctor Emergency Room</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Campus Dispensary near Main Gate 1</div>
+<div class="flex items-center gap-2 mt-1.5">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Emergency Trauma / Sedation</span>
+</div>
+</div>
+</div>
+<a class="p-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-sm shrink-0" href="https://maps.google.com" target="_blank">
+<span class="material-symbols-outlined text-lg">directions</span>
+</a>
+</div>
+</div>
+<!-- Emergency Transportation Assistance -->
+<div class="p-4 rounded-2xl bg-surface-container mt-5 flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-on-surface">ambulance</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Campus Electric Golf-Cart / Stretcher Transport</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Dispatched within 2 mins across all hostel blocks</div>
+</div>
+</div>
+<a class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors shadow-sm shrink-0" href="tel:18005990019">
+            Request
+          </a>
+</div>
+</div>
+<!-- Confidentiality Assurance Box -->
+<div class="rounded-2xl bg-surface-container-low p-5">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-xl">policy</span>
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Strict Medical Privacy Guarantee</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-normal">
+              MindCare operates under strict Clinical Psychology Ethics guidelines. Consultations and SOS activations are strictly firewalled and will never be shared with course conveners, faculty members, parents (unless explicitly requested), or placement cells.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let breathingTimer = null;
+  function startBreathingRoutine() {
+    const btn = document.getElementById('start-breath-btn');
+    const orb = document.getElementById('breath-orb');
+    const text = document.getElementById('breath-text');
+    if (!btn || !orb || !text) return;
+
+    if (breathingTimer) {
+      clearInterval(breathingTimer);
+      breathingTimer = null;
+      btn.innerText = 'Start 30s Exercise';
+      text.innerText = 'Resets autonomic breathing rate in 30 seconds.';
+      orb.classList.remove('scale-150');
+      return;
+    }
+
+    let cycle = 0;
+    const stages = [
+      { text: "Breathe in deeply through your nose...", scale: "scale-125" },
+      { text: "Quick top-up second inhale...", scale: "scale-150" },
+      { text: "Slow, long sigh out through mouth...", scale: "scale-90" },
+      { text: "Hold gently & relax shoulders...", scale: "scale-100" }
+    ];
+
+    btn.innerText = 'Stop Exercise';
+    
+    function tick() {
+      const step = stages[cycle % stages.length];
+      text.innerText = step.text;
+      orb.className = "w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container transition-all duration-1000 " + step.scale;
+      cycle++;
+    }
+
+    tick();
+    breathingTimer = setInterval(tick, 3500);
+
+    setTimeout(() => {
+      if (breathingTimer) {
+        clearInterval(breathingTimer);
+        breathingTimer = null;
+        btn.innerText = 'Restart Exercise';
+        text.innerText = 'Exercise completed. Notice the stillness in your chest.';
+        orb.className = "w-14 h-14 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container transition-all duration-1000 scale-100";
+      }
+    }, 32000);
+  }
+</script></main></div><script src="../../assets/js/nav.js"></script></body></html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e5eeff","inverse-primary":"#bec6e0","tertiary-container":"#001d31","on-tertiary-fixed-variant":"#004b73","secondary-fixed":"#89f5e7","on-primary":"#ffffff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","surface-container-high":"#dce9ff","primary-fixed-dim":"#bec6e0","secondary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","primary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-error":"#ffffff","error-container":"#ffdad6","tertiary":"#000000","tertiary-fixed":"#cce5ff","on-surface":"#0b1c30","primary":"#000000","inverse-on-surface":"#eaf1ff","secondary-container":"#86f2e4","on-secondary-container":"#006f66","surface-tint":"#565e74","error":"#ba1a1a","surface-variant":"#d3e4fe","primary-container":"#131b2e","on-secondary":"#ffffff","inverse-surface":"#213145","surface-container-lowest":"#ffffff","on-tertiary-container":"#188ace","on-surface-variant":"#45464d","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","on-primary-container":"#7c839b","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#3f465c","secondary":"#006a61","outline":"#76777d","on-background":"#0b1c30","on-tertiary-fixed":"#001d31","background":"#f8f9ff","outline-variant":"#c6c6cd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"display":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="min-h-20 py-3 px-4 flex items-center gap-3"><img alt="MindCare Logo" class="h-14 w-auto object-contain" src="../../assets/images/logo.png"/></div><div class="px-4 py-2"><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-label-lg font-semibold"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="wellness-check" href="#"><span class="material-symbols-outlined text-xl">spa</span><span>Wellness Check</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-support" href="#"><span class="material-symbols-outlined text-xl">smart_toy</span><span>AI Support</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="mood-tracker" href="#"><span class="material-symbols-outlined text-xl">mood</span><span>Mood Tracker</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="resources" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Resources</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="counseling" href="#"><span class="material-symbols-outlined text-xl">volunteer_activism</span><span>Counseling</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span>Appointments</span></a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2</span></a><div class="pt-3 pb-1"><div class="h-px bg-surface-container-high mx-2 my-1"></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-xl">person</span><span>Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-xl">help</span><span>Help</span></a></nav></div></div><div class="p-4 mb-3"><div class="rounded-2xl p-4 bg-error-container text-on-error-container flex flex-col gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-xl text-error">emergency</span><span class="font-label-lg text-label-lg font-semibold text-on-error-container">Crisis Helpline</span></div><p class="font-body-sm text-body-sm leading-snug">Confidential 24/7 care whenever you feel overwhelmed.</p><a class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm" data-path="emergency-helpline" href="#"><span>Reach SOS Support</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-8 flex items-center justify-between gap-6"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap"><span class="material-symbols-outlined text-base text-secondary">school</span><span>Delhi Technological University • Academic Year 2024-25</span></div><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md truncate"><span class="material-symbols-outlined text-base text-secondary">psychology_alt</span><span class="truncate">“One day at a time, Ananya”</span></div></div><div class="flex items-center gap-3 shrink-0"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-error-container font-label-sm text-label-sm text-on-error-container font-medium hover:bg-error hover:text-on-error transition-colors" data-path="emergency-helpline" href="#"><span class="material-symbols-outlined text-base">call</span><span>Crisis Hotline</span></a><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="h-6 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMR9rJ2AxPqsMhNBaqkNb3avAQHrPABpyznEHzJXMa3FUXf0cT6zO8c0WoXzseYGkY7hCiPi9fFbmwrtK-NXNsdssW9NzUpeOFU073pF-glZrFyDmKhUkJAY5cPcgjiNo3Z2A7Jcmpdw6MrQYShKd5Andiu9LD3cp9a7PdipH8JaAUd930fGKTJpG2wkRWd8jd57lMDwpMzDtCLvUL7hbR5_rRKFLPTYtUQyJIypC3gibSuQovSyyJ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-medium">Ananya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Online • Sem 6 CS</span></div></div></div></header><main class="flex-1 pt-20 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full space-y-8">
+<!-- Top Command & Perspective Header -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="space-y-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Semester 6 Longitudinal Tracking</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Emotional Trajectory &amp; Insights</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Confidential, encrypted bio-behavioral reflection for Ananya Sharma.</p>
+</div>
+<!-- Controls Ribbon -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Streak Pill -->
+<div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-high shadow-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-label-md text-label-md font-semibold">5-Day Streak</span>
+</div>
+<!-- Timeframe segmented control -->
+<div class="inline-flex p-1 rounded-xl bg-surface-container-low shadow-sm">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest font-label-md text-label-md font-medium text-on-surface shadow-sm" type="button">7-Day</button>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">30-Day</button>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">3-Month</button>
+<button class="px-3.5 py-1.5 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">Semester</button>
+</div>
+<!-- Primary Modal Trigger / Anchor -->
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-highest hover:text-on-surface transition-all" href="#daily-logger">
+<span class="material-symbols-outlined text-lg">edit_note</span>
+<span>Log Today's Mood</span>
+</a>
+</div>
+</section>
+<!-- Two-Thirds / One-Third Main Architecture -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left / Center 8 Columns: Dynamic Workflows -->
+<div class="lg:col-span-8 space-y-8 min-w-0">
+<!-- Section 1: Today's Interactive Mood Logger Card -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-sm space-y-6" id="daily-logger">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-2xl">sentiment_satisfied</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Daily Check-In</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Wednesday, Oct 23 • Evening Reflection</p>
+</div>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">lock</span>
+<span>Zero-Knowledge Stored</span>
+</div>
+</div>
+<!-- 5 Emotion Node Selectors -->
+<div class="space-y-3">
+<label class="block font-label-md text-label-md text-on-surface font-semibold">How would you describe your baseline right now?</label>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+<button class="mood-option group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all text-center" type="button">
+<span class="text-3xl mb-1.5 transition-transform group-hover:scale-110">😄</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Awesome</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">High flow</span>
+</button>
+<button class="mood-option group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container text-on-surface transition-all text-center shadow-sm" type="button">
+<span class="text-3xl mb-1.5 transition-transform group-hover:scale-110">🙂</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Good</span>
+<span class="font-label-sm text-label-sm text-secondary">Balanced</span>
+</button>
+<button class="mood-option group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all text-center" type="button">
+<span class="text-3xl mb-1.5 transition-transform group-hover:scale-110">😐</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Okay</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Neutral tide</span>
+</button>
+<button class="mood-option group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all text-center" type="button">
+<span class="text-3xl mb-1.5 transition-transform group-hover:scale-110">😟</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Anxious</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tight chest</span>
+</button>
+<button class="mood-option group flex flex-col items-center justify-center p-3.5 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all text-center col-span-2 sm:col-span-1" type="button">
+<span class="text-3xl mb-1.5 transition-transform group-hover:scale-110">😫</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Overwhelmed</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Depleted</span>
+</button>
+</div>
+</div>
+<!-- Emotion Intensity Slider -->
+<div class="space-y-3 pt-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Mood Intensity Gauge</label>
+<span class="font-label-md text-label-md px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold" id="intensity-val">7 / 10 • Steady Elevation</span>
+</div>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-secondary" id="mood-slider" max="10" min="1" type="range" value="7"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>1 (Very Subdued)</span>
+<span>5 (Balanced Baseline)</span>
+<span>10 (Vibrant &amp; Serene)</span>
+</div>
+</div>
+<!-- Multi-select Context Tags -->
+<div class="space-y-3 pt-2">
+<label class="block font-label-md text-label-md text-on-surface font-semibold">What influenced your state today? (Select all that apply)</label>
+<div class="flex flex-wrap gap-2" id="tag-cloud">
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-secondary-container text-on-secondary-container font-semibold transition-all" type="button">Midterm Exams</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-secondary-container text-on-secondary-container font-semibold transition-all" type="button">Assignments</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" type="button">Sleep Deficit</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" type="button">Family</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-secondary-container text-on-secondary-container font-semibold transition-all" type="button">Friends &amp; Social</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" type="button">Campus Placements</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" type="button">Hostel Living</button>
+<button class="px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container text-on-surface-variant hover:text-on-surface transition-all" type="button">Physical Health</button>
+</div>
+</div>
+<!-- Reflective Journaling Textarea -->
+<div class="space-y-2 pt-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="journal-entry">Private Emotional Log</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Encrypted with campus key</span>
+</div>
+<div class="relative">
+<textarea class="w-full p-4 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container transition-all" id="journal-entry" placeholder="What influenced your mood today? Your journal entries are 100% private, never shared with faculty or peers..." rows="3"></textarea>
+<div class="absolute bottom-3 right-3 flex items-center gap-2">
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-secondary shadow-sm transition-colors" title="Record 60s Voice Reflection" type="button">
+<span class="material-symbols-outlined text-lg">mic</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm transition-colors" title="Extra Ephemeral Lock" type="button">
+<span class="material-symbols-outlined text-lg">enhanced_encryption</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card Footprint Submissions -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-secondary">check_circle</span>
+<span>Syncs to local longitudinal dashboard only</span>
+</div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-sm hover:opacity-90 transition-all" id="save-log-btn" type="button">
+<span>Save Daily Check-in</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Section 2: Longitudinal Bio-Behavioral Analytics Canvas -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-sm space-y-6">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Bio-Behavioral Correlates</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">30-Day Synthesis</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tracking how academic deadlines and restorative sleep correlate with mood swings.</p>
+</div>
+<!-- Legend -->
+<div class="flex items-center gap-4 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span>Mood (1-10)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Sleep Hours</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span>Exam Stress</span>
+</div>
+</div>
+</div>
+<!-- Inline Multi-timeline Chart Graphic (SVG) -->
+<div class="w-full p-4 rounded-xl bg-surface-container-low overflow-x-auto">
+<svg class="w-full min-w-[640px] h-48 select-none" fill="none" viewbox="0 0 760 220" xmlns="http://www.w3.org/2000/svg">
+<!-- Background Guides -->
+<line stroke="#d3e4fe" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="740" y1="30" y2="30"></line>
+<line stroke="#d3e4fe" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="740" y1="80" y2="80"></line>
+<line stroke="#d3e4fe" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="740" y1="130" y2="130"></line>
+<line stroke="#d3e4fe" stroke-width="1" x1="40" x2="740" y1="180" y2="180"></line>
+<!-- Axis Labels Y -->
+<text class="fill-current text-on-surface-variant font-label-sm text-[10px]" x="15" y="34">High</text>
+<text class="fill-current text-on-surface-variant font-label-sm text-[10px]" x="15" y="105">Med</text>
+<text class="fill-current text-on-surface-variant font-label-sm text-[10px]" x="15" y="184">Low</text>
+<!-- Gradient Definitions -->
+<defs>
+<lineargradient id="moodGradient" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#006a61" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#006a61" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Exam Stress Curve (Spike on Wed/Thu) -->
+<path d="M 60 160 C 130 160, 160 150, 230 120 C 300 90, 340 40, 410 45 C 480 50, 520 150, 600 165 C 670 170, 710 165, 730 165" stroke="#ba1a1a" stroke-dasharray="3 3" stroke-width="2"></path>
+<!-- Sleep Trend Curve -->
+<path d="M 60 90 C 140 100, 190 95, 270 120 C 350 145, 410 160, 480 140 C 550 120, 630 65, 730 70" stroke="#188ace" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Mood Area Fill -->
+<path d="M 60 85 C 130 80, 180 65, 260 80 C 330 95, 380 140, 440 135 C 500 130, 560 60, 640 45 C 690 35, 715 50, 730 55 L 730 180 L 60 180 Z" fill="url(#moodGradient)"></path>
+<!-- Mood Line Curve -->
+<path d="M 60 85 C 130 80, 180 65, 260 80 C 330 95, 380 140, 440 135 C 500 130, 560 60, 640 45 C 690 35, 715 50, 730 55" stroke="#006a61" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- Interactive Highlight Points -->
+<circle cx="260" cy="80" fill="#006a61" r="5" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="440" cy="135" fill="#ba1a1a" r="6" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="640" cy="45" fill="#006a61" r="5" stroke="#ffffff" stroke-width="2"></circle>
+<!-- Context Annotation Flag -->
+<g transform="translate(400, 10)">
+<rect fill="#131b2e" height="24" rx="6" width="105" x="0" y="0"></rect>
+<text class="font-label-sm text-[11px] font-medium" fill="#ffffff" text-anchor="middle" x="52" y="16">CS Lab Viva Peak</text>
+</g>
+<!-- X-Axis Dates -->
+<text class="fill-current text-on-surface-variant font-label-sm text-[11px]" text-anchor="middle" x="60" y="205">Thu 17</text>
+<text class="fill-current text-on-surface-variant font-label-sm text-[11px]" text-anchor="middle" x="170" y="205">Fri 18</text>
+<text class="fill-current text-on-surface-variant font-label-sm text-[11px]" text-anchor="middle" x="280" y="205">Sat 19</text>
+<text class="fill-current text-on-surface-variant font-label-sm text-[11px]" text-anchor="middle" x="390" y="205">Sun 20</text>
+<text class="fill-current text-on-surface-variant font-label-sm text-[11px]" text-anchor="middle" x="500" y="205">Mon 21</text>
+<text class="fill-current text-on-surface-variant font-label-sm text-[11px]" text-anchor="middle" x="610" y="205">Tue 22</text>
+<text class="fill-current text-on-surface-variant font-label-sm text-[11px]" text-anchor="middle" x="720" y="205">Today (Wed)</text>
+</svg>
+</div>
+<!-- Monthly Mood Calendar Heatmap -->
+<div class="space-y-4 pt-2">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold">October Calendar Mosaic</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">23 / 31 Logged Days</span>
+</div>
+<div class="grid grid-cols-7 gap-2">
+<!-- Headers -->
+<div class="text-center font-label-sm text-label-sm text-on-surface-variant py-1">M</div>
+<div class="text-center font-label-sm text-label-sm text-on-surface-variant py-1">T</div>
+<div class="text-center font-label-sm text-label-sm text-on-surface-variant py-1">W</div>
+<div class="text-center font-label-sm text-label-sm text-on-surface-variant py-1">T</div>
+<div class="text-center font-label-sm text-label-sm text-on-surface-variant py-1">F</div>
+<div class="text-center font-label-sm text-label-sm text-on-surface-variant py-1">S</div>
+<div class="text-center font-label-sm text-label-sm text-on-surface-variant py-1">S</div>
+<!-- Heatmap blocks -->
+<div class="h-10 rounded-lg bg-surface-container flex flex-col items-center justify-center text-[10px] text-on-surface-variant">1</div>
+<div class="h-10 rounded-lg bg-secondary-container/50 flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">2 <span class="text-[9px]">🙂</span></div>
+<div class="h-10 rounded-lg bg-secondary-container flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">3 <span class="text-[9px]">😄</span></div>
+<div class="h-10 rounded-lg bg-surface-container-high flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface">4 <span class="text-[9px]">😐</span></div>
+<div class="h-10 rounded-lg bg-secondary-container flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">5 <span class="text-[9px]">😄</span></div>
+<div class="h-10 rounded-lg bg-secondary-container flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">6 <span class="text-[9px]">😄</span></div>
+<div class="h-10 rounded-lg bg-secondary-container/80 flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">7 <span class="text-[9px]">🙂</span></div>
+<div class="h-10 rounded-lg bg-surface-container-high flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface">8 <span class="text-[9px]">😐</span></div>
+<div class="h-10 rounded-lg bg-surface-container-high flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface">9 <span class="text-[9px]">😐</span></div>
+<div class="h-10 rounded-lg bg-error-container/60 flex flex-col items-center justify-center font-label-sm text-label-sm text-on-error-container">10 <span class="text-[9px]">😟</span></div>
+<div class="h-10 rounded-lg bg-error-container flex flex-col items-center justify-center font-label-sm text-label-sm text-on-error-container">11 <span class="text-[9px]">😫</span></div>
+<div class="h-10 rounded-lg bg-secondary-container flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">12 <span class="text-[9px]">😄</span></div>
+<div class="h-10 rounded-lg bg-secondary-container flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">13 <span class="text-[9px]">😄</span></div>
+<div class="h-10 rounded-lg bg-secondary-container/60 flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">14 <span class="text-[9px]">🙂</span></div>
+<div class="h-10 rounded-lg bg-surface-container-high flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface">15 <span class="text-[9px]">😐</span></div>
+<div class="h-10 rounded-lg bg-surface-container flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface">16 <span class="text-[9px]">😐</span></div>
+<div class="h-10 rounded-lg bg-error-container/70 flex flex-col items-center justify-center font-label-sm text-label-sm text-on-error-container">17 <span class="text-[9px]">😟</span></div>
+<div class="h-10 rounded-lg bg-secondary-container/80 flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">18 <span class="text-[9px]">🙂</span></div>
+<div class="h-10 rounded-lg bg-secondary-container flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">19 <span class="text-[9px]">😄</span></div>
+<div class="h-10 rounded-lg bg-secondary-container flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">20 <span class="text-[9px]">😄</span></div>
+<div class="h-10 rounded-lg bg-surface-container-high flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface">21 <span class="text-[9px]">😐</span></div>
+<div class="h-10 rounded-lg bg-secondary-container/70 flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container">22 <span class="text-[9px]">🙂</span></div>
+<div class="h-10 rounded-lg bg-secondary-container flex flex-col items-center justify-center font-label-sm text-label-sm text-on-secondary-container ring-2 ring-primary ring-offset-1">23 <span class="text-[9px]">🙂</span></div>
+<div class="h-10 rounded-lg bg-surface-container-low flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface-variant opacity-40">24</div>
+<div class="h-10 rounded-lg bg-surface-container-low flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface-variant opacity-40">25</div>
+<div class="h-10 rounded-lg bg-surface-container-low flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface-variant opacity-40">26</div>
+<div class="h-10 rounded-lg bg-surface-container-low flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface-variant opacity-40">27</div>
+<div class="h-10 rounded-lg bg-surface-container-low flex flex-col items-center justify-center font-label-sm text-label-sm text-on-surface-variant opacity-40">28</div>
+</div>
+</div>
+<!-- Supportive Behavioral Patterns Card -->
+<div class="p-5 rounded-xl bg-surface-container flex flex-col sm:flex-row items-start sm:items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest flex items-center justify-center shrink-0 shadow-sm text-secondary">
+<span class="material-symbols-outlined text-2xl">insights</span>
+</div>
+<div class="space-y-1">
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">Patterns &amp; Supportive Insights</h4>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              Your responses suggest <span class="font-semibold text-secondary">stable baseline resilience</span> with mid-week academic peaks. Your mood consistently rebounds over weekends (+24% uplift). The highest transient stress strongly correlates with Wednesday lab submissions.
+            </p>
+</div>
+</div>
+</section>
+<!-- Student Peer Sanctuary Visual Banner -->
+<section class="rounded-2xl p-6 bg-surface-container-lowest shadow-sm flex flex-col sm:flex-row items-center gap-6">
+<img class="w-full sm:w-44 h-32 rounded-xl object-cover shrink-0" data-alt="A tranquil university courtyard garden bathed in soft morning daylight with two diverse students sitting on a calm stone bench, surrounded by lush green foliage and architectural shadows, warm minimalist documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkg9-VihwuET2E5Z417krJbMxBQJDVDvCJidwirm_DQPTHNiVCPX2WYSJFuaFv6SBo0RqZWW5yS2L47WWVODOlk7xdYZokmeg4ovy7SH1f-6lnKc1d4zkg72eRKQHJ2DYZkdB3wr7l8oKSsHdtCRq_tLcoc-p1DsP8buchg7-9IenGAzA4SViTqIgVheghmdM1ry3NUmm6x45sqrHXVp8baAVtzkF7U3JbsfhwzHeZpl4oy1UcyBXU"/>
+<div class="space-y-2">
+<div class="inline-flex items-center gap-1.5 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">groups</span>
+<span>DTU Campus Circle</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tired of navigating midterm fatigue alone?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Join an anonymous, counselor-moderated peer group on Thursday evenings to share strategies on managing high workloads.</p>
+<button class="pt-1 inline-flex items-center gap-1 font-label-md text-label-md text-secondary hover:underline font-semibold" type="button">
+<span>Explore Campus Circles</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</section>
+</div>
+<!-- Right 4 Columns: Longitudinal Indicators & Action Ribbons -->
+<div class="lg:col-span-4 space-y-6">
+<!-- Primary Metric Card: Weekly Average -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Weekly Wellness Average</span>
+<span class="material-symbols-outlined text-secondary text-xl">trending_up</span>
+</div>
+<div class="flex items-baseline gap-3">
+<span class="font-display text-display text-on-surface font-semibold tracking-tight">7.4</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ 10</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm ml-auto">+0.8 vs last week</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Optimal emotional recovery noted on Saturday-Sunday due to 8.2 avg hours of uninterrupted sleep.</p>
+<!-- Mini Progress Visualization -->
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 74%"></div>
+</div>
+</div>
+<!-- Top Stress Triggers Breakdown -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold">Top Triggers (Past 30 Days)</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aggregated</span>
+</div>
+<div class="space-y-3.5">
+<!-- Item 1 -->
+<div class="space-y-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">Midterm Prep &amp; Lab Reports</span>
+<span class="text-on-surface-variant font-semibold">65%</span>
+</div>
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 65%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="space-y-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">Broken / Late Night Sleep</span>
+<span class="text-on-surface-variant font-semibold">22%</span>
+</div>
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full" style="width: 22%"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="space-y-1.5">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">Hostel Nutrition &amp; Routine</span>
+<span class="text-on-surface-variant font-semibold">13%</span>
+</div>
+<div class="w-full bg-surface-container-low h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full rounded-full" style="width: 13%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommended Interventions: Breathing Orb Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-5">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-base">self_improvement</span>
+<span>Recommended For You</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">5 Min</span>
+</div>
+<div class="flex items-center gap-4">
+<!-- Animated Calming Breathing Orb simulation -->
+<div class="w-16 h-16 rounded-full bg-secondary-container/70 flex items-center justify-center shrink-0 shadow-inner">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-xl">air</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Box Breathing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vagus nerve reset designed to counter cortisol spikes before late study blocks.</p>
+</div>
+</div>
+<button class="w-full py-2.5 px-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high font-semibold transition-colors flex items-center justify-center gap-2" type="button">
+<span>Start 5-Min Wind-down</span>
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+</button>
+</div>
+<!-- Dedicated Campus Counselor Connect -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm space-y-4">
+<div class="flex items-center gap-3">
+<img class="w-12 h-12 rounded-xl object-cover shrink-0" data-alt="Portrait of an empathetic Indian female clinical wellness counselor smiling kindly in a bright airy modern consulting room with bookshelf background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPzo6XZyF4w_FbxzR13WCmuILDUBXuuvBQseSjDt_WqyVWWivWO1IDsXzIaI71jO3DaCF-6MoR9sLnnzK6XnssQ-4oLnqCQMwVm-gSvv-32GJTbjVk5eAO8SSz_kU6BjHjBA97Miibt3flSB3ZGsp6_Hg7cKB2CuV3RSEkAgf3IRuJuM1AQdpofkufQSx94HsqbyGHueX1lADIE3gpFznjjXMpzUkUvexGh7Sez1TZc06lzHHJLDEy"/>
+<div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Dr. Meera Nambiar</span>
+<p class="font-label-sm text-label-sm text-secondary">Campus Psychologist • DTU Hub</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">"Your mid-week stress trends are very typical for Semester 6 CS students. Consider an informal 15-minute chat to calibrate workload."</p>
+<button class="w-full py-2 px-3 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md font-medium transition-colors" type="button">
+          Book Confidential 15-Min Talk
+        </button>
+</div>
+<!-- Crisis Helpline Standard Footer Card (Per Shell Design Pattern) -->
+<div class="rounded-2xl p-5 bg-error-container text-on-error-container space-y-3 shadow-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-xl text-error">emergency</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-error-container">Immediate Campus Care</span>
+</div>
+<p class="font-body-sm text-body-sm leading-snug">Feeling in crisis or overwhelmed right now? You don't have to carry it on your own.</p>
+<div class="flex gap-2">
+<a class="flex-1 py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold text-center hover:bg-surface-container-low transition-colors shadow-sm" href="#">
+            Call DTU SOS
+          </a>
+<a class="py-2 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center hover:bg-surface-container-low transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-base">chat</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interactions for mood options and intensity
+  document.querySelectorAll('.mood-option').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.mood-option').forEach(b => {
+        b.classList.remove('bg-surface-container', 'shadow-sm');
+        b.classList.add('bg-surface-container-low');
+      });
+      this.classList.remove('bg-surface-container-low');
+      this.classList.add('bg-surface-container', 'shadow-sm');
+    });
+  });
+
+  const moodSlider = document.getElementById('mood-slider');
+  const intensityVal = document.getElementById('intensity-val');
+  if (moodSlider && intensityVal) {
+    moodSlider.addEventListener('input', function() {
+      const v = this.value;
+      let label = 'Steady';
+      if (v <= 3) label = 'Drained / Strained';
+      else if (v <= 6) label = 'Steady Baseline';
+      else if (v <= 8) label = 'Energized & Calm';
+      else label = 'High Flow State';
+      intensityVal.textContent = `${v} / 10 • ${label}`;
+    });
+  }
+
+  // Tag toggles
+  document.querySelectorAll('#tag-cloud button').forEach(tag => {
+    tag.addEventListener('click', function() {
+      if (this.classList.contains('bg-secondary-container')) {
+        this.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'font-semibold');
+        this.classList.add('bg-surface-container', 'text-on-surface-variant');
+      } else {
+        this.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        this.classList.add('bg-secondary-container', 'text-on-secondary-container', 'font-semibold');
+      }
+    });
+  });
+
+  // Save log affirmation
+  const saveBtn = document.getElementById('save-log-btn');
+  if (saveBtn) {
+    saveBtn.addEventListener('click', function() {
+      const originalText = this.innerHTML;
+      this.innerHTML = '<span class="material-symbols-outlined text-lg animate-spin">sync</span><span>Saving encrypted record...</span>';
+      setTimeout(() => {
+        this.innerHTML = '<span class="material-symbols-outlined text-lg">done</span><span>Saved to Your Journal!</span>';
+        this.classList.remove('bg-primary');
+        this.classList.add('bg-secondary');
+        setTimeout(() => {
+          this.innerHTML = originalText;
+          this.classList.remove('bg-secondary');
+          this.classList.add('bg-primary');
+        }, 3000);
+      }, 700);
+    });
+  }
+</script></main></div><script src="../../assets/js/nav.js"></script></body></html>

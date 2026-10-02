@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e5eeff","inverse-primary":"#bec6e0","tertiary-container":"#001d31","on-tertiary-fixed-variant":"#004b73","secondary-fixed":"#89f5e7","on-primary":"#ffffff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","surface-container-high":"#dce9ff","primary-fixed-dim":"#bec6e0","secondary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","primary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-error":"#ffffff","error-container":"#ffdad6","tertiary":"#000000","tertiary-fixed":"#cce5ff","on-surface":"#0b1c30","primary":"#000000","inverse-on-surface":"#eaf1ff","secondary-container":"#86f2e4","on-secondary-container":"#006f66","surface-tint":"#565e74","error":"#ba1a1a","surface-variant":"#d3e4fe","primary-container":"#131b2e","on-secondary":"#ffffff","inverse-surface":"#213145","surface-container-lowest":"#ffffff","on-tertiary-container":"#188ace","on-surface-variant":"#45464d","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","on-primary-container":"#7c839b","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#3f465c","secondary":"#006a61","outline":"#76777d","on-background":"#0b1c30","on-tertiary-fixed":"#001d31","background":"#f8f9ff","outline-variant":"#c6c6cd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"display":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="min-h-20 py-3 px-4 flex items-center gap-3"><img alt="MindCare Logo" class="h-14 w-auto object-contain" src="../../assets/images/logo.png"/></div><div class="px-4 py-2"><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-label-lg font-semibold"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="wellness-check" href="#"><span class="material-symbols-outlined text-xl">spa</span><span>Wellness Check</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-support" href="#"><span class="material-symbols-outlined text-xl">smart_toy</span><span>AI Support</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="mood-tracker" href="#"><span class="material-symbols-outlined text-xl">mood</span><span>Mood Tracker</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="resources" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Resources</span></a><a aria-current="page" class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl transition-all bg-surface-container-high text-on-surface font-label-lg font-semibold" data-path="counseling" href="#"><span class="material-symbols-outlined text-xl">volunteer_activism</span><span>Counseling</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span>Appointments</span></a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2</span></a><div class="pt-3 pb-1"><div class="h-px bg-surface-container-high mx-2 my-1"></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-xl">person</span><span>Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-xl">help</span><span>Help</span></a></nav></div></div><div class="p-4 mb-3"><div class="rounded-2xl p-4 bg-error-container text-on-error-container flex flex-col gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-xl text-error">emergency</span><span class="font-label-lg text-label-lg font-semibold text-on-error-container">Crisis Helpline</span></div><p class="font-body-sm text-body-sm leading-snug">Confidential 24/7 care whenever you feel overwhelmed.</p><a class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm" data-path="emergency-helpline" href="#"><span>Reach SOS Support</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-8 flex items-center justify-between gap-6"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap"><span class="material-symbols-outlined text-base text-secondary">school</span><span>Delhi Technological University • Academic Year 2024-25</span></div><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md truncate"><span class="material-symbols-outlined text-base text-secondary">psychology_alt</span><span class="truncate">“One day at a time, Ananya”</span></div></div><div class="flex items-center gap-3 shrink-0"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-error-container font-label-sm text-label-sm text-on-error-container font-medium hover:bg-error hover:text-on-error transition-colors" data-path="emergency-helpline" href="#"><span class="material-symbols-outlined text-base">call</span><span>Crisis Hotline</span></a><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="h-6 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMR9rJ2AxPqsMhNBaqkNb3avAQHrPABpyznEHzJXMa3FUXf0cT6zO8c0WoXzseYGkY7hCiPi9fFbmwrtK-NXNsdssW9NzUpeOFU073pF-glZrFyDmKhUkJAY5cPcgjiNo3Z2A7Jcmpdw6MrQYShKd5Andiu9LD3cp9a7PdipH8JaAUd930fGKTJpG2wkRWd8jd57lMDwpMzDtCLvUL7hbR5_rRKFLPTYtUQyJIypC3gibSuQovSyyJ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-medium">Ananya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Online • Sem 6 CS</span></div></div></div></header><main class="flex-1 pt-20 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<div class="max-w-[1280px] w-full mx-auto space-y-8">
+<div class="flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm mb-2.5">
+<span class="material-symbols-outlined text-sm">verified_user</span>
+<span>100% Student Welfare Fund Covered • Confidential</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Campus Counseling &amp; Peer Support Directory</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1.5">
+            Free, confidential sessions for enrolled students. Both online (Google Meet) and on-campus health center slots available with certified practitioners.
+          </p>
+</div>
+<div class="flex items-center gap-3 self-start md:self-auto shrink-0">
+<div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md shadow-sm">
+<span class="material-symbols-outlined text-secondary text-lg">medical_services</span>
+<span>DTU Health Center, Block B</span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2 rounded-xl bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>7 Counselors On-Duty Today</span>
+</div>
+</div>
+</div>
+<div class="p-4 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="flex flex-wrap items-center gap-2.5 flex-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mr-1">Filter by</span>
+<button class="filter-chip active inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-sm">tune</span>
+<span>All Focus Areas</span>
+</button>
+<button class="filter-chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all">
+<span>Academic Stress</span>
+</button>
+<button class="filter-chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all">
+<span>Exam Anxiety</span>
+</button>
+<button class="filter-chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all">
+<span>Sleep &amp; Routine</span>
+</button>
+<button class="filter-chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all">
+<span>Career Clarity</span>
+</button>
+<button class="filter-chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all">
+<span>Hostel &amp; Transitions</span>
+</button>
+</div>
+<div class="flex items-center gap-3 overflow-x-auto pb-1 xl:pb-0">
+<div class="relative shrink-0">
+<select class="appearance-none bg-surface-container-low text-on-surface text-label-md font-label-md rounded-xl pl-3 pr-8 py-2 focus:outline-none cursor-pointer">
+<option>Session: All Types</option>
+<option>In-Person (Block B)</option>
+<option>Virtual (Google Meet)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-base text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<div class="relative shrink-0">
+<select class="appearance-none bg-surface-container-low text-on-surface text-label-md font-label-md rounded-xl pl-3 pr-8 py-2 focus:outline-none cursor-pointer">
+<option>When: Next 48 Hours</option>
+<option>Today</option>
+<option>Tomorrow</option>
+<option>This Weekend</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-base text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<div class="relative shrink-0">
+<select class="appearance-none bg-surface-container-low text-on-surface text-label-md font-label-md rounded-xl pl-3 pr-8 py-2 focus:outline-none cursor-pointer">
+<option>Language: English &amp; Hindi</option>
+<option>English only</option>
+<option>Hindi only</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2.5 text-base text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-7 flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Available Counselors</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">3 verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Click practitioner to configure booking</span>
+</div>
+<div class="counselor-card group cursor-pointer p-6 rounded-2xl bg-surface-container-lowest shadow-md transition-all relative overflow-hidden transform hover:-translate-y-0.5 ring-2 ring-secondary" id="counselor-card-1" onclick="selectCounselor(1, 'Dr. Radhika Sharma, PhD', 'Senior Campus Clinical Psychologist', 'Tomorrow, 2:00 PM')">
+<div class="absolute top-0 right-0 px-4 py-1.5 rounded-bl-xl bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-xs">radio_button_checked</span>
+<span>Selected for Booking</span>
+</div>
+<div class="flex flex-col sm:flex-row gap-5 items-start">
+<div class="relative shrink-0">
+<img class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover shadow-sm" data-alt="Warm studio portrait of an experienced Indian female psychologist in her late 30s with gentle smiling eyes, wearing an elegant teal formal kurta with clean architectural university clinic backdrop, soft diffused warm light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUhzfvNL2BhAiP4QJbyjff0UcD8wjM0-MVlvhrQmd1zCqjfSN7LP8eh1BxJyLsCLL6ZKfJN8fENPlaCD-OF__Fe1hW2B4WH84czOWUGjEVZlD_ekhScUsz1BXXLxrkOTykanNb6FL7EjuLtOmXgRvHRe8XLf21hIHvE97fw1YjoLlpJcJAVWH4h3GamkSXSRFTZZxLKKgplXNQkHehFePBWeMsnIU72j-tIZxbx_R0jR1wio7OZ_sx"/>
+<div class="absolute -bottom-1.5 -right-1.5 p-1 rounded-lg bg-surface-container-lowest shadow-sm flex items-center">
+<span class="material-symbols-outlined text-secondary text-base">verified</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Dr. Radhika Sharma, PhD</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">Faculty Practitioner</span>
+</div>
+<p class="font-label-lg text-label-lg text-secondary font-medium mb-3">Senior Campus Clinical Psychologist</p>
+<div class="flex flex-wrap items-center gap-y-2 gap-x-4 font-label-md text-label-md text-on-surface-variant mb-4">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-base text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<strong class="font-semibold">4.9</strong> (184 sessions)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base">work_history</span>
+                  12+ yrs experience
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base">translate</span>
+                  English, Hindi
+                </span>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Exam Burnout</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Perfectionism</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Mindfulness-Based CBT</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Thesis Anxiety</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low/60 rounded-xl px-3.5 py-2.5">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">event_available</span>
+<span>Next: <strong class="font-medium">Tomorrow, 2:00 PM</strong></span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary font-semibold">
+<span>In-Person &amp; Video</span>
+<span class="material-symbols-outlined text-sm">sync_alt</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="counselor-card group cursor-pointer p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative overflow-hidden transform hover:-translate-y-0.5" id="counselor-card-2" onclick="selectCounselor(2, 'Prof. Vikram Sen, M.Phil', 'Student Wellness &amp; Life Coach', 'Friday, 10:30 AM')">
+<div class="flex flex-col sm:flex-row gap-5 items-start">
+<div class="relative shrink-0">
+<img class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover shadow-sm" data-alt="Portrait of a friendly male academic counselor in his early 40s wearing spectacles and an open-collar casual shirt, warm bookshelf and college library study nook in background, calm composed aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAYzCFXqniukkd_A5N-7ON6Tb6kAiP_luBGzHj6JYKbFuj0uykfR0DOT3r6w7cKhTtTtBMMi08fLq71bm3XBaUgVV_AG5jlGVH-tnlGrPZ6JIw0i3XTxfVzqJYVcX93mQgHRecZkpKqqnw66xk08yvMQhEpmrqMk1qYLcxS11WmxzhwK1qO9iNaj8dLkqGIMIeqy6oLLIvvgvPGBSXlOCXtTJBDdmQrudsohpuFHarzz2OPcLPTk9f"/>
+<div class="absolute -bottom-1.5 -right-1.5 p-1 rounded-lg bg-surface-container-lowest shadow-sm flex items-center">
+<span class="material-symbols-outlined text-secondary text-base">verified</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Prof. Vikram Sen, M.Phil</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Academic Coach</span>
+</div>
+<p class="font-label-lg text-label-lg text-secondary font-medium mb-3">Student Wellness &amp; Life Strategy Coach</p>
+<div class="flex flex-wrap items-center gap-y-2 gap-x-4 font-label-md text-label-md text-on-surface-variant mb-4">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-base text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<strong class="font-semibold">4.8</strong> (142 sessions)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base">work_history</span>
+                  9 yrs university coaching
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base">translate</span>
+                  English, Bengali
+                </span>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Academic Transitions</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Chronic Procrastination</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Time Architecture</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Habit Systems</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low/60 rounded-xl px-3.5 py-2.5">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">event_available</span>
+<span>Next: <strong class="font-medium">Friday, 10:30 AM</strong></span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span>Video Call Preferred</span>
+<span class="material-symbols-outlined text-sm">videocam</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="counselor-card group cursor-pointer p-6 rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all relative overflow-hidden transform hover:-translate-y-0.5" id="counselor-card-3" onclick="selectCounselor(3, 'Ananya Roy', 'Trained Peer Counselor • Final Year M.Sc Psychology', 'Today, 4:30 PM')">
+<div class="flex flex-col sm:flex-row gap-5 items-start">
+<div class="relative shrink-0">
+<img class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover shadow-sm" data-alt="Warm natural portrait of an Indian graduate student peer counselor in early 20s with calm empathetic smile, holding a notebook in sunny campus courtyard with leafy green shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Op4jX63NXLImBP-1tzMbQS_Fr1T56fuaV7dmJrgEcXFJqeMvZ56zvi1Be-zzJZqyCGXmWEpVypuBpa0eCnXUE7aFwJlPLFla-ke4ZjlBUqENvrL-Jws3QJk4s4WTpMTA5mer3ocbPaPpxGzno_TyEtiIApNvhGyk14rzJT1jueW2DA6KUMJLdqMgSS6b-BsS1Nv2cuJWlSdGVLTbaFGLq6LqBUzI-TgMlC6cuEWd3sbaHOjcSEcQ"/>
+<div class="absolute -bottom-1.5 -right-1.5 p-1 rounded-lg bg-surface-container-lowest shadow-sm flex items-center">
+<span class="material-symbols-outlined text-secondary text-base">diversity_1</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Ananya Roy</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Peer Listening Guild</span>
+</div>
+<p class="font-label-lg text-label-lg text-secondary font-medium mb-3">Trained Peer Counselor • Final Year M.Sc Psychology</p>
+<div class="flex flex-wrap items-center gap-y-2 gap-x-4 font-label-md text-label-md text-on-surface-variant mb-4">
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-base text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<strong class="font-semibold">4.95</strong> (96 student chats)
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base">forum</span>
+                  Non-clinical peer listening
+                </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base">translate</span>
+                  English, Hindi
+                </span>
+</div>
+<div class="flex flex-wrap gap-1.5 mb-4">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Hostel Adaptation</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Peer Pressure</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Social Isolation</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm">Imposter Syndrome</span>
+</div>
+<div class="flex items-center justify-between pt-3 bg-surface-container-low/60 rounded-xl px-3.5 py-2.5">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">event_available</span>
+<span>Next: <strong class="font-medium text-secondary">Today, 4:30 PM</strong></span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface-variant font-medium">
+<span>Student Lounge or Video</span>
+<span class="material-symbols-outlined text-sm">coffee</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-5 rounded-2xl bg-surface-container-low flex items-start gap-4 shadow-sm">
+<div class="p-2.5 rounded-xl bg-surface-container-lowest text-secondary shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-2xl">shield</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-label-lg text-label-lg font-semibold text-on-surface">Guaranteed Institutional Discretion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Under university health charter Article 14B, psychiatric and psychological consulting records are never shared with Dean of Academics, faculty supervisors, placement cells, or family without express emergency consent.
+            </p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 sticky top-24">
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-lg space-y-6">
+<div class="flex items-start justify-between pb-4 bg-surface-container-low -mx-6 -mt-6 p-6 rounded-t-2xl">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl">calendar_add_on</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Session Reservation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight" id="panel-counselor-name">Dr. Radhika Sharma, PhD</h3>
+<p class="font-label-md text-label-md text-on-surface-variant" id="panel-counselor-role">Senior Campus Clinical Psychologist</p>
+</div>
+</div>
+<span class="px-2 py-1 rounded-lg bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold shrink-0">Free</span>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface tracking-wide uppercase flex items-center justify-between">
+<span>1. Choose Delivery Format</span>
+<span class="text-secondary font-normal lowercase">50-min slot</span>
+</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+<button class="mode-btn active p-3 rounded-xl bg-primary text-on-primary text-left transition-all shadow-sm flex flex-col justify-between h-20" id="mode-in-person" onclick="setMode('in-person')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-xl">domain</span>
+<span class="material-symbols-outlined text-sm check-icon">check_circle</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-semibold block leading-tight">Campus Clinic</span>
+<span class="font-label-sm text-label-sm opacity-80 block truncate">Block B, Rm 204</span>
+</div>
+</button>
+<button class="mode-btn p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface text-left transition-all flex flex-col justify-between h-20" id="mode-video" onclick="setMode('video')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-xl text-on-surface-variant">videocam</span>
+<span class="material-symbols-outlined text-sm check-icon opacity-0">check_circle</span>
+</div>
+<div>
+<span class="font-label-md text-label-md font-semibold block leading-tight">Google Meet</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block truncate">Encrypted video link</span>
+</div>
+</button>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface tracking-wide uppercase flex items-center justify-between">
+<span>2. Select Date</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">October 2024</span>
+</label>
+<div class="grid grid-cols-4 gap-2">
+<button class="date-chip p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col items-center transition-all" onclick="setDate(this, 'Thu, Oct 24')" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Thu</span>
+<span class="font-headline-sm text-headline-sm font-semibold">24</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1"></span>
+</button>
+<button class="date-chip active p-2.5 rounded-xl bg-secondary text-on-secondary flex flex-col items-center transition-all shadow-sm" onclick="setDate(this, 'Fri, Oct 25')" type="button">
+<span class="font-label-sm text-label-sm opacity-90">Fri</span>
+<span class="font-headline-sm text-headline-sm font-semibold">25</span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-secondary mt-1"></span>
+</button>
+<button class="date-chip p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col items-center transition-all" onclick="setDate(this, 'Mon, Oct 28')" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mon</span>
+<span class="font-headline-sm text-headline-sm font-semibold">28</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1"></span>
+</button>
+<button class="date-chip p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col items-center transition-all" onclick="setDate(this, 'Tue, Oct 29')" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tue</span>
+<span class="font-headline-sm text-headline-sm font-semibold">29</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mt-1"></span>
+</button>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface tracking-wide uppercase flex items-center justify-between">
+<span>3. Available Hours</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium" id="selected-date-label">Fri, Oct 25</span>
+</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="time-btn py-2 px-2 rounded-xl bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface transition-all text-center" onclick="setTime(this, '10:00 AM')" type="button">
+                10:00 AM
+              </button>
+<button class="time-btn py-2 px-2 rounded-xl bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface transition-all text-center" onclick="setTime(this, '11:30 AM')" type="button">
+                11:30 AM
+              </button>
+<button class="time-btn active py-2 px-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm text-center" onclick="setTime(this, '02:00 PM')" type="button">
+                02:00 PM
+              </button>
+<button class="time-btn py-2 px-2 rounded-xl bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface transition-all text-center" onclick="setTime(this, '03:30 PM')" type="button">
+                03:30 PM
+              </button>
+<button class="time-btn py-2 px-2 rounded-xl bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface transition-all text-center" onclick="setTime(this, '05:00 PM')" type="button">
+                05:00 PM
+              </button>
+<button class="py-2 px-2 rounded-xl bg-surface-container-low/50 font-label-md text-label-md text-on-surface-variant/40 line-through text-center cursor-not-allowed" disabled="" type="button">
+                06:15 PM
+              </button>
+</div>
+</div>
+<div class="space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface tracking-wide uppercase" for="confidential-notes">
+                4. Private Context Note (Optional)
+              </label>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Encrypted</span>
+</div>
+<textarea class="w-full bg-surface-container-low rounded-xl p-3 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary transition-all resize-none" id="confidential-notes" placeholder="e.g. Experiencing intense sleep loss and overwhelm leading up to the final year capstone defense..." rows="3"></textarea>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-lg mt-0.5 shrink-0">lock</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+              Appointment notifications are dispatched only to your personal authenticated university inbox (<span class="font-medium text-on-surface">ananya.s@dtu.ac.in</span>).
+            </p>
+</div>
+<div class="flex flex-col gap-2 pt-2">
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary hover:bg-surface-container-highest text-on-primary hover:text-on-surface font-label-lg text-label-lg font-semibold shadow-md transition-all flex items-center justify-center gap-2 transform active:scale-95" onclick="handleBooking()" type="button">
+<span class="material-symbols-outlined text-xl">event_available</span>
+<span>Confirm Free Booking</span>
+</button>
+<a class="w-full py-2.5 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-all text-center flex items-center justify-center gap-2" href="profile-booking.html" data-path="counselor-profile">
+<span class="material-symbols-outlined text-base">person</span>
+<span>View counselor profile &amp; book</span>
+</a>
+<button class="w-full py-2.5 px-4 rounded-xl bg-transparent hover:bg-surface-container-low text-on-surface-variant font-label-md text-label-md transition-all text-center" onclick="resetForm()" type="button">
+              Clear &amp; Browse Directory
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-4" id="booking-modal">
+<div class="w-full max-w-md bg-surface-container-lowest rounded-3xl p-6 shadow-xl flex flex-col items-center text-center space-y-4">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-3xl">check_circle</span>
+</div>
+<div class="space-y-1">
+<span class="px-3 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">Appointment Reserved</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">You're All Set, Ananya</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Your confidential counseling slot has been confirmed with zero charges.</p>
+</div>
+<div class="w-full p-4 rounded-2xl bg-surface-container-low text-left space-y-2 font-label-md text-label-md">
+<div class="flex justify-between items-center text-on-surface">
+<span class="text-on-surface-variant">Counselor:</span>
+<span class="font-semibold text-right" id="modal-counselor">Dr. Radhika Sharma, PhD</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span class="text-on-surface-variant">Schedule:</span>
+<span class="font-semibold text-right" id="modal-datetime">Fri, Oct 25 • 02:00 PM</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span class="text-on-surface-variant">Format:</span>
+<span class="font-semibold text-right" id="modal-mode">Campus Clinic (Block B, 204)</span>
+</div>
+</div>
+<div class="w-full flex flex-col gap-2">
+<a class="w-full py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-semibold transition-all text-center" href="appointments.html" data-path="appointments">
+          View in Appointments
+        </a>
+<a class="w-full py-2.5 rounded-xl bg-surface-container-low text-on-surface font-label-md text-label-md transition-all text-center" href="../app/dashboard.html" data-path="dashboard">
+          Return to Dashboard
+        </a>
+</div>
+</div>
+</div>
+<script>
+    let currentCounselor = 'Dr. Radhika Sharma, PhD';
+    let currentRole = 'Senior Campus Clinical Psychologist';
+    let currentMode = 'Campus Clinic (Block B, 204)';
+    let currentDate = 'Fri, Oct 25';
+    let currentTime = '02:00 PM';
+
+    function selectCounselor(id, name, role, defaultSlot) {
+      currentCounselor = name;
+      currentRole = role;
+      document.getElementById('panel-counselor-name').innerText = name;
+      document.getElementById('panel-counselor-role').innerText = role;
+
+      const cards = [1, 2, 3];
+      cards.forEach(cardId => {
+        const el = document.getElementById('counselor-card-' + cardId);
+        if (cardId === id) {
+          el.classList.add('ring-2', 'ring-secondary', 'shadow-md');
+          el.classList.remove('shadow-sm');
+          if (!el.querySelector('.counselor-badge')) {
+            const badge = document.createElement('div');
+            badge.className = 'counselor-badge absolute top-0 right-0 px-4 py-1.5 rounded-bl-xl bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center gap-1 shadow-sm';
+            badge.innerHTML = '<span class="material-symbols-outlined text-xs">radio_button_checked</span><span>Selected for Booking</span>';
+            el.appendChild(badge);
+          }
+        } else {
+          el.classList.remove('ring-2', 'ring-secondary', 'shadow-md');
+          el.classList.add('shadow-sm');
+          const existingBadge = el.querySelector('.counselor-badge');
+          if (existingBadge) existingBadge.remove();
+        }
+      });
+    }
+
+    function setMode(mode) {
+      const inPersonBtn = document.getElementById('mode-in-person');
+      const videoBtn = document.getElementById('mode-video');
+
+      if (mode === 'in-person') {
+        currentMode = 'Campus Clinic (Block B, 204)';
+        inPersonBtn.className = 'mode-btn active p-3 rounded-xl bg-primary text-on-primary text-left transition-all shadow-sm flex flex-col justify-between h-20';
+        inPersonBtn.querySelector('.check-icon').classList.remove('opacity-0');
+        inPersonBtn.querySelector('.material-symbols-outlined').classList.remove('text-on-surface-variant');
+
+        videoBtn.className = 'mode-btn p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface text-left transition-all flex flex-col justify-between h-20';
+        videoBtn.querySelector('.check-icon').classList.add('opacity-0');
+      } else {
+        currentMode = 'Encrypted Google Meet';
+        videoBtn.className = 'mode-btn active p-3 rounded-xl bg-primary text-on-primary text-left transition-all shadow-sm flex flex-col justify-between h-20';
+        videoBtn.querySelector('.check-icon').classList.remove('opacity-0');
+        
+        inPersonBtn.className = 'mode-btn p-3 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface text-left transition-all flex flex-col justify-between h-20';
+        inPersonBtn.querySelector('.check-icon').classList.add('opacity-0');
+      }
+    }
+
+    function setDate(btn, dateStr) {
+      currentDate = dateStr;
+      document.querySelectorAll('.date-chip').forEach(b => {
+        b.className = 'date-chip p-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col items-center transition-all';
+        const circle = b.querySelector('span:last-child');
+        if (circle) circle.className = 'w-1.5 h-1.5 rounded-full bg-secondary mt-1';
+      });
+      btn.className = 'date-chip active p-2.5 rounded-xl bg-secondary text-on-secondary flex flex-col items-center transition-all shadow-sm';
+      const circleActive = btn.querySelector('span:last-child');
+      if (circleActive) circleActive.className = 'w-1.5 h-1.5 rounded-full bg-on-secondary mt-1';
+
+      document.getElementById('selected-date-label').innerText = dateStr;
+    }
+
+    function setTime(btn, timeStr) {
+      currentTime = timeStr;
+      document.querySelectorAll('.time-btn').forEach(b => {
+        b.className = 'time-btn py-2 px-2 rounded-xl bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface transition-all text-center';
+      });
+      btn.className = 'time-btn active py-2 px-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm text-center';
+    }
+
+    function handleBooking() {
+      document.getElementById('modal-counselor').innerText = currentCounselor;
+      document.getElementById('modal-datetime').innerText = currentDate + ' • ' + currentTime;
+      document.getElementById('modal-mode').innerText = currentMode;
+      document.getElementById('booking-modal').classList.remove('hidden');
+      // Also offer profile booking pathway after short delay for users who want details
+      // Primary confirmation path: modal CTAs → appointments / dashboard
+    }
+
+    function closeModal() {
+      document.getElementById('booking-modal').classList.add('hidden');
+    }
+
+    function resetForm() {
+      document.getElementById('confidential-notes').value = '';
+      selectCounselor(1, 'Dr. Radhika Sharma, PhD', 'Senior Campus Clinical Psychologist', 'Tomorrow, 2:00 PM');
+      setMode('in-person');
+    }
+
+    document.querySelectorAll('.filter-chip').forEach(chip => {
+      chip.addEventListener('click', function() {
+        document.querySelectorAll('.filter-chip').forEach(c => {
+          c.className = 'filter-chip inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all';
+        });
+        this.className = 'filter-chip active inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm';
+      });
+    });
+  </script>
+</div></main></div><script src="../../assets/js/nav.js"></script></body></html>

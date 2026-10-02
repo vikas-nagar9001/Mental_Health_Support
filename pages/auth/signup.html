@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e5eeff","inverse-primary":"#bec6e0","tertiary-container":"#001d31","on-tertiary-fixed-variant":"#004b73","secondary-fixed":"#89f5e7","on-primary":"#ffffff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","surface-container-high":"#dce9ff","primary-fixed-dim":"#bec6e0","secondary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","primary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-error":"#ffffff","error-container":"#ffdad6","tertiary":"#000000","tertiary-fixed":"#cce5ff","on-surface":"#0b1c30","primary":"#000000","inverse-on-surface":"#eaf1ff","secondary-container":"#86f2e4","on-secondary-container":"#006f66","surface-tint":"#565e74","error":"#ba1a1a","surface-variant":"#d3e4fe","primary-container":"#131b2e","on-secondary":"#ffffff","inverse-surface":"#213145","surface-container-lowest":"#ffffff","on-tertiary-container":"#188ace","on-surface-variant":"#45464d","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","on-primary-container":"#7c839b","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#3f465c","secondary":"#006a61","outline":"#76777d","on-background":"#0b1c30","on-tertiary-fixed":"#001d31","background":"#f8f9ff","outline-variant":"#c6c6cd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"display":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="min-h-20 py-3 px-4 flex items-center gap-3"><img alt="MindCare Logo" class="h-14 w-auto object-contain" src="../../assets/images/logo.png"/></div><div class="px-4 py-2"><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-label-lg font-semibold"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="wellness-check" href="#"><span class="material-symbols-outlined text-xl">spa</span><span>Wellness Check</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-support" href="#"><span class="material-symbols-outlined text-xl">smart_toy</span><span>AI Support</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="mood-tracker" href="#"><span class="material-symbols-outlined text-xl">mood</span><span>Mood Tracker</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="resources" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Resources</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="counseling" href="#"><span class="material-symbols-outlined text-xl">volunteer_activism</span><span>Counseling</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span>Appointments</span></a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2</span></a><div class="pt-3 pb-1"><div class="h-px bg-surface-container-high mx-2 my-1"></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-xl">person</span><span>Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-xl">help</span><span>Help</span></a></nav></div></div><div class="p-4 mb-3"><div class="rounded-2xl p-4 bg-error-container text-on-error-container flex flex-col gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-xl text-error">emergency</span><span class="font-label-lg text-label-lg font-semibold text-on-error-container">Crisis Helpline</span></div><p class="font-body-sm text-body-sm leading-snug">Confidential 24/7 care whenever you feel overwhelmed.</p><a class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm" data-path="emergency-helpline" href="#"><span>Reach SOS Support</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-8 flex items-center justify-between gap-6"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap"><span class="material-symbols-outlined text-base text-secondary">school</span><span>Delhi Technological University • Academic Year 2024-25</span></div><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md truncate"><span class="material-symbols-outlined text-base text-secondary">psychology_alt</span><span class="truncate">“One day at a time, Ananya”</span></div></div><div class="flex items-center gap-3 shrink-0"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-error-container font-label-sm text-label-sm text-on-error-container font-medium hover:bg-error hover:text-on-error transition-colors" data-path="emergency-helpline" href="#"><span class="material-symbols-outlined text-base">call</span><span>Crisis Hotline</span></a><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="h-6 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMR9rJ2AxPqsMhNBaqkNb3avAQHrPABpyznEHzJXMa3FUXf0cT6zO8c0WoXzseYGkY7hCiPi9fFbmwrtK-NXNsdssW9NzUpeOFU073pF-glZrFyDmKhUkJAY5cPcgjiNo3Z2A7Jcmpdw6MrQYShKd5Andiu9LD3cp9a7PdipH8JaAUd930fGKTJpG2wkRWd8jd57lMDwpMzDtCLvUL7hbR5_rRKFLPTYtUQyJIypC3gibSuQovSyyJ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-medium">Ananya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Online • Sem 6 CS</span></div></div></div></header><main class="flex-1 pt-20 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<div class="max-w-[1280px] mx-auto w-full py-4 space-y-6">
+<!-- Screen Meta Bar / Reassurance Tracker -->
+<div class="flex flex-wrap items-center justify-between gap-4 bg-surface-container-low px-6 py-3.5 rounded-2xl shadow-sm">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-secondary text-on-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">lock</span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">End-to-End Cryptographic Privacy</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">256-Bit Encrypted Campus Vault · ISO 27701 Compliant</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          DTU Portal Active
+        </span>
+<span class="font-label-sm text-label-sm text-outline">Affiliation: Delhi Technological University</span>
+</div>
+</div>
+<!-- Main 12-Column Responsive Workspace Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Comprehensive Onboarding Form (7 Cols) -->
+<section class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-6 sm:p-8 shadow-sm space-y-6">
+<!-- Header Badge & Titles -->
+<div class="space-y-2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">
+<span class="material-symbols-outlined text-sm text-secondary">verified_user</span>
+<span>Step 1 of 2: Confidential Profile Creation</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Join MindCare Student Sanctuary
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Create your free, completely private wellness space. Zero telemetry or grades data sharing with university administration or prospective recruiters.
+          </p>
+</div>
+<!-- Institutional Single Sign-On Button -->
+<div class="space-y-3">
+<button class="group w-full flex items-center justify-center gap-3 py-3 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface font-label-lg text-label-lg transition-all duration-200 shadow-sm hover:shadow" type="button">
+<svg class="w-5 h-5 shrink-0 text-secondary" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 004.07 3.93" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span class="font-medium">Sign up with Institutional Email (Instant @dtu.ac.in SSO)</span>
+<span class="material-symbols-outlined text-sm text-secondary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="relative flex items-center justify-center">
+<div class="w-full h-px bg-surface-container-high"></div>
+<span class="absolute px-3 bg-surface-container-lowest font-label-sm text-label-sm text-outline-variant uppercase tracking-wider">or register manually</span>
+</div>
+</div>
+<!-- Form Elements -->
+<form class="space-y-6" id="registrationForm" onsubmit="event.preventDefault(); window.location.href='onboarding.html';">
+<!-- Section 1: Identity & Persona -->
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-secondary">badge</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">1. Personal Identity &amp; Safety Persona</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="fullName">
+                  Full Name or Chosen Pseudonym <span class="text-error">*</span>
+</label>
+<div class="relative">
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder-outline focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="fullName" placeholder="e.g., Ananya Sharma or 'Sam'" required="" type="text"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Therapists can address you by chosen nickname.</p>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="pronouns">
+                  Preferred Pronouns <span class="text-outline text-label-sm font-normal">(Optional)</span>
+</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="pronouns">
+<option value="">Prefer not to say</option>
+<option value="she-her">She / Her / Hers</option>
+<option value="he-him">He / Him / His</option>
+<option value="they-them">They / Them / Theirs</option>
+<option value="other">Self-describe in notes</option>
+</select>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Used solely in clinical conversation notes.</p>
+</div>
+</div>
+</div>
+<!-- Section 2: Campus Credentials & Safe Recovery -->
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-secondary">mail</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">2. Credentials &amp; Isolated Contact Channels</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="dtuEmail">
+                  Institutional Email (@dtu.ac.in) <span class="text-error">*</span>
+</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder-outline focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="dtuEmail" placeholder="ananya_2021cs88@dtu.ac.in" required="" type="email"/>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Validates student tier status instantly.</p>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="recoveryEmail">
+                  Alternate Personal Email <span class="text-error">*</span>
+</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder-outline focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="recoveryEmail" placeholder="ananya.personal@gmail.com" required="" type="email"/>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Confidential password resets &amp; counseling slips.</p>
+</div>
+</div>
+</div>
+<!-- Section 3: Academic Context -->
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-secondary">school</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">3. Academic Profile &amp; Campus Housing</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="collegeName">College</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container text-on-surface-variant font-body-md text-body-md cursor-not-allowed" id="collegeName" readonly="" type="text" value="Delhi Technological Univ. (DTU)"/>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="deptName">Department / Branch</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="deptName">
+<option>Computer Science &amp; Engineering</option>
+<option>Information Technology</option>
+<option>Electronics &amp; Comm. (ECE)</option>
+<option>Mechanical Engineering</option>
+<option>Civil / Environmental</option>
+<option>Delhi School of Management (DSM)</option>
+<option>Applied Mathematics / Physics</option>
+</select>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="academicCycle">Academic Cycle</label>
+<select class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="academicCycle">
+<option>Semester 1 &amp; 2 (Freshman)</option>
+<option>Semester 3 &amp; 4 (Sophomore)</option>
+<option selected="">Semester 5 &amp; 6 (Junior / 3rd Year)</option>
+<option>Semester 7 &amp; 8 (Senior / Final)</option>
+<option>Postgraduate / M.Tech / MBA</option>
+<option>Ph.D. Scholar</option>
+</select>
+</div>
+</div>
+<!-- Living Status Pill Selector -->
+<div class="space-y-2 pt-1">
+<span class="block font-label-md text-label-md text-on-surface">Living Status On/Off Campus:</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="livingStatusPills">
+<label class="relative flex items-center gap-3 p-3 rounded-xl bg-secondary-container/40 text-on-secondary-container cursor-pointer transition-all">
+<input checked="" class="accent-secondary h-4 w-4" name="living_status" type="radio" value="hostel"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold">Hostel Resident</span>
+<span class="font-body-sm text-body-sm text-secondary">Campus Blocks A–H / Ramanujan Hall</span>
+</div>
+</label>
+<label class="relative flex items-center gap-3 p-3 rounded-xl bg-surface-container-low text-on-surface-variant hover:bg-surface-container cursor-pointer transition-all">
+<input class="accent-secondary h-4 w-4" name="living_status" type="radio" value="day_scholar"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Day Scholar / Commuter</span>
+<span class="font-body-sm text-body-sm">Commuting daily via Metro/Bus</span>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- Section 4: Security & Password Strength Meter -->
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-secondary">password</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">4. Account Security &amp; Strong Access Key</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="pwdField">
+                  Master Sanctuary Password <span class="text-error">*</span>
+</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder-outline focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="pwdField" oninput="evaluatePassword(this.value)" placeholder="••••••••••••" required="" type="password"/>
+</div>
+<div class="space-y-1.5">
+<label class="block font-label-md text-label-md text-on-surface" for="confirmPwdField">
+                  Confirm Master Password <span class="text-error">*</span>
+</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder-outline focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="confirmPwdField" placeholder="••••••••••••" required="" type="password"/>
+</div>
+</div>
+<!-- Real-Time Password Strength Meter -->
+<div class="p-3.5 rounded-xl bg-surface-container-low space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Security Evaluation:</span>
+<span class="font-label-sm text-label-sm font-semibold text-secondary" id="strengthScoreText">Enter password</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden flex gap-1">
+<div class="h-full w-1/4 rounded-full bg-surface-container transition-all" id="meter1"></div>
+<div class="h-full w-1/4 rounded-full bg-surface-container transition-all" id="meter2"></div>
+<div class="h-full w-1/4 rounded-full bg-surface-container transition-all" id="meter3"></div>
+<div class="h-full w-1/4 rounded-full bg-surface-container transition-all" id="meter4"></div>
+</div>
+<div class="flex flex-wrap gap-x-4 gap-y-1 text-label-sm font-label-sm pt-1">
+<span class="text-on-surface-variant flex items-center gap-1" id="critLength">
+<span class="material-symbols-outlined text-xs">radio_button_unchecked</span> 8+ chars
+                </span>
+<span class="text-on-surface-variant flex items-center gap-1" id="critNumber">
+<span class="material-symbols-outlined text-xs">radio_button_unchecked</span> Contains number
+                </span>
+<span class="text-on-surface-variant flex items-center gap-1" id="critSpecial">
+<span class="material-symbols-outlined text-xs">radio_button_unchecked</span> Special symbol (!@#$)
+                </span>
+</div>
+</div>
+</div>
+<!-- Section 5: Trust and Consent Checkboxes -->
+<div class="space-y-3 pt-2">
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low">
+<input class="mt-1 h-4 w-4 rounded accent-secondary cursor-pointer" id="consentWall" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface leading-snug cursor-pointer" for="consentWall">
+<span class="font-semibold text-on-surface">Mandatory Sanctuary Isolation:</span> I understand and acknowledge that all my counseling bookings, reflections, session notes, and mood evaluations are strictly air-gapped from DTU Deans, HODs, faculty supervisors, and Training &amp; Placement Cells.
+              </label>
+</div>
+<div class="flex items-start gap-3 p-3.5 rounded-xl bg-surface-container-low">
+<input checked="" class="mt-1 h-4 w-4 rounded accent-secondary cursor-pointer" id="consentAnalytics" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface leading-snug cursor-pointer" for="consentAnalytics">
+<span class="font-semibold text-on-surface">Anonymous Campus Health Signals:</span> I agree to share anonymized, high-level wellness metrics (e.g., peak exam stress periods) to assist the campus clinic in procuring adequate psychologists during midterms.
+              </label>
+</div>
+</div>
+<!-- Primary Submit Action & Secondary Link -->
+<div class="space-y-4 pt-2">
+<button class="w-full py-3.5 px-6 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 transition-all transform hover:scale-[1.008] shadow-md" type="submit">
+<span>Create Confidential Account &amp; Setup Wellness Profile</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<div class="text-center font-body-sm text-body-sm text-on-surface-variant">
+<span>Already registered your student sanctuary profile? </span>
+<a class="font-semibold text-secondary hover:underline" href="login.html" data-path="login">Sign in here</a>
+</div>
+</div>
+</form>
+</section>
+<!-- RIGHT COLUMN: Student Rights & Confidentiality Charter (5 Cols) -->
+<aside class="lg:col-span-5 space-y-6">
+<!-- Confidentiality Charter Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 sm:p-7 shadow-sm space-y-6">
+<div class="flex items-center gap-3">
+<span class="p-2.5 rounded-xl bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-2xl text-secondary">gavel</span>
+</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Institutional Pledge</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">The Student Rights Charter</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Mental health care should never feel like a hazard to your academic future. MindCare DTU operates under medical strictness:
+          </p>
+<!-- 3 Tenet Bento Blocks -->
+<div class="space-y-3.5">
+<!-- Tenet 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low space-y-1.5 transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">verified</span>
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">1. Absolute Clinical Privilege</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-6">
+                What you tell a MindCare counselor remains strictly between you and your licensed therapist. No professor or parent has legal access without an imminent harm protocol.
+              </p>
+</div>
+<!-- Tenet 2 -->
+<div class="p-4 rounded-xl bg-surface-container-low space-y-1.5 transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">shield</span>
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">2. Total Academic Isolation</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-6">
+                Appointment logs and triage outcomes will never show on official transcripts, disciplinary committees, internal attendance registries, or degree certificates.
+              </p>
+</div>
+<!-- Tenet 3 -->
+<div class="p-4 rounded-xl bg-surface-container-low space-y-1.5 transition-colors hover:bg-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-lg text-secondary">work_off</span>
+<h4 class="font-label-lg text-label-lg font-semibold text-on-surface">3. Zero Placement Bias</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-6">
+                Campus placement coordinators, alumni interviewers, and multinational hiring recruiters are completely blind to any student's registration status or wellness tier.
+              </p>
+</div>
+</div>
+<!-- Peer Testimonial Card with Image -->
+<div class="p-4 rounded-xl bg-surface-container space-y-3">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-full object-cover shrink-0 shadow-sm" data-alt="Warm portrait photograph of a confident Indian university student in a sunny campus library setting wearing casual college attire with soft ambient lighting and genuine thoughtful expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF2vrCqDT-mcb56K8EbpGlc7so8UuPpbvURiZa1SnTITH_s7ciNvmHwAIg5ISg_-iqNka0TGb2m28kBPKvTaQXViPNVAJv6NNjchhGBJBNoje6sahEheBMO5O1cgwPy-hechkYXC3jzrkcaZgZV7_Y5FyLGm4Op18Rz5j3kfx74_QIw1L-KW3fC2udMfOZTPVq59LOIVFfBlCJosFVQ_O8euA-5o9Mnx3uAOVsmVqeg6TfY1nxjgmE"/>
+<div>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Peer Reflection</p>
+<p class="font-label-sm text-label-sm text-secondary">CSE Batch of 2024 · DTU</p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-relaxed">
+              “Signing up for counseling during 3rd year midterms changed my college life. It felt safe knowing my professors couldn't see anything. I regained my focus and made it through placements safely.”
+            </p>
+</div>
+</div>
+<!-- Emergency Crisis Bypass Card -->
+<div class="bg-error-container text-on-error-container rounded-2xl p-5 shadow-sm space-y-3">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-2xl text-error">emergency</span>
+<div class="flex flex-col">
+<h4 class="font-label-lg text-label-lg font-semibold text-on-error-container">In Urgent Crisis Right Now?</h4>
+<span class="font-label-sm text-label-sm text-error font-medium">Bypass registration immediately</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-error-container leading-relaxed">
+            You do not need to fill out forms or verify enrollment if you feel unsafe or in severe acute distress.
+          </p>
+<div class="pt-1 flex flex-col sm:flex-row gap-2">
+<a class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-error text-on-error font-label-md text-label-md font-semibold shadow hover:opacity-90 transition-opacity" href="tel:14416">
+<span class="material-symbols-outlined text-base">call</span>
+<span>KIRAN (14416)</span>
+</a>
+<a class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-container-low transition-colors" href="tel:9152987821">
+<span class="material-symbols-outlined text-base">support_agent</span>
+<span>Tele-MANAS SOS</span>
+</a>
+</div>
+</div>
+<!-- Quick Assistance FAQ Note -->
+<div class="p-4 rounded-xl bg-surface-container-low flex items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-xl">contact_support</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Having trouble with verification?</span>
+</div>
+<a class="font-label-md text-label-md text-secondary font-semibold hover:underline shrink-0" href="#">Campus Clinic Desk</a>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<script>
+  function evaluatePassword(val) {
+    const m1 = document.getElementById('meter1');
+    const m2 = document.getElementById('meter2');
+    const m3 = document.getElementById('meter3');
+    const m4 = document.getElementById('meter4');
+    const txt = document.getElementById('strengthScoreText');
+    
+    const critLen = document.getElementById('critLength');
+    const critNum = document.getElementById('critNumber');
+    const critSpec = document.getElementById('critSpecial');
+
+    const hasLength = val.length >= 8;
+    const hasNumber = /[0-9]/.test(val);
+    const hasSpecial = /[^A-Za-z0-9]/.test(val);
+
+    // Update criteria glyphs
+    updateCriterion(critLen, hasLength);
+    updateCriterion(critNum, hasNumber);
+    updateCriterion(critSpec, hasSpecial);
+
+    let score = 0;
+    if (val.length > 0) score++;
+    if (hasLength) score++;
+    if (hasNumber && hasSpecial) score += 2;
+    else if (hasNumber || hasSpecial) score++;
+
+    // Reset meters
+    [m1, m2, m3, m4].forEach(m => {
+      m.className = "h-full w-1/4 rounded-full bg-surface-container transition-all";
+    });
+
+    if (val.length === 0) {
+      txt.textContent = "Enter password";
+      txt.className = "font-label-sm text-label-sm font-semibold text-on-surface-variant";
+      return;
+    }
+
+    if (score <= 1) {
+      m1.className = "h-full w-1/4 rounded-full bg-error transition-all";
+      txt.textContent = "Weak Key";
+      txt.className = "font-label-sm text-label-sm font-semibold text-error";
+    } else if (score === 2) {
+      m1.className = "h-full w-1/4 rounded-full bg-secondary-container transition-all";
+      m2.className = "h-full w-1/4 rounded-full bg-secondary-container transition-all";
+      txt.textContent = "Moderate Key";
+      txt.className = "font-label-sm text-label-sm font-semibold text-secondary";
+    } else if (score === 3) {
+      m1.className = "h-full w-1/4 rounded-full bg-secondary transition-all";
+      m2.className = "h-full w-1/4 rounded-full bg-secondary transition-all";
+      m3.className = "h-full w-1/4 rounded-full bg-secondary transition-all";
+      txt.textContent = "Strong Sanctuary Key";
+      txt.className = "font-label-sm text-label-sm font-semibold text-secondary";
+    } else {
+      m1.className = "h-full w-1/4 rounded-full bg-secondary transition-all";
+      m2.className = "h-full w-1/4 rounded-full bg-secondary transition-all";
+      m3.className = "h-full w-1/4 rounded-full bg-secondary transition-all";
+      m4.className = "h-full w-1/4 rounded-full bg-secondary transition-all";
+      txt.textContent = "Optimal Cryptographic Standard";
+      txt.className = "font-label-sm text-label-sm font-semibold text-secondary";
+    }
+  }
+
+  function updateCriterion(el, isValid) {
+    if (isValid) {
+      el.className = "text-secondary flex items-center gap-1 font-semibold";
+      el.children[0].textContent = "check_circle";
+    } else {
+      el.className = "text-on-surface-variant flex items-center gap-1 font-normal";
+      el.children[0].textContent = "radio_button_unchecked";
+    }
+  }
+</script></main></div><script src="../../assets/js/nav.js"></script></body></html>

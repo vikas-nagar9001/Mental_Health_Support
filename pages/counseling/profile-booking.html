@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e5eeff","inverse-primary":"#bec6e0","tertiary-container":"#001d31","on-tertiary-fixed-variant":"#004b73","secondary-fixed":"#89f5e7","on-primary":"#ffffff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","surface-container-high":"#dce9ff","primary-fixed-dim":"#bec6e0","secondary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","primary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-error":"#ffffff","error-container":"#ffdad6","tertiary":"#000000","tertiary-fixed":"#cce5ff","on-surface":"#0b1c30","primary":"#000000","inverse-on-surface":"#eaf1ff","secondary-container":"#86f2e4","on-secondary-container":"#006f66","surface-tint":"#565e74","error":"#ba1a1a","surface-variant":"#d3e4fe","primary-container":"#131b2e","on-secondary":"#ffffff","inverse-surface":"#213145","surface-container-lowest":"#ffffff","on-tertiary-container":"#188ace","on-surface-variant":"#45464d","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","on-primary-container":"#7c839b","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#3f465c","secondary":"#006a61","outline":"#76777d","on-background":"#0b1c30","on-tertiary-fixed":"#001d31","background":"#f8f9ff","outline-variant":"#c6c6cd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"display":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="min-h-20 py-3 px-4 flex items-center gap-3"><img alt="MindCare Logo" class="h-14 w-auto object-contain" src="../../assets/images/logo.png"/></div><div class="px-4 py-2"><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-label-lg font-semibold"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="wellness-check" href="#"><span class="material-symbols-outlined text-xl">spa</span><span>Wellness Check</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-support" href="#"><span class="material-symbols-outlined text-xl">smart_toy</span><span>AI Support</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="mood-tracker" href="#"><span class="material-symbols-outlined text-xl">mood</span><span>Mood Tracker</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="resources" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Resources</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="counseling" href="#"><span class="material-symbols-outlined text-xl">volunteer_activism</span><span>Counseling</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span>Appointments</span></a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2</span></a><div class="pt-3 pb-1"><div class="h-px bg-surface-container-high mx-2 my-1"></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-xl">person</span><span>Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-xl">help</span><span>Help</span></a></nav></div></div><div class="p-4 mb-3"><div class="rounded-2xl p-4 bg-error-container text-on-error-container flex flex-col gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-xl text-error">emergency</span><span class="font-label-lg text-label-lg font-semibold text-on-error-container">Crisis Helpline</span></div><p class="font-body-sm text-body-sm leading-snug">Confidential 24/7 care whenever you feel overwhelmed.</p><a class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm" data-path="emergency-helpline" href="#"><span>Reach SOS Support</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-8 flex items-center justify-between gap-6"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap"><span class="material-symbols-outlined text-base text-secondary">school</span><span>Delhi Technological University • Academic Year 2024-25</span></div><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md truncate"><span class="material-symbols-outlined text-base text-secondary">psychology_alt</span><span class="truncate">“One day at a time, Ananya”</span></div></div><div class="flex items-center gap-3 shrink-0"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-error-container font-label-sm text-label-sm text-on-error-container font-medium hover:bg-error hover:text-on-error transition-colors" data-path="emergency-helpline" href="#"><span class="material-symbols-outlined text-base">call</span><span>Crisis Hotline</span></a><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="h-6 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMR9rJ2AxPqsMhNBaqkNb3avAQHrPABpyznEHzJXMa3FUXf0cT6zO8c0WoXzseYGkY7hCiPi9fFbmwrtK-NXNsdssW9NzUpeOFU073pF-glZrFyDmKhUkJAY5cPcgjiNo3Z2A7Jcmpdw6MrQYShKd5Andiu9LD3cp9a7PdipH8JaAUd930fGKTJpG2wkRWd8jd57lMDwpMzDtCLvUL7hbR5_rRKFLPTYtUQyJIypC3gibSuQovSyyJ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-medium">Ananya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Online • Sem 6 CS</span></div></div></div></header><main class="flex-1 pt-20 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<!-- Breadcrumb Navigation Ribbon -->
+<nav class="flex items-center gap-2 mb-6 text-on-surface-variant font-label-md">
+<a class="hover:text-secondary transition-colors" data-path="counseling" href="#">Counseling</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<a class="hover:text-secondary transition-colors" data-path="counselor-directory" href="#">Counselor Directory</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-on-surface font-semibold">Dr. Radhika Sharma, PhD</span>
+</nav>
+<!-- Hero Profile Banner Card (Integrated Bio + Quick Metrics) -->
+<div class="relative bg-surface-container-lowest rounded-3xl p-8 mb-8 shadow-sm overflow-hidden">
+<div class="absolute -right-20 -top-20 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-24 w-80 h-80 rounded-full bg-surface-container-high/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row gap-8 items-start">
+<!-- Headshot & Trust Marker -->
+<div class="relative shrink-0">
+<div class="w-36 h-36 lg:w-44 lg:h-44 rounded-2xl overflow-hidden shadow-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Warm and empathetic Indian woman psychologist in her late 30s with gentle smiling expression, dressed in elegant navy and teal professional attire in a modern, naturally lit office with soft plants and book spines in the subtle background, high resolution editorial portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJshlreYKsPeI_AhkwxSWx9rYP92nSRi0FbX_G4sCrp-LlRxS-iF1YFOT5WgcyLjgGEh-SH4w4r7Cmi6VxOa09feWJnbd-wYQoq3PCgZWgWvSuNj_9Oh6X4ISOgEs7XEMt3e1bLmtV4TEC9Tob-j0ehWyupPa2T7nlF2VSqhsiOveTjYaSXFWOAUgmkMmI3paSRHaixy0xwi0X3Q8pgQTPzOoi-Xxu86Za2ZTq_ihVSum1GDiKybrw"/>
+</div>
+<div class="absolute -bottom-3 left-1/2 -translate-x-1/2 whitespace-nowrap bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-semibold flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-sm text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Verified Psychologist</span>
+</div>
+</div>
+<!-- Core Identity & Philosophy -->
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center gap-3 mb-2">
+<span class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm">Faculty Clinical Counselor</span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm font-medium">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            Accepting Students This Week
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-2 font-semibold">Dr. Radhika Sharma, PhD</h1>
+<p class="font-body-md text-on-surface-variant mb-4 flex items-center gap-2 flex-wrap">
+<span>Licensed Clinical Psychologist</span>
+<span class="text-surface-container-highest">•</span>
+<span class="font-medium text-secondary">Delhi Psychological Association #DL-4819</span>
+</p>
+<!-- Quote Card Callout -->
+<div class="bg-surface-container-low rounded-2xl p-4 mb-6 relative">
+<span class="material-symbols-outlined text-2xl text-secondary/40 absolute top-2 left-3 select-none">format_quote</span>
+<p class="font-body-md text-on-surface italic pl-6 leading-relaxed">
+            "Academic pressure should never compromise student humanity. My clinical approach blends cognitive-behavioral tools with nervous system grounding tailored to the intense pace of university life."
+          </p>
+</div>
+<!-- Specialization Pills -->
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3.5 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md font-medium">
+            Exam Burnout &amp; Academic Pressure
+          </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md font-medium">
+            Perfectionism &amp; Imposter Syndrome
+          </span>
+<span class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-md font-medium">
+            Mindfulness-Based CBT
+          </span>
+<span class="px-3.5 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md font-medium">
+            Thesis &amp; Final Year Anxiety
+          </span>
+</div>
+<!-- Key Metrics Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 bg-surface-container-lowest rounded-2xl">
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">psychology</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">12+ Yrs</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Clinical Exp.</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">4.9 / 5</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">184 Student Reviews</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">translate</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">English, Hindi</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Bilingual Care</div>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">lock</span>
+</div>
+<div>
+<div class="font-headline-sm text-headline-sm font-semibold text-on-surface">100% Free</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Campus Covered</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Body Grid: 2/3 Clinical Depth & Student Feedback + 1/3 Interactive Booking Rail -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left / Center Stream (8 cols) -->
+<div class="lg:col-span-7 xl:col-span-8 space-y-8">
+<!-- Practice Locations Card -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">apartment</span>
+<span>Consultation Channels</span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">meeting_room</span>
+</div>
+<div>
+<div class="font-label-lg font-semibold text-on-surface">In-Person Campus Clinic</div>
+<div class="font-body-md text-on-surface-variant mt-0.5">DTU Student Health Center</div>
+<div class="font-label-sm text-secondary font-medium mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">pin_drop</span>
+                Block B, Room 204 (Soundproof Suite)
+              </div>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-container-low">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">videocam</span>
+</div>
+<div>
+<div class="font-label-lg font-semibold text-on-surface">Encrypted Video Portal</div>
+<div class="font-body-md text-on-surface-variant mt-0.5">MindCare Telehealth Network</div>
+<div class="font-label-sm text-secondary font-medium mt-1 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">shield</span>
+                End-to-End Encrypted Google Meet
+              </div>
+</div>
+</div>
+</div>
+</div>
+<!-- How a Session Works Step-by-Step Flow -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">neurology</span>
+<span>How a Session with Dr. Sharma Works</span>
+</h2>
+<p class="font-body-md text-on-surface-variant mt-1">Designed for zero friction, zero stigma, and zero academic reporting.</p>
+</div>
+<span class="hidden sm:inline-flex px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm font-semibold">
+            50-Minute Safe Space
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 relative">
+<!-- Step 1 -->
+<div class="p-5 rounded-2xl bg-surface flex flex-col justify-between h-full">
+<div>
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-md font-bold flex items-center justify-center mb-4">
+                01
+              </div>
+<div class="font-label-lg font-semibold text-on-surface mb-2">Confidential Intake</div>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+                Zero connection to your university transcript or DTU dean's office. You only share what feels emotionally safe.
+              </p>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-2 text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-sm">enhanced_encryption</span>
+<span>Strict Doctor-Patient Privilege</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-5 rounded-2xl bg-surface flex flex-col justify-between h-full">
+<div>
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-label-md font-bold flex items-center justify-center mb-4">
+                02
+              </div>
+<div class="font-label-lg font-semibold text-on-surface mb-2">Non-Judgmental Listening</div>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+                Unpack thesis roadblocks, family expectations, or imposter feelings with someone who understands high-stakes engineering rigor.
+              </p>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-2 text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">hearing</span>
+<span>Collaborative Exploration</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-5 rounded-2xl bg-surface flex flex-col justify-between h-full">
+<div>
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary font-label-md font-bold flex items-center justify-center mb-4">
+                03
+              </div>
+<div class="font-label-lg font-semibold text-on-surface mb-2">Practical Grounding Plan</div>
+<p class="font-body-sm text-on-surface-variant leading-relaxed">
+                Walk away with tangible nervous system de-escalation tools, somatic micro-drills, and actionable sleep hygiene adjustments.
+              </p>
+</div>
+<div class="mt-4 pt-3 flex items-center gap-2 text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-sm">task_alt</span>
+<span>Custom Toolkit in MindCare App</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Clinical Background, Education & Approach Bento -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">school</span>
+<span>Education, Accreditations &amp; Research</span>
+</h2>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface font-headline-sm font-bold shrink-0">
+              PhD
+            </div>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-label-lg font-semibold text-on-surface">PhD in Clinical Psychology</span>
+<span class="font-label-sm text-on-surface-variant">2012 – 2017</span>
+</div>
+<div class="font-body-md text-secondary font-medium">NIMHANS (National Institute of Mental Health &amp; Neurosciences)</div>
+<p class="font-body-sm text-on-surface-variant mt-1">Specialized dissertation on cognitive-affective interventions for perfectionism &amp; somatic distress in competitive university environments.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface font-headline-sm font-bold shrink-0">
+              MPhil
+            </div>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-label-lg font-semibold text-on-surface">M.Phil in Medical &amp; Social Psychology</span>
+<span class="font-label-sm text-on-surface-variant">2010 – 2012</span>
+</div>
+<div class="font-body-md text-secondary font-medium">Central Institute of Psychiatry (CIP), Ranchi</div>
+<p class="font-body-sm text-on-surface-variant mt-1">Supervised clinical rotations across adolescent acute stress, crisis de-escalation, and mindfulness-informed behavior therapy.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-on-surface font-headline-sm font-bold shrink-0">
+              BSc
+            </div>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+<span class="font-label-lg font-semibold text-on-surface">B.Sc. (Hons) Psychology</span>
+<span class="font-label-sm text-on-surface-variant">2007 – 2010</span>
+</div>
+<div class="font-body-md text-secondary font-medium">Lady Shri Ram College, Delhi University</div>
+<p class="font-body-sm text-on-surface-variant mt-1">First-class distinction with focus on developmental cognition and community-based mental hygiene initiatives.</p>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-6 flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+<span>Professional Fellow: Indian Association of Clinical Psychologists (IACP)</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md">
+<span class="material-symbols-outlined text-secondary">public</span>
+<span>Certified CBT Practitioner: Beck Institute Alumni</span>
+</div>
+</div>
+</div>
+<!-- Anonymized Student Feedback & Reflections -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">forum</span>
+<span>Anonymized Student Reflections</span>
+</h2>
+<p class="font-body-md text-on-surface-variant">Real testimonials from fellow DTU engineering and design peers.</p>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-xl bg-surface-container font-label-sm text-on-surface">
+<span class="material-symbols-outlined text-sm text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold">4.9</span>
+<span class="text-on-surface-variant">(184 consultations)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Review 1 -->
+<div class="p-5 rounded-2xl bg-surface flex flex-col justify-between">
+<p class="font-body-md text-on-surface italic leading-relaxed mb-4">
+              "Dr. Radhika helped me survive 3rd year midterms without feeling like a failure. Her 4-7-8 breathing method and cognitive reframing changed my exam panic completely."
+            </p>
+<div class="flex items-center justify-between pt-3 text-label-sm">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs">CS</span>
+<span>3rd Year B.Tech Student</span>
+</div>
+<span class="text-on-surface-variant">2 weeks ago</span>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-5 rounded-2xl bg-surface flex flex-col justify-between">
+<p class="font-body-md text-on-surface italic leading-relaxed mb-4">
+              "I thought going to counseling meant I was weak or failing my placement season. She treated me with such respect and helped dismantle my brutal inner critic."
+            </p>
+<div class="flex items-center justify-between pt-3 text-label-sm">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-xs">EE</span>
+<span>Final Year Electrical</span>
+</div>
+<span class="text-on-surface-variant">1 month ago</span>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-5 rounded-2xl bg-surface flex flex-col justify-between">
+<p class="font-body-md text-on-surface italic leading-relaxed mb-4">
+              "Her office in Block B is genuinely calm. No academic records were touched, no judgment. If you're feeling overwhelmed by thesis deadlines, just book a slot."
+            </p>
+<div class="flex items-center justify-between pt-3 text-label-sm">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs">ME</span>
+<span>M.Tech Scholar</span>
+</div>
+<span class="text-on-surface-variant">Oct 12, 2024</span>
+</div>
+</div>
+<!-- Review 4 -->
+<div class="p-5 rounded-2xl bg-surface flex flex-col justify-between">
+<p class="font-body-md text-on-surface italic leading-relaxed mb-4">
+              "I used the encrypted video option because I was too anxious to walk to the clinic. She made me feel grounded within the first five minutes. Immensely thankful."
+            </p>
+<div class="flex items-center justify-between pt-3 text-label-sm">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-bold text-xs">IT</span>
+<span>2nd Year Student</span>
+</div>
+<span class="text-on-surface-variant">Oct 04, 2024</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Rail: Direct Booking Engine (4-5 cols) -->
+<div class="lg:col-span-5 xl:col-span-4 sticky top-24 space-y-6">
+<!-- Interactive Booking Card -->
+<div class="bg-surface-container-lowest rounded-3xl p-6 shadow-md">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-secondary uppercase tracking-wider font-semibold">Reserve Consultation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Book with Dr. Sharma</h3>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm font-semibold">
+            100% Confidential
+          </span>
+</div>
+<form class="space-y-5" id="bookingForm" onsubmit="event.preventDefault(); triggerBookingSuccess();">
+<!-- Step A: Select Mode -->
+<div>
+<label class="block font-label-md text-on-surface font-medium mb-2">1. Consultation Mode</label>
+<div class="grid grid-cols-2 gap-2" id="modeSelector">
+<button class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface text-on-surface text-center transition-all hover:bg-surface-container" id="mode-clinic" onclick="selectMode('clinic')" type="button">
+<span class="material-symbols-outlined text-xl mb-1 text-secondary">apartment</span>
+<span class="font-label-md font-semibold">Campus Clinic</span>
+<span class="font-label-sm text-on-surface-variant">Block B, Rm 204</span>
+</button>
+<button class="flex flex-col items-center justify-center p-3 rounded-xl bg-primary text-on-primary text-center transition-all shadow-sm" id="mode-telehealth" onclick="selectMode('telehealth')" type="button">
+<span class="material-symbols-outlined text-xl mb-1 text-secondary-fixed">videocam</span>
+<span class="font-label-md font-semibold">Secure Video</span>
+<span class="font-label-sm text-primary-fixed">Encrypted Meet</span>
+</button>
+</div>
+</div>
+<!-- Step B: Interactive Date Picker -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-md text-on-surface font-medium">2. Select Day (October 2024)</label>
+<span class="font-label-sm text-secondary font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Available
+              </span>
+</div>
+<div class="grid grid-cols-5 gap-2 text-center" id="daySelector">
+<!-- Mon -->
+<button class="p-2.5 rounded-xl bg-surface-container-low text-on-surface-variant opacity-40 cursor-not-allowed" disabled="" type="button">
+<div class="font-label-sm">MON</div>
+<div class="font-label-lg font-bold">21</div>
+<div class="font-label-sm text-[10px] text-on-surface-variant">Booked</div>
+</button>
+<!-- Tue -->
+<button class="p-2.5 rounded-xl bg-surface-container-low text-on-surface-variant opacity-40 cursor-not-allowed" disabled="" type="button">
+<div class="font-label-sm">TUE</div>
+<div class="font-label-lg font-bold">22</div>
+<div class="font-label-sm text-[10px] text-on-surface-variant">Booked</div>
+</button>
+<!-- Wed -->
+<button class="p-2.5 rounded-xl bg-surface text-on-surface hover:bg-surface-container transition-colors" id="date-23" onclick="selectDate(23)" type="button">
+<div class="font-label-sm text-on-surface-variant">WED</div>
+<div class="font-label-lg font-bold">23</div>
+<div class="w-1.5 h-1.5 rounded-full bg-secondary mx-auto mt-1"></div>
+</button>
+<!-- Thu -->
+<button class="p-2.5 rounded-xl bg-surface text-on-surface hover:bg-surface-container transition-colors" id="date-24" onclick="selectDate(24)" type="button">
+<div class="font-label-sm text-on-surface-variant">THU</div>
+<div class="font-label-lg font-bold">24</div>
+<div class="w-1.5 h-1.5 rounded-full bg-secondary mx-auto mt-1"></div>
+</button>
+<!-- Fri (Active) -->
+<button class="p-2.5 rounded-xl bg-primary text-on-primary shadow-sm" id="date-25" onclick="selectDate(25)" type="button">
+<div class="font-label-sm text-secondary-fixed">FRI</div>
+<div class="font-label-lg font-bold">25</div>
+<div class="w-1.5 h-1.5 rounded-full bg-secondary-fixed mx-auto mt-1"></div>
+</button>
+</div>
+</div>
+<!-- Step C: Time Slot Grid -->
+<div>
+<label class="block font-label-md text-on-surface font-medium mb-2">
+              3. Available Slots on <span class="text-secondary font-semibold" id="selectedDayText">Friday, Oct 25</span>
+</label>
+<div class="grid grid-cols-3 gap-2" id="slotSelector">
+<button class="py-2.5 px-2 rounded-xl bg-surface font-label-md text-on-surface hover:bg-surface-container text-center transition-all" id="slot-1000" onclick="selectTime('10:00 AM')" type="button">
+                10:00 AM
+              </button>
+<button class="py-2.5 px-2 rounded-xl bg-secondary text-on-secondary font-label-md font-semibold text-center shadow-sm transition-all" id="slot-1400" onclick="selectTime('02:00 PM')" type="button">
+                02:00 PM
+              </button>
+<button class="py-2.5 px-2 rounded-xl bg-surface font-label-md text-on-surface hover:bg-surface-container text-center transition-all" id="slot-1530" onclick="selectTime('03:30 PM')" type="button">
+                03:30 PM
+              </button>
+</div>
+</div>
+<!-- Topic / Focus Notes -->
+<div>
+<label class="block font-label-md text-on-surface font-medium mb-1.5">4. What's on your mind? (Optional)</label>
+<input class="w-full px-4 py-2.5 rounded-xl bg-surface text-on-surface placeholder:text-on-surface-variant font-body-sm focus:outline-none focus:bg-surface-container transition-colors" placeholder="e.g. Midterm burnout, anxiety before lab viva" type="text"/>
+</div>
+<!-- Student Zero Impact Guarantee Badge -->
+<div class="p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-lg shrink-0 mt-0.5">verified_user</span>
+<div class="text-label-sm text-on-surface-variant leading-snug">
+<span class="font-semibold text-on-surface">Zero Academic Impact:</span> University faculties and grading portals have no access to health center consultations.
+            </div>
+</div>
+<!-- Primary Submit CTA -->
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary text-on-primary font-label-lg font-semibold hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-md active:scale-95" id="bookSubmitBtn" type="submit">
+<span>Proceed to Book Appointment</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+</form>
+<!-- Booking Confirmation Toast Mockup -->
+<div class="hidden mt-4 p-4 rounded-xl bg-secondary-container text-on-secondary-container transition-all" id="bookingToast">
+<div class="flex items-center gap-2 font-label-lg font-semibold mb-1">
+<span class="material-symbols-outlined text-secondary">check_circle</span>
+<span>Slot Reserved for Ananya Sharma!</span>
+</div>
+<p class="font-body-sm text-on-secondary-container/90">
+            A private calendar invite and encrypted link have been sent to your student portal.
+          </p>
+</div>
+</div>
+<!-- Acute Crisis Safety Fallback Box -->
+<div class="bg-error-container text-on-error-container rounded-2xl p-5 shadow-sm">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-2xl text-error shrink-0">crisis_alert</span>
+<div>
+<div class="font-label-lg font-bold text-on-error-container">In Acute Emotional Distress?</div>
+<p class="font-body-sm text-on-error-container/90 mt-1 mb-3 leading-snug">
+              Please do not wait for a scheduled appointment. DTU 24/7 crisis responders and student peer lifelines are awake right now.
+            </p>
+<a class="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 rounded-xl bg-surface-container-lowest text-error font-label-md font-bold hover:bg-surface-container transition-colors shadow-sm" data-path="emergency-helpline" href="#">
+<span class="material-symbols-outlined text-sm">phone_in_talk</span>
+<span>Connect with 24/7 SOS Helpline</span>
+</a>
+</div>
+</div>
+</div>
+<!-- FAQ Accordion Snippet -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm">
+<div class="font-label-md font-semibold text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-base">help_outline</span>
+<span>Common Student Questions</span>
+</div>
+<div class="space-y-3 text-body-sm text-on-surface-variant">
+<div class="p-3 rounded-xl bg-surface">
+<div class="font-label-md font-semibold text-on-surface mb-1">What if I need to reschedule?</div>
+<div>You can cancel or move your slot up to 2 hours before with zero penalty or attendance alerts.</div>
+</div>
+<div class="p-3 rounded-xl bg-surface">
+<div class="font-label-md font-semibold text-on-surface mb-1">Can I bring a classmate for support?</div>
+<div>Yes! Companion sessions or peer-assisted initial check-ins are completely welcome.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Micro-interactions Script -->
+<script>
+    let activeMode = 'telehealth';
+    let activeDate = 25;
+    let activeTime = '02:00 PM';
+
+    function selectMode(mode) {
+      activeMode = mode;
+      const clinicBtn = document.getElementById('mode-clinic');
+      const telehealthBtn = document.getElementById('mode-telehealth');
+      
+      if (mode === 'clinic') {
+        clinicBtn.className = 'flex flex-col items-center justify-center p-3 rounded-xl bg-primary text-on-primary text-center transition-all shadow-sm';
+        telehealthBtn.className = 'flex flex-col items-center justify-center p-3 rounded-xl bg-surface text-on-surface text-center transition-all hover:bg-surface-container';
+      } else {
+        telehealthBtn.className = 'flex flex-col items-center justify-center p-3 rounded-xl bg-primary text-on-primary text-center transition-all shadow-sm';
+        clinicBtn.className = 'flex flex-col items-center justify-center p-3 rounded-xl bg-surface text-on-surface text-center transition-all hover:bg-surface-container';
+      }
+    }
+
+    function selectDate(day) {
+      activeDate = day;
+      const dayButtons = [23, 24, 25];
+      dayButtons.forEach(d => {
+        const el = document.getElementById('date-' + d);
+        if (el) {
+          if (d === day) {
+            el.className = 'p-2.5 rounded-xl bg-primary text-on-primary shadow-sm';
+          } else {
+            el.className = 'p-2.5 rounded-xl bg-surface text-on-surface hover:bg-surface-container transition-colors';
+          }
+        }
+      });
+
+      const dayText = document.getElementById('selectedDayText');
+      if (dayText) {
+        if (day === 23) dayText.textContent = 'Wednesday, Oct 23';
+        if (day === 24) dayText.textContent = 'Thursday, Oct 24';
+        if (day === 25) dayText.textContent = 'Friday, Oct 25';
+      }
+    }
+
+    function selectTime(timeStr) {
+      activeTime = timeStr;
+      const slot10 = document.getElementById('slot-1000');
+      const slot14 = document.getElementById('slot-1400');
+      const slot15 = document.getElementById('slot-1530');
+
+      [slot10, slot14, slot15].forEach(btn => {
+        if (btn) {
+          btn.className = 'py-2.5 px-2 rounded-xl bg-surface font-label-md text-on-surface hover:bg-surface-container text-center transition-all';
+        }
+      });
+
+      if (timeStr === '10:00 AM' && slot10) {
+        slot10.className = 'py-2.5 px-2 rounded-xl bg-secondary text-on-secondary font-label-md font-semibold text-center shadow-sm transition-all';
+      } else if (timeStr === '02:00 PM' && slot14) {
+        slot14.className = 'py-2.5 px-2 rounded-xl bg-secondary text-on-secondary font-label-md font-semibold text-center shadow-sm transition-all';
+      } else if (timeStr === '03:30 PM' && slot15) {
+        slot15.className = 'py-2.5 px-2 rounded-xl bg-secondary text-on-secondary font-label-md font-semibold text-center shadow-sm transition-all';
+      }
+    }
+
+    function triggerBookingSuccess() {
+      const toast = document.getElementById('bookingToast');
+      const btn = document.getElementById('bookSubmitBtn');
+      if (toast && btn) {
+        btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-base">autorenew</span> <span>Locking Confidential Slot...</span>`;
+        btn.disabled = true;
+        setTimeout(() => {
+          btn.innerHTML = `<span class="material-symbols-outlined text-base">check</span> <span>Appointment Confirmed</span>`;
+          btn.className = 'w-full py-3.5 px-4 rounded-xl bg-secondary text-on-secondary font-label-lg font-semibold flex items-center justify-center gap-2';
+          toast.classList.remove('hidden');
+          setTimeout(() => { window.location.href = 'confirmation.html'; }, 900);
+        }, 650);
+      }
+    }
+  </script>
+</div></main></div><script src="../../assets/js/nav.js"></script></body></html>

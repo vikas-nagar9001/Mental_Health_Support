@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e5eeff","inverse-primary":"#bec6e0","tertiary-container":"#001d31","on-tertiary-fixed-variant":"#004b73","secondary-fixed":"#89f5e7","on-primary":"#ffffff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","surface-container-high":"#dce9ff","primary-fixed-dim":"#bec6e0","secondary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","primary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-error":"#ffffff","error-container":"#ffdad6","tertiary":"#000000","tertiary-fixed":"#cce5ff","on-surface":"#0b1c30","primary":"#000000","inverse-on-surface":"#eaf1ff","secondary-container":"#86f2e4","on-secondary-container":"#006f66","surface-tint":"#565e74","error":"#ba1a1a","surface-variant":"#d3e4fe","primary-container":"#131b2e","on-secondary":"#ffffff","inverse-surface":"#213145","surface-container-lowest":"#ffffff","on-tertiary-container":"#188ace","on-surface-variant":"#45464d","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","on-primary-container":"#7c839b","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#3f465c","secondary":"#006a61","outline":"#76777d","on-background":"#0b1c30","on-tertiary-fixed":"#001d31","background":"#f8f9ff","outline-variant":"#c6c6cd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"display":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="min-h-20 py-3 px-4 flex items-center gap-3"><img alt="MindCare Logo" class="h-14 w-auto object-contain" src="../../assets/images/logo.png"/></div><div class="px-4 py-2"><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-label-lg font-semibold"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="wellness-check" href="#"><span class="material-symbols-outlined text-xl">spa</span><span>Wellness Check</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-support" href="#"><span class="material-symbols-outlined text-xl">smart_toy</span><span>AI Support</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="mood-tracker" href="#"><span class="material-symbols-outlined text-xl">mood</span><span>Mood Tracker</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="resources" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Resources</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="counseling" href="#"><span class="material-symbols-outlined text-xl">volunteer_activism</span><span>Counseling</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span>Appointments</span></a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2</span></a><div class="pt-3 pb-1"><div class="h-px bg-surface-container-high mx-2 my-1"></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-xl">person</span><span>Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-xl">help</span><span>Help</span></a></nav></div></div><div class="p-4 mb-3"><div class="rounded-2xl p-4 bg-error-container text-on-error-container flex flex-col gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-xl text-error">emergency</span><span class="font-label-lg text-label-lg font-semibold text-on-error-container">Crisis Helpline</span></div><p class="font-body-sm text-body-sm leading-snug">Confidential 24/7 care whenever you feel overwhelmed.</p><a class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm" data-path="emergency-helpline" href="#"><span>Reach SOS Support</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-8 flex items-center justify-between gap-6"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap"><span class="material-symbols-outlined text-base text-secondary">school</span><span>Delhi Technological University • Academic Year 2024-25</span></div><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md truncate"><span class="material-symbols-outlined text-base text-secondary">psychology_alt</span><span class="truncate">“One day at a time, Ananya”</span></div></div><div class="flex items-center gap-3 shrink-0"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-error-container font-label-sm text-label-sm text-on-error-container font-medium hover:bg-error hover:text-on-error transition-colors" data-path="emergency-helpline" href="#"><span class="material-symbols-outlined text-base">call</span><span>Crisis Hotline</span></a><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="h-6 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMR9rJ2AxPqsMhNBaqkNb3avAQHrPABpyznEHzJXMa3FUXf0cT6zO8c0WoXzseYGkY7hCiPi9fFbmwrtK-NXNsdssW9NzUpeOFU073pF-glZrFyDmKhUkJAY5cPcgjiNo3Z2A7Jcmpdw6MrQYShKd5Andiu9LD3cp9a7PdipH8JaAUd930fGKTJpG2wkRWd8jd57lMDwpMzDtCLvUL7hbR5_rRKFLPTYtUQyJIypC3gibSuQovSyyJ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-medium">Ananya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Online • Sem 6 CS</span></div></div></div></header><main class="flex-1 pt-20 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<!-- Dynamic Notification Bar / Breadcrumb Micro-Ribbon -->
+<div class="flex items-center justify-between gap-4 mb-6">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant">
+<span class="inline-flex items-center gap-1.5 text-secondary font-medium">
+<span class="material-symbols-outlined text-sm">home</span>
+<span>Student Hub</span>
+</span>
+<span>/</span>
+<span>Communication</span>
+<span>/</span>
+<span class="text-on-surface font-semibold">Notifications</span>
+</div>
+<!-- Live Sync & Focus Status -->
+<div class="hidden md:flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+        Encrypted Sync Active
+      </span>
+<span class="text-outline-variant font-label-sm">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last synced: 2m ago</span>
+</div>
+</div>
+<!-- Header Banner Section with Subtle Depth Gradient -->
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-surface-container-low via-surface-container to-surface-container-high p-6 lg:p-8 mb-8 shadow-sm">
+<div class="absolute -right-8 -top-8 w-64 h-64 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm text-secondary font-label-sm text-label-sm font-semibold mb-3 shadow-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+<span>STUDENT PACING RADAR</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mb-2">
+          Notifications &amp; Mindful Pacing Center
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Review upcoming consultation reminders, wellness check-in nudges, and campus wellness announcements tailored to your academic workload.
+        </p>
+</div>
+<!-- Quick Global Actions -->
+<div class="flex flex-wrap items-center gap-3 shrink-0">
+<button class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-lg text-label-lg font-medium shadow-sm hover:bg-surface-container-high transition-all" id="mark-all-read-btn">
+<span class="material-symbols-outlined text-lg text-secondary">done_all</span>
+<span>Mark all as read</span>
+</button>
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-medium shadow-sm hover:opacity-90 transition-all" data-path="settings" href="#">
+<span class="material-symbols-outlined text-lg">tune</span>
+<span>Notification Settings</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Primary Workspace & Companion Rail -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT & CENTER FEED (~65%) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Interactive Filter Pills Navigation -->
+<div class="bg-surface-container-lowest p-2 rounded-2xl shadow-sm flex items-center justify-between gap-2 overflow-x-auto">
+<div class="flex items-center gap-1.5 min-w-max" id="filter-container">
+<button class="filter-tab active inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg transition-all font-semibold" data-filter="all">
+<span>All</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">6</span>
+</button>
+<button class="filter-tab inline-flex items-center gap-2 px-4 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-all font-label-lg text-label-lg" data-filter="unread">
+<span>Unread</span>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">2</span>
+</button>
+<button class="filter-tab inline-flex items-center gap-2 px-4 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-all font-label-lg text-label-lg" data-filter="appointments">
+<span class="material-symbols-outlined text-base">video_call</span>
+<span>Appointments</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">2</span>
+</button>
+<button class="filter-tab inline-flex items-center gap-2 px-4 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-all font-label-lg text-label-lg" data-filter="checkins">
+<span class="material-symbols-outlined text-base">spa</span>
+<span>Daily Check-ins</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">2</span>
+</button>
+<button class="filter-tab inline-flex items-center gap-2 px-4 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-all font-label-lg text-label-lg" data-filter="system">
+<span class="material-symbols-outlined text-base">security</span>
+<span>System</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">2</span>
+</button>
+</div>
+<div class="hidden sm:flex items-center gap-2 pr-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-lg">filter_list</span>
+</div>
+</div>
+<!-- TIMELINE LIST -->
+<div class="flex flex-col gap-8">
+<!-- SECTION 1: TODAY -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Today</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">2 New</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Thursday, 24 Oct</span>
+</div>
+<!-- CARD 1: Consultation Alert (Urgent/Actionable) -->
+<div class="notification-item unread group relative rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-5 items-start">
+<div class="absolute left-3 top-6 w-2 h-2 rounded-full bg-secondary"></div>
+<!-- Icon Badge -->
+<div class="w-12 h-12 rounded-2xl bg-secondary-container flex items-center justify-center shrink-0 text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">video_camera_front</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Upcoming Counseling Session in 24 Hours</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">Confirmed</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">10:45 AM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+                Dr. Radhika Sharma, PhD • Tomorrow at 03:30 PM IST via Encrypted Campus Video Link.
+              </p>
+<!-- Session Micro-Metadata Callout -->
+<div class="rounded-xl bg-surface-container-low p-3.5 mb-4 flex flex-wrap items-center gap-4 text-on-surface font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">calendar_today</span>
+<span>Friday, Oct 25 • 3:30 - 4:20 PM</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-base">verified_user</span>
+<span>End-to-End Encrypted (Zero DTU Logs)</span>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:opacity-95 transition-opacity shadow-sm">
+<span class="material-symbols-outlined text-base">door_open</span>
+<span>Join Test Room</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-medium hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+<span>View Booking Details</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-on-surface-variant hover:text-error hover:bg-error-container/30 transition-colors font-label-md text-label-md ml-auto">
+<span class="material-symbols-outlined text-base">event_repeat</span>
+<span>Reschedule</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 2: Daily Check-in Nudge -->
+<div class="notification-item unread group relative rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-5 items-start">
+<div class="absolute left-3 top-6 w-2 h-2 rounded-full bg-secondary"></div>
+<!-- Icon Badge -->
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center shrink-0 text-on-surface shadow-sm">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">wb_sunny</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Evening Reflection: Midterm Prep Pace</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/60 text-on-secondary-container font-label-sm text-label-sm font-semibold">5-Day Streak 🔥</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">06:15 PM</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+                You've maintained a 5-day reflection streak! Take 45 seconds to record how your study sprint went today.
+              </p>
+<!-- Inline Micro Sentiment Selector -->
+<div class="flex flex-wrap items-center gap-2 pt-1">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:opacity-90 transition-opacity shadow-sm" data-path="wellness-check" href="#">
+<span class="material-symbols-outlined text-base">edit_note</span>
+<span>Quick Check-in (1 min)</span>
+</a>
+<button class="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">snooze</span>
+<span>Remind after dinner</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: YESTERDAY -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between px-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Yesterday</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Wednesday, 23 Oct</span>
+</div>
+<!-- CARD 3: Wellness Assessment Milestone -->
+<div class="notification-item rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-5 items-start">
+<!-- Icon Badge -->
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center shrink-0 text-on-surface-variant">
+<span class="material-symbols-outlined text-2xl">monitoring</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Semester 6 Bi-Weekly Wellness Check Ready</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Academic Metric</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+                Your bi-weekly check-in is due. Insights will help calibrate your exam fatigue curve and tailor your study-rest ratio.
+              </p>
+<!-- Embedded progress preview -->
+<div class="mb-4 p-3 rounded-xl bg-surface-container-low flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg">timeline</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Fatigue Curve Calibration</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 min quick self-reflection questionnaire</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold shrink-0">Est. 3 mins</span>
+</div>
+<div class="flex items-center gap-2">
+<a class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors" data-path="wellness-check" href="#">
+<span class="material-symbols-outlined text-base">assignment</span>
+<span>Start Assessment</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 4: Resource Recommendation -->
+<div class="notification-item rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-5 items-start">
+<!-- Icon Badge -->
+<div class="w-12 h-12 rounded-2xl bg-surface-container-high flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">headphones</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">New Audio Drill Added: 4-7-8 Breath for Pre-Exam Viva</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">Audio Guidance</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+                Curated specifically for 3rd year engineering students experiencing viva jitters. Master calm autonomic pacing before entering the panel room.
+              </p>
+<div class="flex items-center gap-3">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+<span>Listen Now (4 min)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-base">bookmark_add</span>
+<span>Save to Library</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: EARLIER THIS WEEK -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between px-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Earlier This Week</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Oct 21 - Oct 22</span>
+</div>
+<!-- CARD 5: Peer Listening Circle Announcement -->
+<div class="notification-item rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-5 items-start">
+<!-- Icon Badge -->
+<div class="w-12 h-12 rounded-2xl bg-surface-container flex items-center justify-center shrink-0 text-on-surface">
+<span class="material-symbols-outlined text-2xl">groups_2</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Hostel Block 3 Peer Circle: Imposter Syndrome in Tech</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">Campus Event</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 days ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 leading-relaxed">
+                Thursday 7:00 PM at Student Activity Center. Hosted by final-year psychology mentors. Tea and confidential, pressure-free discussion guaranteed.
+              </p>
+<!-- Session venue pill card -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-base">location_on</span>
+<span>Student Activity Center, Room 204</span>
+</div>
+<div class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-base">how_to_reg</span>
+<span>14 of 20 spots remaining</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-semibold hover:opacity-95 transition-opacity">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Save Seat</span>
+</button>
+<button class="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low transition-colors font-label-md text-label-md">
+<span>View Agenda</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 6: Privacy & System Update -->
+<div class="notification-item rounded-2xl bg-surface-container-lowest p-6 shadow-sm hover:shadow-md transition-all flex flex-col md:flex-row gap-5 items-start">
+<!-- Icon Badge -->
+<div class="w-12 h-12 rounded-2xl bg-surface-container-low flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-1.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Monthly Confidentiality Audit Cleared</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">System Compliance</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 days ago</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-3 leading-relaxed">
+                All 30-day AI conversational histories older than Oct 1st have been automatically purged per your strict student privacy settings. No personal disclosures are retained.
+              </p>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-base text-secondary">lock</span>
+<span>Self-destruction protocol: SHA-256 zero-log verified</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COMPANION RAIL (~35%) -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- WIDGET 1: Quiet Study / Exam Mode Quick Toggle -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm">
+<div class="flex items-center justify-between gap-3 mb-4">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">bedtime</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Quiet Study Mode</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pacing Control</span>
+</div>
+</div>
+<!-- Switch Toggle Button -->
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" id="exam-mode-toggle" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+          Auto-mutes wellness reminders between <span class="font-semibold text-on-surface">11:00 PM – 7:00 AM</span> or active Midterm exam blocks so your mental bandwidth is respected.
+        </p>
+<!-- Current Schedule Cardlet -->
+<div class="p-3.5 rounded-xl bg-surface-container-low mb-4 flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Status</span>
+<span class="inline-flex items-center gap-1.5 text-secondary font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Active &amp; Shielding
+            </span>
+</div>
+<div class="flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Next un-mute window</span>
+<span class="font-medium">Tomorrow, 07:00 AM IST</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-secondary font-semibold hover:underline inline-flex items-center gap-1" href="#">
+<span>Configure custom exam schedules</span>
+<span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+<!-- WIDGET 2: Campus Care Desk On-Duty -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-xl">health_and_safety</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Care Desk On-Duty</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Present</span>
+</div>
+<!-- Counselor Profile Snapshot -->
+<div class="flex items-start gap-4 mb-4">
+<img class="w-14 h-14 rounded-2xl object-cover shadow-sm shrink-0" data-alt="Portrait of Dr. K. Mehta, a supportive senior university clinical psychologist with warm expression and formal academic attire in Delhi Technological University clinic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGeJSmiSBrWNA6NJnrdlJ2ObMFPc-1a0OJVXX61UXNX6-Y6oe31TJlT8kqiZ5oA4eR8pJJn_JnVo23KLtJT9k-rzvHaqP3D_mRf3OmglAM8_kDiZLKSw9Wg1VxIA0qnn8uvIF7cq4FO5gc1CK0tNHCPcuJGnVa5JBRs4a9iO37NzNiYK7bdzk66bcrt_aBcFz9X0IXADqt4xGhkK1Km7PtP0buXO13phthq5tlZ8e2ao6r-4AUwZaI"/>
+<div class="flex flex-col min-w-0">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Dr. K. Mehta, MD</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Resident Campus Counselor</span>
+<div class="flex items-center gap-1.5 mt-1 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-sm">apartment</span>
+<span class="truncate">Block B Infirmary • Ground Fl.</span>
+</div>
+</div>
+</div>
+<div class="space-y-2 mb-5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Walk-in hours today</span>
+<span class="text-on-surface font-medium">09:00 AM – 06:00 PM</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Direct extension</span>
+<span class="text-on-surface font-medium">Ext. 4402 (DTU Campus)</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<a class="flex-1 inline-flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors text-center" data-path="counseling" href="#">
+<span class="material-symbols-outlined text-base">chat</span>
+<span>Send Direct Ping</span>
+</a>
+<a class="inline-flex items-center justify-center p-2.5 rounded-xl bg-primary-container text-on-primary hover:opacity-90 transition-opacity" data-path="appointments" href="#" title="Book appointment slot">
+<span class="material-symbols-outlined text-base">calendar_add_on</span>
+</a>
+</div>
+</div>
+<!-- WIDGET 3: Crisis Hotline Quick Tile (Destigmatized, Warm, Reassuring) -->
+<div class="rounded-2xl bg-error-container p-6 shadow-sm flex flex-col gap-4 text-on-error-container">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-2xl text-error">emergency_home</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-on-error-container">24/7 Crisis Lifeline</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/80 text-error font-label-sm text-label-sm font-bold tracking-wide">SOS READY</span>
+</div>
+<p class="font-body-sm text-body-sm leading-relaxed text-on-error-container/90">
+          Overwhelmed by academic pressure or feeling hopeless? You don't have to carry it alone. Toll-free, zero-identity required mental health triage.
+        </p>
+<!-- Direct Action Dialers -->
+<div class="flex flex-col gap-2.5 pt-1">
+<a class="flex items-center justify-between p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors shadow-sm group" href="tel:18005990019">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-base">call</span>
+</span>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">1800-599-0019</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">KIRAN National Mental Health</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-base text-on-surface-variant group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-3 rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors shadow-sm group" href="tel:14416">
+<div class="flex items-center gap-3">
+<span class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-base">support_agent</span>
+</span>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Tele-MANAS (14416)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Govt of India 24x7 Helpline</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-base text-on-surface-variant group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</a>
+</div>
+<span class="font-label-sm text-label-sm text-center text-on-error-container/80 pt-1">
+          Strictly confidential • Free of charge from any campus telephone
+        </span>
+</div>
+<!-- WIDGET 4: Weekly Rest & Recovery Metric Mini-Visualizer -->
+<div class="rounded-2xl bg-surface-container-lowest p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-xl">self_improvement</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Weekly Pacing</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Balanced</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Notifications are dynamically throttled based on your predicted cognitive fatigue.
+        </p>
+<!-- Inline SVG Pacing Indicator -->
+<div class="flex items-center justify-center py-2">
+<div class="relative w-36 h-36 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#eff4ff" stroke-width="8"></circle>
+<circle cx="50" cy="50" fill="transparent" r="40" stroke="#006a61" stroke-dasharray="251.2" stroke-dashoffset="65" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold leading-none">74%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Mindful Rest</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-2">
+<span>Weekly Check-ins: <strong>5 / 7</strong></span>
+<span>Nudges Silenced: <strong>9</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Micro-interaction Controller -->
+<script>
+    (function initNotifications() {
+      // Mark All Read interaction
+      const markBtn = document.getElementById('mark-all-read-btn');
+      if (markBtn) {
+        markBtn.addEventListener('click', () => {
+          const unreadDots = document.querySelectorAll('.notification-item.unread');
+          unreadDots.forEach(card => {
+            card.classList.remove('unread');
+            const dot = card.querySelector('.bg-secondary.w-2.h-2');
+            if (dot) dot.remove();
+          });
+          markBtn.innerHTML = '<span class="material-symbols-outlined text-lg text-secondary">check</span><span>All Caught Up</span>';
+          markBtn.disabled = true;
+          markBtn.classList.add('opacity-70', 'cursor-default');
+        });
+      }
+
+      // Filter tabs interaction
+      const tabs = document.querySelectorAll('.filter-tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => {
+            t.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold');
+            t.classList.add('text-on-surface-variant');
+            const badge = t.querySelector('span:last-child');
+            if (badge && !t.classList.contains('active')) {
+              badge.classList.remove('bg-surface-container-highest', 'text-on-surface');
+            }
+          });
+          tab.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+          tab.classList.remove('text-on-surface-variant');
+        });
+      });
+
+      // Quiet Exam Mode Toggle Feedback
+      const toggle = document.getElementById('exam-mode-toggle');
+      if (toggle) {
+        toggle.addEventListener('change', (e) => {
+          const statusText = toggle.closest('.rounded-2xl').querySelector('.text-secondary');
+          if (statusText) {
+            if (e.target.checked) {
+              statusText.innerHTML = '<span class="w-2 h-2 rounded-full bg-secondary"></span> Active & Shielding';
+            } else {
+              statusText.innerHTML = '<span class="w-2 h-2 rounded-full bg-outline"></span> Paused';
+            }
+          }
+        });
+      }
+    })();
+  </script>
+</div></main></div><script src="../../assets/js/nav.js"></script></body></html>

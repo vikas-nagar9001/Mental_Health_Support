@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wellness Check — MindCare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            surface: "#f8f9ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e5eeff",
+            "surface-container-high": "#dce9ff",
+            "on-surface": "#0b1c30",
+            "on-surface-variant": "#45464d",
+            primary: "#000000",
+            "on-primary": "#ffffff",
+            secondary: "#006a61",
+            "secondary-container": "#86f2e4",
+            "on-secondary-container": "#006f66",
+          },
+          fontFamily: { sans: ["Inter", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-surface font-sans text-on-surface antialiased min-h-screen">
+  <div class="max-w-2xl mx-auto px-6 py-12">
+    <div class="mb-8">
+      <img src="../../assets/images/logo.png" alt="MindCare Logo" class="h-16 w-auto object-contain"/>
+    </div>
+    <a class="inline-flex items-center gap-1 text-secondary font-medium mb-8" data-path="dashboard" href="../app/dashboard.html">
+      <span class="material-symbols-outlined text-lg">arrow_back</span>
+      Back to Dashboard
+    </a>
+    <div class="bg-surface-container-lowest rounded-2xl p-8 shadow-sm">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/50 text-on-secondary-container text-sm font-medium mb-4">
+        <span class="material-symbols-outlined text-base">spa</span>
+        Wellness Check
+      </div>
+      <h1 class="text-3xl font-semibold tracking-tight mb-3">How have you been feeling lately?</h1>
+      <p class="text-on-surface-variant mb-6 leading-relaxed">
+        This short check-in helps us suggest supportive resources. It is <strong>not</strong> a medical diagnosis.
+        Your responses suggest patterns — they do not label you.
+      </p>
+      <div class="h-2 rounded-full bg-surface-container mb-8 overflow-hidden">
+        <div class="h-full w-1/4 rounded-full bg-secondary"></div>
+      </div>
+      <p class="text-sm font-medium text-on-surface-variant mb-2">Question 1 of 12</p>
+      <h2 class="text-xl font-semibold mb-6">Over the past week, how often have you felt overwhelmed by academic pressure?</h2>
+      <div class="space-y-3 mb-8" id="scale">
+        <button type="button" class="scale-btn w-full text-left px-4 py-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors" data-v="0">Never</button>
+        <button type="button" class="scale-btn w-full text-left px-4 py-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors" data-v="1">Rarely</button>
+        <button type="button" class="scale-btn w-full text-left px-4 py-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors" data-v="2">Sometimes</button>
+        <button type="button" class="scale-btn w-full text-left px-4 py-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors" data-v="3">Often</button>
+        <button type="button" class="scale-btn w-full text-left px-4 py-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors" data-v="4">Almost Always</button>
+      </div>
+      <div class="flex gap-3">
+        <a class="flex-1 inline-flex justify-center py-3 rounded-xl bg-surface-container text-on-surface font-medium" data-path="dashboard" href="../app/dashboard.html">Back</a>
+        <a class="flex-1 inline-flex justify-center py-3 rounded-xl bg-primary text-on-primary font-medium" data-path="assessment-results" href="assessment-results.html">Next</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll(".scale-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".scale-btn").forEach((b) => {
+          b.className = "scale-btn w-full text-left px-4 py-3 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors";
+        });
+        btn.className = "scale-btn w-full text-left px-4 py-3 rounded-xl bg-secondary-container/60 text-on-secondary-container font-semibold ring-1 ring-secondary/30";
+      });
+    });
+  </script>
+  <script src="../../assets/js/nav.js"></script>
+</body>
+</html>

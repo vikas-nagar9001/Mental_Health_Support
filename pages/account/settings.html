@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container":"#e5eeff","inverse-primary":"#bec6e0","tertiary-container":"#001d31","on-tertiary-fixed-variant":"#004b73","secondary-fixed":"#89f5e7","on-primary":"#ffffff","surface":"#f8f9ff","on-primary-fixed":"#131b2e","surface-container-high":"#dce9ff","primary-fixed-dim":"#bec6e0","secondary-fixed-dim":"#6bd8cb","on-error-container":"#93000a","primary-fixed":"#dae2fd","surface-container-low":"#eff4ff","on-error":"#ffffff","error-container":"#ffdad6","tertiary":"#000000","tertiary-fixed":"#cce5ff","on-surface":"#0b1c30","primary":"#000000","inverse-on-surface":"#eaf1ff","secondary-container":"#86f2e4","on-secondary-container":"#006f66","surface-tint":"#565e74","error":"#ba1a1a","surface-variant":"#d3e4fe","primary-container":"#131b2e","on-secondary":"#ffffff","inverse-surface":"#213145","surface-container-lowest":"#ffffff","on-tertiary-container":"#188ace","on-surface-variant":"#45464d","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005049","surface-bright":"#f8f9ff","on-primary-container":"#7c839b","on-tertiary":"#ffffff","on-secondary-fixed":"#00201d","surface-container-highest":"#d3e4fe","tertiary-fixed-dim":"#93ccff","on-primary-fixed-variant":"#3f465c","secondary":"#006a61","outline":"#76777d","on-background":"#0b1c30","on-tertiary-fixed":"#001d31","background":"#f8f9ff","outline-variant":"#c6c6cd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","gutter":"1.5rem","space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-lg":"1.5rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-lg":["Inter"],"body-sm":["Inter"],"headline-sm":["Inter"],"display":["Inter"],"display-mobile":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"],"label-sm":["Inter"],"headline-lg-mobile":["Inter"],"headline-md":["Inter"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="min-h-20 py-3 px-4 flex items-center gap-3"><img alt="MindCare Logo" class="h-14 w-auto object-contain" src="../../assets/images/logo.png"/></div><div class="px-4 py-2"><nav class="space-y-1" data-active-classes="bg-surface-container-high text-on-surface font-label-lg font-semibold"><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">grid_view</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="wellness-check" href="#"><span class="material-symbols-outlined text-xl">spa</span><span>Wellness Check</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="ai-support" href="#"><span class="material-symbols-outlined text-xl">smart_toy</span><span>AI Support</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="mood-tracker" href="#"><span class="material-symbols-outlined text-xl">mood</span><span>Mood Tracker</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="resources" href="#"><span class="material-symbols-outlined text-xl">menu_book</span><span>Resources</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="counseling" href="#"><span class="material-symbols-outlined text-xl">volunteer_activism</span><span>Counseling</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="appointments" href="#"><span class="material-symbols-outlined text-xl">calendar_month</span><span>Appointments</span></a><a class="flex items-center justify-between px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="notifications" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-xl">notifications</span><span>Notifications</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">2</span></a><div class="pt-3 pb-1"><div class="h-px bg-surface-container-high mx-2 my-1"></div></div><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-xl">person</span><span>Profile</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">settings</span><span>Settings</span></a><a class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="help" href="#"><span class="material-symbols-outlined text-xl">help</span><span>Help</span></a></nav></div></div><div class="p-4 mb-3"><div class="rounded-2xl p-4 bg-error-container text-on-error-container flex flex-col gap-2.5 shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-xl text-error">emergency</span><span class="font-label-lg text-label-lg font-semibold text-on-error-container">Crisis Helpline</span></div><p class="font-body-sm text-body-sm leading-snug">Confidential 24/7 care whenever you feel overwhelmed.</p><a class="inline-flex items-center justify-center gap-2 w-full py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold hover:bg-surface-container-low transition-colors shadow-sm" data-path="emergency-helpline" href="#"><span>Reach SOS Support</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-20 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-8 flex items-center justify-between gap-6"><div class="flex items-center gap-4 flex-1 min-w-0"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface whitespace-nowrap"><span class="material-symbols-outlined text-base text-secondary">school</span><span>Delhi Technological University • Academic Year 2024-25</span></div><div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md truncate"><span class="material-symbols-outlined text-base text-secondary">psychology_alt</span><span class="truncate">“One day at a time, Ananya”</span></div></div><div class="flex items-center gap-3 shrink-0"><a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-error-container font-label-sm text-label-sm text-on-error-container font-medium hover:bg-error hover:text-on-error transition-colors" data-path="emergency-helpline" href="#"><span class="material-symbols-outlined text-base">call</span><span>Crisis Hotline</span></a><a class="relative p-2 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></a><div class="h-6 w-px bg-surface-container-high mx-1"></div><div class="flex items-center gap-3"><div class="relative"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMR9rJ2AxPqsMhNBaqkNb3avAQHrPABpyznEHzJXMa3FUXf0cT6zO8c0WoXzseYGkY7hCiPi9fFbmwrtK-NXNsdssW9NzUpeOFU073pF-glZrFyDmKhUkJAY5cPcgjiNo3Z2A7Jcmpdw6MrQYShKd5Andiu9LD3cp9a7PdipH8JaAUd930fGKTJpG2wkRWd8jd57lMDwpMzDtCLvUL7hbR5_rRKFLPTYtUQyJIypC3gibSuQovSyyJ"/><span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span></div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight font-medium">Ananya Sharma</span><span class="font-label-sm text-label-sm text-secondary leading-tight">Online • Sem 6 CS</span></div></div></div></header><main class="flex-1 pt-20 bg-surface w-full px-8 pb-12"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Layer (strictly within container) -->
+<div class="relative w-full overflow-hidden pb-4">
+<div class="absolute -top-16 right-12 w-96 h-96 rounded-full bg-secondary-container/30 blur-3xl pointer-events-none"></div>
+<div class="absolute top-20 left-1/3 w-80 h-80 rounded-full bg-surface-container-high/40 blur-3xl pointer-events-none"></div>
+<!-- Header Block with High-End Typographic Texture -->
+<div class="relative flex flex-col md:flex-row md:items-end justify-between gap-6 pt-4 pb-6">
+<div class="max-w-2xl">
+<div class="flex items-center gap-2 mb-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span class="material-symbols-outlined text-sm text-secondary">verified_user</span>
+            Confidentiality Tier A • FERPA &amp; DPDP Aligned
+          </span>
+<span class="font-label-sm text-label-sm text-outline">SYS_BUILD: 2024.11-STU</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Account Settings &amp; Privacy Governance</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 max-w-xl">
+          Manage your confidential profile, notification triggers, AI interaction settings, and institutional privacy controls.
+        </p>
+</div>
+<!-- Quick Status Metric Widget -->
+<div class="flex items-center gap-4 bg-surface-container-lowest p-3 rounded-2xl shadow-sm">
+<div class="relative w-12 h-12 flex items-center justify-center">
+<svg class="w-12 h-12 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="100, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="material-symbols-outlined absolute text-secondary text-lg" style="font-variation-settings: 'FILL' 1;">shield_lock</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Firewall Security</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">100% Segregated</div>
+</div>
+</div>
+</div>
+<!-- Navigation Tabs Strip -->
+<div class="relative flex items-center gap-1.5 p-1.5 rounded-2xl bg-surface-container-low overflow-x-auto shadow-sm">
+<button class="flex items-center gap-2 px-4 py-2 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-lg">shield</span>
+<span>Account &amp; Security</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-xl font-label-lg text-label-lg bg-surface-container-lowest text-on-surface shadow-sm font-semibold whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-lg text-secondary">lock</span>
+<span>Privacy &amp; Data Rights</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-lg">notifications_active</span>
+<span>Notification Triggers</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-lg">smart_toy</span>
+<span>AI Companion Preferences</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-xl font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-lg">accessibility_new</span>
+<span>Accessibility &amp; Focus</span>
+</button>
+</div>
+</div>
+<!-- Primary Content Grid (2/3 Workspace & 1/3 Side Context Rail) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-4">
+<!-- Left / Central 8-Col Flow: Detailed Settings & Controls -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Section 1: Strict Institutional Privacy & Data Isolation -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-6">
+<!-- Section Header -->
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/40 text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">vpn_lock</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Strict Institutional Privacy &amp; Data Isolation</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Guaranteed cryptographic separation between university records and personal wellness.</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Active Isolation</span>
+</div>
+<!-- High-Impact Institutional Firewall Status Banner -->
+<div class="relative overflow-hidden rounded-2xl p-5 bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container-low shadow-sm">
+<div class="flex items-start gap-4">
+<div class="p-2 rounded-xl bg-surface-container-lowest text-secondary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Active Institutional Firewall</span>
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+                Your mental wellness data is strictly segregated under clinical confidentiality laws. Campus administrators, professors, and placement officers have <span class="font-semibold text-on-surface">zero access</span> to your activity, assessments, or notes.
+              </p>
+<div class="flex flex-wrap items-center gap-4 mt-3 pt-3 text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-secondary">check_circle</span> End-to-End Vault</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-secondary">check_circle</span> Zero Admin Telemetry</span>
+<span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-secondary">check_circle</span> ISO 27701 Privacy Cert</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Privacy Toggles Stack -->
+<div class="space-y-4">
+<!-- Toggle 1: Anonymous Analytics Contribution -->
+<div class="p-4 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors flex items-start justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<label class="font-label-lg text-label-lg font-semibold text-on-surface cursor-pointer" for="toggle-analytics">Anonymous Analytics Contribution</label>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">Differential Privacy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-xl">
+                Contribute anonymized, aggregated campus well-being trends without personally identifiable information to help the university improve overall counseling staffing.
+              </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" id="toggle-analytics" onchange="markUnsaved()" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-6 peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Toggle 2: Zero-Knowledge Encrypted Journaling -->
+<div class="p-4 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors flex items-start justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<label class="font-label-lg text-label-lg font-semibold text-on-surface cursor-pointer" for="toggle-encryption">Zero-Knowledge Encrypted Journaling</label>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">AES-256-GCM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-xl">
+                Client-side cryptographic key generation for mood entries and private notes. Decryption keys never touch university cloud infrastructure.
+              </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" id="toggle-encryption" onchange="markUnsaved()" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-6 peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Toggle 3: Auto-Clear AI Dialogue History -->
+<div class="p-4 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors flex items-start justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<label class="font-label-lg text-label-lg font-semibold text-on-surface cursor-pointer" for="toggle-purge">Auto-Clear AI Dialogue History</label>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">Every 30 Days</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed max-w-xl">
+                Automatically purges companion conversations and reflective dialogues after 30 days to keep your personal headspace completely ephemeral.
+              </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" id="toggle-purge" onchange="markUnsaved()" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-6 peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Section 2: Data Portability & Patient Rights -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-6">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">folder_shared</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Data Portability &amp; Patient Rights</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Full student autonomy compliant with GDPR and the Digital Personal Data Protection Act.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-3 py-1 rounded-full font-medium">DPDP Compliant</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Action 1: Export -->
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-all group">
+<div class="space-y-2">
+<div class="w-9 h-9 rounded-xl bg-surface-container-lowest text-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-lg">download</span>
+</div>
+<h3 class="font-label-lg text-label-lg font-semibold text-on-surface">Export Health Record</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Download full JSON archive or a signed clinician PDF of assessments and mood histories.</p>
+</div>
+<div class="pt-4 flex flex-col gap-2">
+<button class="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+<span>Download Clinician PDF</span>
+</button>
+<button class="w-full inline-flex items-center justify-center gap-1 py-1.5 px-3 rounded-lg text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">data_object</span>
+<span>Raw JSON Export</span>
+</button>
+</div>
+</div>
+<!-- Action 2: Freeze -->
+<div class="p-5 rounded-2xl bg-surface-container-low flex flex-col justify-between hover:bg-surface-container transition-all group">
+<div class="space-y-2">
+<div class="w-9 h-9 rounded-xl bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-lg">pause_circle</span>
+</div>
+<h3 class="font-label-lg text-label-lg font-semibold text-on-surface">Academic Leave Freeze</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Temporarily pause daily alerts, check-in prompts, and clinic reminders during breaks or study leave.</p>
+</div>
+<div class="pt-4">
+<button class="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">pause</span>
+<span>Freeze Reminders</span>
+</button>
+</div>
+</div>
+<!-- Action 3: Purge -->
+<div class="p-5 rounded-2xl bg-error-container/30 flex flex-col justify-between group">
+<div class="space-y-2">
+<div class="w-9 h-9 rounded-xl bg-surface-container-lowest text-error flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-lg">delete_forever</span>
+</div>
+<h3 class="font-label-lg text-label-lg font-semibold text-on-error-container">Permanent Purge</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Irrevocably erase all journal entries, mood logs, and AI dialogue histories across all university servers.</p>
+</div>
+<div class="pt-4">
+<button class="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container-lowest text-error font-label-md text-label-md font-semibold hover:bg-error hover:text-on-error transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-sm">lock_reset</span>
+<span>Request Wipe</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: AI Companion Safety & Dialogue Preferences -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-6">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/40 text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">psychology</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">AI Companion Safety &amp; Dialogue Preferences</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Configure persona empathy style, drill recommendations, and safety interventions.</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Companion Active</span>
+</div>
+<!-- Interactive Empathy Tone Selector -->
+<div class="space-y-3">
+<label class="block font-label-lg text-label-lg font-semibold text-on-surface">AI Empathy Tone</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="tone-selector">
+<div class="cursor-pointer p-4 rounded-xl bg-secondary-container/30 text-on-surface flex flex-col justify-between transition-all shadow-sm" onclick="selectTone(this)">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-secondary text-xl">favorite</span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div class="mt-3">
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Warm &amp; Empathetic</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-snug block mt-0.5">Gentle, validating tone suited for academic burnout &amp; stress.</span>
+</div>
+</div>
+<div class="cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col justify-between transition-all" onclick="selectTone(this)">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-on-surface-variant text-xl">lightbulb</span>
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+</div>
+<div class="mt-3">
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Practical &amp; Solution</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-snug block mt-0.5">Direct cognitive reframing, time blocks, and task prioritization.</span>
+</div>
+</div>
+<div class="cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col justify-between transition-all" onclick="selectTone(this)">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-on-surface-variant text-xl">air</span>
+<span class="w-2 h-2 rounded-full bg-transparent"></span>
+</div>
+<div class="mt-3">
+<span class="font-label-lg text-label-lg font-semibold block text-on-surface">Grounding &amp; Brief</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-snug block mt-0.5">Minimal words, focused on quick breathing cycles and anchors.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Strict Crisis Protocol Detection [Locked ON for student safety] -->
+<div class="p-4 rounded-xl bg-surface-container-low flex items-start justify-between gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-xl shrink-0 mt-0.5">crisis_alert</span>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Strict Crisis Protocol Detection</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-xs">lock</span> Institutional Safety Lock
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Immediately trigger an emergency SOS safe card and prioritize human counselor escalation when acute distress triggers or self-harm markers are identified. Cannot be disabled on campus-enrolled accounts.
+              </p>
+</div>
+</div>
+<div class="shrink-0 mt-1">
+<div class="w-12 h-6 bg-secondary/40 rounded-full cursor-not-allowed relative">
+<div class="w-5 h-5 bg-secondary rounded-full absolute top-[2px] right-[2px]"></div>
+</div>
+</div>
+</div>
+<!-- Audio Somatic Drills Suggestion -->
+<div class="p-4 rounded-xl bg-surface-container-low/60 hover:bg-surface-container-low transition-colors flex items-start justify-between gap-4">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<label class="font-label-lg text-label-lg font-semibold text-on-surface cursor-pointer" for="toggle-audio-drills">Audio Somatic Drills Suggestion</label>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container font-label-sm text-label-sm text-on-secondary-container">Interactive Drills</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Include guided audio prompts and interactive 4-7-8 breathing widgets directly within conversational response ribbons when tension is sensed.
+            </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-1">
+<input checked="" class="sr-only peer" id="toggle-audio-drills" onchange="markUnsaved()" type="checkbox"/>
+<div class="w-12 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-6 peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</section>
+<!-- Section 4: Campus Notifications & Mindful Triggers -->
+<section class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-6">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">schedule</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Campus Notifications &amp; Mindful Triggers</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Set deliberate rhythms for check-ins without adding stress to your study calendar.</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">Quiet Mode Active</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Daily Check-in Timing -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-3">
+<div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Daily Check-in Reminder</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Gentle nudge to reflect and log day-end headspace.</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="relative flex-1">
+<input class="w-full bg-surface-container-lowest text-on-surface font-label-lg text-label-lg px-3.5 py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-secondary/30" onchange="markUnsaved()" type="time" value="20:30"/>
+</div>
+<div class="flex rounded-xl bg-surface-container-highest p-1 text-on-surface font-label-sm text-label-sm">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest font-medium shadow-sm" type="button">Weekdays</button>
+<button class="px-2.5 py-1 rounded-lg text-on-surface-variant hover:text-on-surface" type="button">Weekends</button>
+</div>
+</div>
+</div>
+<!-- Exam Season Adaptive Flow -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col justify-between gap-3">
+<div class="flex items-start justify-between gap-2">
+<div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Exam Season Pacing</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Auto-activate during DTU Midterms &amp; End-terms.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0 mt-0.5">
+<input checked="" class="sr-only peer" onchange="markUnsaved()" type="checkbox"/>
+<div class="w-10 h-5 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-5 peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-secondary text-base">spa</span>
+<span>Replaces lengthy questionnaires with 30s breathing cards</span>
+</div>
+</div>
+</div>
+<!-- Verified Institutional Email Routing -->
+<div class="p-4 rounded-xl bg-surface-container-low/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest text-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-lg">mail_lock</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Authenticated Institutional Routing</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Domain Verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Confidential digests and clinician appointment confirmations delivered exclusively to:</span>
+</div>
+</div>
+<div class="px-3.5 py-1.5 rounded-xl bg-surface-container-lowest font-label-sm text-label-sm text-on-surface font-mono font-medium shadow-sm">
+            ananya.s@dtu.ac.in
+          </div>
+</div>
+</section>
+</div>
+<!-- Right 4-Col Side Companion Rail -->
+<div class="lg:col-span-4 flex flex-col gap-6">
+<!-- Patient Rights Digest Card with Visual Illustration -->
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-secondary">Student Wellness Charter</span>
+<span class="material-symbols-outlined text-on-surface-variant text-lg">gavel</span>
+</div>
+<div class="relative w-full h-36 rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A calm minimalist university courtyard surrounded by lush greenery, modern light wooden study pavilions, gentle natural morning light, evoking serenity, safety, and academic wellness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChfTkYfRlo_Pen1SGdlbAg4wH9e2uti2OH4Oby76ivJWQNkPqi6xPTQWdTQpmULeXPXXGxyyPbpOstK-9kcS5AHeMHaHYreCr44txHxCNOvvOA3LXSCROuMB9xfmGCMY-uLaTJuf4VGTckpF0aST2TX_E-u82GmFEkhNRYEmTVVJ7PKy-S84R8y3b3igbks36v-vCWd4oNpqYygSIWiszr1Zc9MBCeXhHu9jMBqgqGK43eG9HEN85o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent flex items-end p-4">
+<span class="font-label-md text-label-md text-on-primary font-medium">Your sanctuary. Your data. Your timeline.</span>
+</div>
+</div>
+<div class="space-y-3 pt-1">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg shrink-0 mt-0.5">verified</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-semibold">Clinician-Client Privilege:</strong> Campus mental health consultations are held under professional medical confidentiality.
+            </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg shrink-0 mt-0.5">visibility_off</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-semibold">Transcript Isolation:</strong> Nothing logged in MindCare can be queried by DTU academic registrar systems.
+            </div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-lg shrink-0 mt-0.5">history_edu</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface font-semibold">Audit Logs:</strong> View any access request or automated audit timestamp anytime from the security log.
+            </div>
+</div>
+</div>
+<button class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-surface-container font-label-md text-label-md font-semibold text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span>Read Institutional Charter (PDF)</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+<!-- Quick Emergency Grounding Drill Companion Box -->
+<div class="bg-gradient-to-br from-surface-container-lowest to-surface-container-low rounded-2xl p-6 shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-xl">self_improvement</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Paced Somatic Anchor</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">30s DRILL</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Feeling heightened while managing settings? Pause for two cycles of box breathing.
+        </p>
+<!-- Animated Breathing Ring Graphic -->
+<div class="flex flex-col items-center justify-center py-4">
+<div class="relative w-28 h-28 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full bg-secondary-container/40 animate-ping opacity-30"></div>
+<div class="w-24 h-24 rounded-full bg-secondary/10 flex items-center justify-center transition-all duration-1000">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex flex-col items-center justify-center shadow-md">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Inhale</span>
+<span class="font-label-sm text-label-sm font-mono">4s</span>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2 font-medium">Breathe in through nose...</span>
+</div>
+</div>
+<!-- Verified Campus Counselor Contact Hotline Info -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-xl">support_agent</span>
+<span class="font-label-lg text-label-lg font-semibold">Dedicated Campus Counselor</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          You are currently assigned to <strong class="text-on-surface font-semibold">Dr. Ruchira Rao, Ph.D.</strong> (Health Center, Wing B).
+        </p>
+<div class="flex items-center gap-2 pt-1">
+<a class="flex-1 inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl bg-surface-container font-label-md text-label-md text-on-surface font-semibold hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">event</span>
+<span>Book In-Person</span>
+</a>
+<a class="inline-flex items-center justify-center p-2 rounded-xl bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary transition-colors" href="#" title="Message Clinic Desk">
+<span class="material-symbols-outlined text-lg">chat</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Save / Unsaved Changes Notification Bar -->
+<div class="sticky bottom-6 mt-8 z-30 transition-all duration-300" id="save-bar">
+<div class="mx-auto max-w-4xl bg-inverse-surface text-inverse-on-surface p-4 rounded-2xl shadow-xl flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container/20 text-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg" id="save-status-icon">check_circle</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg font-semibold text-inverse-on-surface flex items-center gap-2">
+<span id="save-title">All privacy settings synced &amp; verified</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest/20 text-inverse-primary font-label-sm text-label-sm" id="save-tag">FERPA Validated</span>
+</div>
+<p class="font-body-sm text-body-sm text-inverse-primary/80 hidden sm:block">
+            Modifications update the local zero-knowledge keyring instantly.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2.5 shrink-0 w-full sm:w-auto justify-end">
+<button class="px-4 py-2 rounded-xl bg-inverse-surface hover:bg-surface-container-highest/10 text-inverse-primary font-label-md text-label-md transition-colors" onclick="resetDefaults()" type="button">
+          Reset to Defaults
+        </button>
+<button class="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-secondary-container text-on-secondary-container font-label-lg text-label-lg font-semibold hover:bg-secondary-fixed transition-transform active:scale-95 shadow-md" onclick="savePreferences()" type="button">
+<span class="material-symbols-outlined text-lg">save</span>
+<span>Save Privacy Preferences</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function markUnsaved() {
+    const saveTitle = document.getElementById('save-title');
+    const saveTag = document.getElementById('save-tag');
+    const saveIcon = document.getElementById('save-status-icon');
+    
+    if (saveTitle && saveTag && saveIcon) {
+      saveTitle.textContent = "Unsaved privacy changes detected";
+      saveTag.textContent = "Draft Pending";
+      saveTag.className = "px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm";
+      saveIcon.textContent = "pending";
+    }
+  }
+
+  function selectTone(element) {
+    const selector = document.getElementById('tone-selector');
+    if (!selector) return;
+    const cards = selector.children;
+    for (let card of cards) {
+      card.className = "cursor-pointer p-4 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface flex flex-col justify-between transition-all";
+      const dot = card.querySelector('span.rounded-full');
+      const icon = card.querySelector('.material-symbols-outlined');
+      if (dot) dot.className = "w-2 h-2 rounded-full bg-transparent";
+      if (icon) icon.className = "material-symbols-outlined text-on-surface-variant text-xl";
+    }
+
+    element.className = "cursor-pointer p-4 rounded-xl bg-secondary-container/30 text-on-surface flex flex-col justify-between transition-all shadow-sm";
+    const activeDot = element.querySelector('span.rounded-full');
+    const activeIcon = element.querySelector('.material-symbols-outlined');
+    if (activeDot) activeDot.className = "w-2 h-2 rounded-full bg-secondary";
+    if (activeIcon) activeIcon.className = "material-symbols-outlined text-secondary text-xl";
+
+    markUnsaved();
+  }
+
+  function savePreferences() {
+    const saveTitle = document.getElementById('save-title');
+    const saveTag = document.getElementById('save-tag');
+    const saveIcon = document.getElementById('save-status-icon');
+
+    if (saveTitle && saveTag && saveIcon) {
+      saveTitle.textContent = "Preferences saved securely to local vault";
+      saveTag.textContent = "Keyring Encrypted";
+      saveTag.className = "px-2 py-0.5 rounded-full bg-secondary-container/40 text-secondary-fixed font-label-sm text-label-sm";
+      saveIcon.textContent = "task_alt";
+      
+      setTimeout(() => {
+        saveTitle.textContent = "All privacy settings synced & verified";
+        saveTag.textContent = "FERPA Validated";
+        saveTag.className = "px-2 py-0.5 rounded-full bg-surface-container-highest/20 text-inverse-primary font-label-sm text-label-sm";
+        saveIcon.textContent = "check_circle";
+      }, 3500);
+    }
+  }
+
+  function resetDefaults() {
+    const analytics = document.getElementById('toggle-analytics');
+    const encryption = document.getElementById('toggle-encryption');
+    const purge = document.getElementById('toggle-purge');
+    const audioDrills = document.getElementById('toggle-audio-drills');
+
+    if (analytics) analytics.checked = true;
+    if (encryption) encryption.checked = true;
+    if (purge) purge.checked = true;
+    if (audioDrills) audioDrills.checked = true;
+
+    savePreferences();
+  }
+</script></main></div><script src="../../assets/js/nav.js"></script></body></html>

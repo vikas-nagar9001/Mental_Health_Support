@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resources — MindCare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            surface: "#f8f9ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e5eeff",
+            "on-surface": "#0b1c30",
+            "on-surface-variant": "#45464d",
+            primary: "#000000",
+            "on-primary": "#ffffff",
+            secondary: "#006a61",
+            "secondary-container": "#86f2e4",
+            "on-secondary-container": "#006f66",
+          },
+          fontFamily: { sans: ["Inter", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-surface font-sans text-on-surface antialiased min-h-screen">
+  <div class="max-w-5xl mx-auto px-6 py-12">
+    <div class="mb-8">
+      <img src="../../assets/images/logo.png" alt="MindCare Logo" class="h-16 w-auto object-contain"/>
+    </div>
+    <a class="inline-flex items-center gap-1 text-secondary font-medium mb-8" data-path="dashboard" href="../app/dashboard.html">
+      <span class="material-symbols-outlined text-lg">arrow_back</span>
+      Dashboard
+    </a>
+    <h1 class="text-3xl font-semibold tracking-tight mb-2">Self-help resources</h1>
+    <p class="text-on-surface-variant mb-8 max-w-2xl">Practical guides and exercises for stress, sleep, focus, and academic pressure — curated for students.</p>
+
+    <div class="flex flex-wrap gap-2 mb-10">
+      <span class="px-3 py-1.5 rounded-full bg-secondary text-on-primary text-sm font-medium">All</span>
+      <span class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm">Stress</span>
+      <span class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm">Sleep</span>
+      <span class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm">Academic Pressure</span>
+      <span class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm">Focus</span>
+      <span class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant text-sm">Mindfulness</span>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <a class="block p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:bg-surface-container-low transition-colors" href="resource-detail.html" data-path="resource-detail">
+        <span class="text-xs font-medium text-secondary uppercase tracking-wide">Academic Pressure · 8 min</span>
+        <h2 class="text-lg font-semibold mt-2 mb-1">Cognitive guide for exam stress</h2>
+        <p class="text-sm text-on-surface-variant">Reframe unhelpful thoughts before midterms and finals.</p>
+      </a>
+      <a class="block p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:bg-surface-container-low transition-colors" href="breathing.html" data-path="breathing">
+        <span class="text-xs font-medium text-secondary uppercase tracking-wide">Mindfulness · 5 min</span>
+        <h2 class="text-lg font-semibold mt-2 mb-1">Interactive breathing exercise</h2>
+        <p class="text-sm text-on-surface-variant">Inhale, hold, exhale — calm your nervous system in minutes.</p>
+      </a>
+      <a class="block p-5 rounded-2xl bg-surface-container-lowest shadow-sm hover:bg-surface-container-low transition-colors" href="relaxation.html" data-path="relaxation">
+        <span class="text-xs font-medium text-secondary uppercase tracking-wide">Sleep · 12 min</span>
+        <h2 class="text-lg font-semibold mt-2 mb-1">Guided meditation player</h2>
+        <p class="text-sm text-on-surface-variant">Audio-style relaxation for wind-down and focus resets.</p>
+      </a>
+    </div>
+  </div>
+  <script src="../../assets/js/nav.js"></script>
+</body>
+</html>
